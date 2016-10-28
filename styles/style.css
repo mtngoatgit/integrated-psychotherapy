@@ -1,3 +1,4 @@
+
 .header {
   background-color: #3580a1;
   width: 100%;
@@ -31,6 +32,7 @@
   background-color: #01152a;
   width: 100px;
   height: auto;
+  padding-bottom: calc(100vh - 300px);
   position: absolute;
   left: 0;
 }
@@ -144,7 +146,9 @@
   margin: 15px 15px 15px 0;
   padding: 14px;
   display: inline-block;
+  letter-spacing: 1px;
 }
 .effective-link-item img {
   margin-left: 10px;
+  width: 8px;
 }
