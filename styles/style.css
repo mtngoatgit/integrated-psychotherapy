@@ -28,13 +28,17 @@
   color: white;
   padding: 30px 20px;
 }
+.nav-container {
+  overflow: hidden;
+}
 .nav-bar {
   background-color: #01152a;
   width: 100px;
-  height: auto;
   padding-bottom: calc(100vh - 300px);
   position: absolute;
   left: 0;
+  margin-bottom: -5000px;
+  padding-bottom: 5000px;
 }
 /*.nav-overflow {
   background-color: #01152a;
@@ -102,18 +106,43 @@
   padding: 2em 1.5em;
 }
 .goal-component li {
-  margin-bottom: 25px;
+  list-style: none;
+  margin-top: 25px;
+  margin-left: 20px;
+  text-indent: -20px;
+}
+.goal-component li:before {
+    content: "• ";
+    letter-spacing: 3px;
+    color: #154f74; /* or whatever color you prefer */
 }
 .note-component {
   background-color: #eeeeee;
   width: 48%;
   padding: 2em 1.5em;
 }
+.note-component li {
+  list-style: none;
+  margin-top: 25px;
+  margin-left: 20px;
+  text-indent: -20px;
+}
+.note-component li:before {
+    content: "• ";
+    letter-spacing: 3px;
+    color: #154f74; /* or whatever color you prefer */
+}
 .collapsible-component-title {
   font-size: 24px;
   color: #154f74;
   font-weight: 700;
   position: relative;
+}
+.collapsible-header img {
+  position: absolute;
+  right: 46%;
+  top: 40%;
+  width: 20px;
 }
 .collapse-icon {
   font-weight: 900;
