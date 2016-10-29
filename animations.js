@@ -1,5 +1,10 @@
 $(document).ready(function(){
-  $('.collapsible-header').on('click', function(){
-    $('down-arrow').hide();
+  $('.collapsible-component-assessment').on('click', function(){
+    $('.collapse-icon-plus-one').toggle();
+    $('.collapse-icon-minus-one').toggle();
+  })
+  $('.collapsible-component-techniques').on('click', function(){
+    $('.collapse-icon-plus-two').toggle();
+    $('.collapse-icon-minus-two').toggle();
   })
 })

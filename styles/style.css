@@ -130,13 +130,17 @@
 .note-component li:before {
     content: "• ";
     letter-spacing: 3px;
-    color: #154f74; /* or whatever color you prefer */
+    color: #154f74;
 }
-.collapsible-component-title {
+.collapsible-component-assessment {
   font-size: 24px;
   color: #154f74;
   font-weight: 700;
-  position: relative;
+}
+.collapsible-component-techniques {
+  font-size: 24px;
+  color: #154f74;
+  font-weight: 700;
 }
 .collapsible-header img {
   position: absolute;
@@ -144,13 +148,31 @@
   top: 40%;
   width: 20px;
 }
-.collapse-icon {
+.collapse-icon-plus-one {
   font-weight: 900;
   color: #154f74;
   font-size: 28px;
-  position: absolute;
-  right: 25px;
-  /*margin-left: 74%;*/
+  float: right;
+}
+.collapse-icon-minus-one {
+  font-weight: 900;
+  color: #154f74;
+  font-size: 28px;
+  display: none;
+  float: right;
+}
+.collapse-icon-plus-two {
+  font-weight: 900;
+  color: #154f74;
+  font-size: 28px;
+  float: right;
+}
+.collapse-icon-minus-two {
+  font-weight: 900;
+  color: #154f74;
+  font-size: 28px;
+  display: none;
+  float: right;
 }
 .homework-header {
   display: block;
