@@ -39,9 +39,10 @@
 .nav-bar {
   background-color: #01152a;
   width: 100px;
-  min-height: 100%;
   position: absolute;
   left: 0;
+  top: 95px;
+  bottom: 0;
 }
 .nav-item {
   width: 100%;
@@ -66,9 +67,9 @@
   background-color: #041b32;
   height: 14px;
 }
-.nav-overflow-exterior {
-  height: 27vh;
-}
+/*.nav-overflow-exterior {
+  height: 20vh;
+}*/
 .nav-overflow-interior {
 
 }
@@ -92,7 +93,7 @@
   margin-left: 100px;
   padding: 25px;
   font-family: 'Lato', sans-serif;
-  height: 145vh;
+  height: calc(1024px - 95px);
   overflow: scroll;
 }
 .main-body li {
