@@ -30,9 +30,16 @@
   color: white;
   padding: 30px 20px;
 }
+/*.nav-container {
+  min-height:100%;
+  width:100px;
+  position:relative;
+  display:inline-block;
+}*/
 .nav-bar {
   background-color: #01152a;
   width: 100px;
+  min-height: 100%;
   position: absolute;
   left: 0;
 }
@@ -60,17 +67,33 @@
   height: 14px;
 }
 .nav-overflow-exterior {
-  height: 200vh;
+  height: 27vh;
 }
 .nav-overflow-interior {
 
 }
+/*.nav-overflow-exterior {
+    min-height:100%;
+    width:100%;
+    position:relative;
+    display:inline-block;
+}
+.nav-overflow-interior {
+    width:20%;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    position:absolute;
+    background-color:yellow;
+}*/
 .main-body {
   background-color: white;
   width: calc(100% - 100px);
   margin-left: 100px;
   padding: 25px;
   font-family: 'Lato', sans-serif;
+  height: 145vh;
+  overflow: scroll;
 }
 .main-body li {
   color: #504f4f;
