@@ -1,3 +1,4 @@
+@import '../global';
 
 .header {
   background-color: #3580a1;
@@ -10,7 +11,7 @@
   top: 0;*/
 }
 .back-arrow-parent {
-  background-color: #154f74;
+  background-color: $blue300;
   width: 100px;
   height: 95px;
   display: flex;
@@ -107,7 +108,7 @@
 }
 .component-title {
   font-size: 23px;
-  color: #154f74;
+  color: $blue300;
   margin-bottom: 13px;
   font-weight: 700;
 }
@@ -135,7 +136,7 @@
 .goal-component li:before {
     content: "• ";
     letter-spacing: 3px;
-    color: #154f74; /* or whatever color you prefer */
+    color: $blue300; /* or whatever color you prefer */
 }
 .note-component {
   background-color: #eeeeee;
@@ -151,16 +152,21 @@
 .note-component li:before {
     content: "• ";
     letter-spacing: 3px;
-    color: #154f74;
+    color: $blue300;
+}
+.Collapsible {
+  font-size: 24px;
+  color: $blue300;
+  font-weight: 700;
 }
 .collapsible-component-assessment {
   font-size: 24px;
-  color: #154f74;
+  color: $blue300;
   font-weight: 700;
 }
 .collapsible-component-techniques {
   font-size: 24px;
-  color: #154f74;
+  color: $blue300;
   font-weight: 700;
 }
 .collapsible li {
@@ -206,26 +212,26 @@
 .up-arrow-nine {display: none;}
 .collapse-icon-plus-one {
   font-weight: 900;
-  color: #154f74;
+  color: $blue300;
   font-size: 28px;
   float: right;
 }
 .collapse-icon-minus-one {
   font-weight: 900;
-  color: #154f74;
+  color: $blue300;
   font-size: 28px;
   display: none;
   float: right;
 }
 .collapse-icon-plus-two {
   font-weight: 900;
-  color: #154f74;
+  color: $blue300;
   font-size: 28px;
   float: right;
 }
 .collapse-icon-minus-two {
   font-weight: 900;
-  color: #154f74;
+  color: $blue300;
   font-size: 28px;
   display: none;
   float: right;
@@ -236,8 +242,8 @@
   min-height: 3rem;
   line-height: 3rem;
   padding: 0 1rem;
-  color: #154f74;
-  background-color: #eeeeee;
+  color: $blue300;
+  background-color: $gray100;
 }
 .effective-container {
   margin-top: 20px;
