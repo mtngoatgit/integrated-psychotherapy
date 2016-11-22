@@ -1,3 +1,5 @@
+@import '../global';
+
 * {
   font-family: 'Lato', sans-serif;
 }
@@ -5,7 +7,7 @@ a {
   text-decoration: none;
 }
 .header {
-  background-color: #3580a1;
+  background-color: $blue100;
   width: 100%;
   height: auto;
   font-family: 'Lato', sans-serif;
@@ -42,12 +44,12 @@ a {
 width: 60px;
 height: 60px;
 }
-.search-icon {
-  color: white;
-  position: absolute;
-  top: 35px;
-  right: 15px;
-}
+// .search-icon {
+//   color: white;
+//   position: absolute;
+//   top: 35px;
+//   right: 15px;
+// }
 .nav-bar {
   background-color: #01152a;
   width: 178px;

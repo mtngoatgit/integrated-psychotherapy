@@ -68,19 +68,23 @@
 	
 	var _AppIntroView2 = _interopRequireDefault(_AppIntroView);
 	
-	var _DiagnosisExpandedView = __webpack_require__(246);
+	var _DiagnosisExpandedView = __webpack_require__(249);
 	
 	var _DiagnosisExpandedView2 = _interopRequireDefault(_DiagnosisExpandedView);
 	
-	var _HomeView = __webpack_require__(250);
+	var _HomeView = __webpack_require__(253);
 	
 	var _HomeView2 = _interopRequireDefault(_HomeView);
 	
-	var _ProblemSolvingView = __webpack_require__(254);
+	var _NotFoundView = __webpack_require__(266);
+	
+	var _NotFoundView2 = _interopRequireDefault(_NotFoundView);
+	
+	var _ProblemSolvingView = __webpack_require__(257);
 	
 	var _ProblemSolvingView2 = _interopRequireDefault(_ProblemSolvingView);
 	
-	var _ScreeningMoodView = __webpack_require__(256);
+	var _ScreeningMoodView = __webpack_require__(262);
 	
 	var _ScreeningMoodView2 = _interopRequireDefault(_ScreeningMoodView);
 	
@@ -102,7 +106,8 @@
 	        _react2.default.createElement(_reactRouter.Route, { path: '/diagnosis', component: _AppDiagnosisView2.default }),
 	        _react2.default.createElement(_reactRouter.Route, { path: '/diagnosis_expanded', component: _DiagnosisExpandedView2.default }),
 	        _react2.default.createElement(_reactRouter.Route, { path: '/problem_solving', component: _ProblemSolvingView2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/screening_mood', component: _ScreeningMoodView2.default })
+	        _react2.default.createElement(_reactRouter.Route, { path: '/screening_mood', component: _ScreeningMoodView2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: '*', component: _NotFoundView2.default })
 	      )
 	    );
 	  }
@@ -27212,7 +27217,7 @@
 	});
 	exports.default = undefined;
 	
-	var _AppIntro = __webpack_require__(262);
+	var _AppIntro = __webpack_require__(246);
 	
 	var _AppIntro2 = _interopRequireDefault(_AppIntro);
 	
@@ -27229,9 +27234,77 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	__webpack_require__(247);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function AppIntro() {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    'THIS VIEW'
+	  );
+	}
+	
+	exports.default = AppIntro;
+
+/***/ },
+/* 247 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(248);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(244)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./app-intro.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./app-intro.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(243)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 249 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 	exports.default = undefined;
 	
-	var _DiagnosisExpanded = __webpack_require__(247);
+	var _DiagnosisExpanded = __webpack_require__(250);
 	
 	var _DiagnosisExpanded2 = _interopRequireDefault(_DiagnosisExpanded);
 	
@@ -27240,7 +27313,7 @@
 	exports.default = _DiagnosisExpanded2.default;
 
 /***/ },
-/* 247 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27253,7 +27326,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	__webpack_require__(248);
+	__webpack_require__(251);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -27268,13 +27341,13 @@
 	exports.default = DiagnosisExpanded;
 
 /***/ },
-/* 248 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(249);
+	var content = __webpack_require__(252);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(244)(content, {});
@@ -27294,7 +27367,7 @@
 	}
 
 /***/ },
-/* 249 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(243)();
@@ -27308,7 +27381,7 @@
 
 
 /***/ },
-/* 250 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27318,7 +27391,7 @@
 	});
 	exports.default = undefined;
 	
-	var _Home = __webpack_require__(251);
+	var _Home = __webpack_require__(254);
 	
 	var _Home2 = _interopRequireDefault(_Home);
 	
@@ -27327,7 +27400,7 @@
 	exports.default = _Home2.default;
 
 /***/ },
-/* 251 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27340,7 +27413,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	__webpack_require__(252);
+	__webpack_require__(255);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -27496,13 +27569,13 @@
 	exports.default = Home;
 
 /***/ },
-/* 252 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(253);
+	var content = __webpack_require__(256);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(244)(content, {});
@@ -27522,7 +27595,7 @@
 	}
 
 /***/ },
-/* 253 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(243)();
@@ -27530,13 +27603,13 @@
 	
 	
 	// module
-	exports.push([module.id, "* {\n  font-family: 'Lato', sans-serif; }\n\na {\n  text-decoration: none; }\n\n.header {\n  background-color: #3580a1;\n  width: 100%;\n  height: auto;\n  font-family: 'Lato', sans-serif;\n  padding: 20px;\n  display: flex;\n  justify-content: center; }\n\n.logo-container {\n  display: flex;\n  flex-direction: row; }\n\n.logo-title {\n  display: flex;\n  flex-direction: column;\n  margin-left: 20px; }\n\n.logo-title_one {\n  text-transform: uppercase;\n  color: #7bd5f0;\n  font-weight: 100;\n  font-size: 22px;\n  letter-spacing: 7px; }\n\n.logo-title_two {\n  color: white;\n  font-size: 40px;\n  font-weight: 700; }\n\n.logo-title_two span {\n  font-size: 6px;\n  font-weight: 100; }\n\n.logo {\n  width: 60px;\n  height: 60px; }\n\n.search-icon {\n  color: white;\n  position: absolute;\n  top: 35px;\n  right: 15px; }\n\n.nav-bar {\n  background-color: #01152a;\n  width: 178px;\n  position: absolute;\n  left: 0; }\n\n.nav-item {\n  width: 100%;\n  height: 220px;\n  font-family: 'Lato', sans-serif;\n  display: table; }\n\n.nav-item-interior {\n  display: table-cell;\n  vertical-align: middle; }\n\n.nav-icon-container {\n  width: 50px;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 20px; }\n\n.nav-icon {\n  width: 50px; }\n\n.nav-title {\n  text-align: center;\n  color: white;\n  font-size: 14px;\n  font-weight: 300;\n  line-height: 1.3;\n  width: 65%;\n  margin: auto;\n  font-family: 'Lato', sans-serif; }\n\n.nav-spacer {\n  background-color: #041b32;\n  height: 14px; }\n\n.content-container {\n  margin-left: 178px;\n  padding-top: 20px;\n  height: auto; }\n\n.menu-container {\n  width: 90%;\n  margin-left: auto;\n  margin-right: auto;\n  font-family: 'Lato', sans-serif;\n  font-weight: 400; }\n\n.menu-item {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  line-height: 2;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  position: relative; }\n\n.menu-item a {\n  text-decoration: none; }\n\n.arrow-icon {\n  position: absolute;\n  right: 15px;\n  top: 9px; }\n", ""]);
+	exports.push([module.id, "*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n* {\n  font-family: 'Lato', sans-serif; }\n\na {\n  text-decoration: none; }\n\n.header {\n  background-color: #3580a1;\n  width: 100%;\n  height: auto;\n  font-family: 'Lato', sans-serif;\n  padding: 20px;\n  display: flex;\n  justify-content: center; }\n\n.logo-container {\n  display: flex;\n  flex-direction: row; }\n\n.logo-title {\n  display: flex;\n  flex-direction: column;\n  margin-left: 20px; }\n\n.logo-title_one {\n  text-transform: uppercase;\n  color: #7bd5f0;\n  font-weight: 100;\n  font-size: 22px;\n  letter-spacing: 7px; }\n\n.logo-title_two {\n  color: white;\n  font-size: 40px;\n  font-weight: 700; }\n\n.logo-title_two span {\n  font-size: 6px;\n  font-weight: 100; }\n\n.logo {\n  width: 60px;\n  height: 60px; }\n\n.nav-bar {\n  background-color: #01152a;\n  width: 178px;\n  position: absolute;\n  left: 0; }\n\n.nav-item {\n  width: 100%;\n  height: 220px;\n  font-family: 'Lato', sans-serif;\n  display: table; }\n\n.nav-item-interior {\n  display: table-cell;\n  vertical-align: middle; }\n\n.nav-icon-container {\n  width: 50px;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 20px; }\n\n.nav-icon {\n  width: 50px; }\n\n.nav-title {\n  text-align: center;\n  color: white;\n  font-size: 14px;\n  font-weight: 300;\n  line-height: 1.3;\n  width: 65%;\n  margin: auto;\n  font-family: 'Lato', sans-serif; }\n\n.nav-spacer {\n  background-color: #041b32;\n  height: 14px; }\n\n.content-container {\n  margin-left: 178px;\n  padding-top: 20px;\n  height: auto; }\n\n.menu-container {\n  width: 90%;\n  margin-left: auto;\n  margin-right: auto;\n  font-family: 'Lato', sans-serif;\n  font-weight: 400; }\n\n.menu-item {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  line-height: 2;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  position: relative; }\n\n.menu-item a {\n  text-decoration: none; }\n\n.arrow-icon {\n  position: absolute;\n  right: 15px;\n  top: 9px; }\n", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 254 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27546,7 +27619,7 @@
 	});
 	exports.default = undefined;
 	
-	var _ProblemSolving = __webpack_require__(255);
+	var _ProblemSolving = __webpack_require__(258);
 	
 	var _ProblemSolving2 = _interopRequireDefault(_ProblemSolving);
 	
@@ -27555,7 +27628,7 @@
 	exports.default = _ProblemSolving2.default;
 
 /***/ },
-/* 255 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27568,9 +27641,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactCollapsible = __webpack_require__(307);
+	var _reactCollapsible = __webpack_require__(259);
 	
 	var _reactCollapsible2 = _interopRequireDefault(_reactCollapsible);
+	
+	var _reactRouter = __webpack_require__(178);
 	
 	__webpack_require__(260);
 	
@@ -27582,15 +27657,19 @@
 	    null,
 	    _react2.default.createElement(
 	      'section',
-	      { className: 'header' },
+	      { className: 'problem-solving__header' },
 	      _react2.default.createElement(
-	        'div',
-	        { className: 'back-arrow-parent' },
-	        _react2.default.createElement('img', { className: 'back-arrow', src: '/assets/back-arrow.png', alt: '' })
+	        _reactRouter.Link,
+	        { to: '/' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'back-arrow-parent' },
+	          _react2.default.createElement('img', { className: 'back-arrow', src: '/assets/back-arrow.png', alt: '' })
+	        )
 	      ),
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'header-title' },
+	        { className: 'problem-solving__header-title' },
 	        'Psychotherapy'
 	      ),
 	      _react2.default.createElement(
@@ -27727,148 +27806,77 @@
 	      ),
 	      _react2.default.createElement(
 	        'section',
-	        { className: 'assessment-container' },
+	        { className: 'collapsible__section' },
 	        _react2.default.createElement(
-	          'ul',
-	          { className: 'Collapsible', 'data-collapsible': 'accordion' },
+	          'div',
+	          null,
 	          _react2.default.createElement(
 	            _reactCollapsible2.default,
-	            { trigger: 'Assessment-test' },
+	            { trigger: 'Assessment', transitionTime: 100 },
 	            _react2.default.createElement(
-	              'li',
+	              'p',
 	              null,
+	              'Problem solving therapy begins with an initial evaluation of the problem, problem orientation, problem solving style, and emotional reaction. Perform assessment ongoing to evaluate new information, changes, and/or general progress.'
+	            ),
+	            _react2.default.createElement(
+	              _reactCollapsible2.default,
+	              { trigger: 'Perform Problem Assessment', transitionTime: 100, classParentString: 'collapsible-sub_header' },
 	              _react2.default.createElement(
-	                'div',
-	                { className: 'Collapsible-header collapsible-component-assessment' },
-	                'Assessment',
-	                _react2.default.createElement(
-	                  'span',
-	                  { className: 'collapse-icon-plus-one' },
-	                  '+'
-	                ),
-	                _react2.default.createElement(
-	                  'span',
-	                  { className: 'collapse-icon-minus-one' },
-	                  '-'
-	                )
+	                'p',
+	                null,
+	                'Complete a detailed evaluation of the current problems experienced by the client.'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              _reactCollapsible2.default,
+	              { trigger: 'Identify Problem Orientation', transitionTime: 100, classParentString: 'collapsible-sub_header' },
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'Problem orientation is the general beliefs, attitudes and emotional reactions about life problems and one\'s ability to resolve them. It is either positive or negative.'
 	              ),
 	              _react2.default.createElement(
-	                'div',
-	                { className: 'collapsible-body component-text' },
-	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  'Problem solving therapy begins with an initial evaluation of the problem, problem orientation, problem solving style, and emotional reaction. Perform assessment ongoing to evaluate new information, changes, and/or general progress.'
-	                ),
-	                _react2.default.createElement(
-	                  'ul',
-	                  { className: 'collapsible', 'data-collapsible': 'accordion' },
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement(
-	                      'div',
-	                      { className: 'collapsible-header collapse-trigger-one' },
-	                      'Perform Problem Assessment',
-	                      _react2.default.createElement('img', { className: 'down-arrow down-arrow-one', src: '/assets/down-arrow.png', alt: 'down arrow' }),
-	                      _react2.default.createElement('img', { className: 'up-arrow up-arrow-one', src: '/assets/up-arrow.png', alt: 'up arrow' })
-	                    ),
-	                    _react2.default.createElement(
-	                      'div',
-	                      { className: 'collapsible-body' },
-	                      _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'Complete a detailed evaluation of the current problems experienced by the client.'
-	                      )
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement(
-	                      'div',
-	                      { className: 'collapsible-header collapse-trigger-two' },
-	                      'Identify Problem Orientation',
-	                      _react2.default.createElement('img', { className: 'down-arrow down-arrow-two', src: '/assets/down-arrow.png', alt: 'down arrow' }),
-	                      _react2.default.createElement('img', { className: 'up-arrow up-arrow-two', src: '/assets/up-arrow.png', alt: 'up arrow' })
-	                    ),
-	                    _react2.default.createElement(
-	                      'div',
-	                      { className: 'collapsible-body' },
-	                      _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'Problem orientation is the general beliefs, attitudes and emotional reactions about life problems and one\'s ability to resolve them. It is either positive or negative.'
-	                      ),
-	                      _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'Positive: views problems as opportunities, believes they are solvable, sense of self efficacy regarding ability to cope.'
-	                      ),
-	                      _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'Negative: views problems as threats to well-being, doubts ability to cope, overracting emotionally when problems occur.'
-	                      )
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement(
-	                      'div',
-	                      { className: 'collapsible-header collapse-trigger-three' },
-	                      'Identify Problem Solving Style',
-	                      _react2.default.createElement('img', { className: 'down-arrow down-arrow-three', src: '/assets/down-arrow.png', alt: 'down arrow' }),
-	                      _react2.default.createElement('img', { className: 'up-arrow up-arrow-three', src: '/assets/up-arrow.png', alt: 'up arrow' })
-	                    ),
-	                    _react2.default.createElement(
-	                      'div',
-	                      { className: 'collapsible-body' },
-	                      _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'The problem solving style describes strategies used by the individual when attempting to solve or cope with stressful problems'
-	                      ),
-	                      _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'Rational/Planful: Applies effective problem solving skills.'
-	                      ),
-	                      _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'Avoidant: Avoids problems, waits for problems to resolve themselves or others to solve the problem.'
-	                      ),
-	                      _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'Impulsive-careless: Considers few alternatives, impulsive, goes with the first idea that comes to mind.  '
-	                      )
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement(
-	                      'div',
-	                      { className: 'collapsible-header collapse-trigger-four' },
-	                      'Engage Client in Self-Monitoring',
-	                      _react2.default.createElement('img', { className: 'down-arrow down-arrow-four', src: '/assets/down-arrow.png', alt: 'down arrow' }),
-	                      _react2.default.createElement('img', { className: 'up-arrow up-arrow-four', src: '/assets/up-arrow.png', alt: 'up arrow' })
-	                    ),
-	                    _react2.default.createElement(
-	                      'div',
-	                      { className: 'collapsible-body' },
-	                      _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'Encourage patients to record the problem, emotional reaction, method used to handle the problem, and outcomes to identify problem solving patterns.'
-	                      )
-	                    )
-	                  )
-	                )
+	                'p',
+	                null,
+	                'Positive: views problems as opportunities, believes they are solvable, sense of self efficacy regarding ability to cope.'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'Negative: views problems as threats to well-being, doubts ability to cope, overracting emotionally when problems occur.'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              _reactCollapsible2.default,
+	              { trigger: 'Identify Problem Solving Style', transitionTime: 100, classParentString: 'collapsible-sub_header' },
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'The problem solving style describes strategies used by the individual when attempting to solve or cope with stressful problems'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'Rational/Planful: Applies effective problem solving skills.'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'Avoidant: Avoids problems, waits for problems to resolve themselves or others to solve the problem.'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'Impulsive-careless: Considers few alternatives, impulsive, goes with the first idea that comes to mind.  '
+	              )
+	            ),
+	            _react2.default.createElement(
+	              _reactCollapsible2.default,
+	              { trigger: 'Engage Client in Self-Monitoring', transitionTime: 100, classParentString: 'collapsible-sub_header' },
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'Encourage patients to record the problem, emotional reaction, method used to handle the problem, and outcomes to identify problem solving patterns.'
 	              )
 	            )
 	          )
@@ -27876,149 +27884,67 @@
 	      ),
 	      _react2.default.createElement(
 	        'section',
-	        { className: 'techniques-container' },
+	        { className: 'collapsible__section' },
 	        _react2.default.createElement(
-	          'ul',
-	          { className: 'collapsible', 'data-collapsible': 'accordion' },
+	          'div',
+	          null,
 	          _react2.default.createElement(
-	            'li',
-	            null,
+	            _reactCollapsible2.default,
+	            { trigger: 'Therapeutic Techniques/Strategies', transitionTime: 100 },
 	            _react2.default.createElement(
-	              'div',
-	              { className: 'collapsible-header collapsible-component-techniques' },
-	              'Therapeutic Techniques/Strategies',
+	              'p',
+	              null,
+	              'Use strategies individually or in combination to address the current problem solving orientation/style. '
+	            ),
+	            _react2.default.createElement(
+	              _reactCollapsible2.default,
+	              { trigger: 'Problem Solving Skills Training', transitionTime: 100, classParentString: 'collapsible-sub_header' },
 	              _react2.default.createElement(
-	                'span',
-	                { className: 'collapse-icon-plus-two' },
-	                '+'
-	              ),
+	                'p',
+	                null,
+	                'Provide skills training on planful problem solving: 1) select and define the problem (break down complex problems to make them manageable), 2) generate alternatives, 3) decision-making (weigh the pros and cons of alternatives), 4) implementing the preferred solution, 5) evaluating outcomes.'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              _reactCollapsible2.default,
+	              { trigger: 'Psychoeducation', transitionTime: 100, classParentString: 'collapsible-sub_header' },
 	              _react2.default.createElement(
-	                'span',
-	                { className: 'collapse-icon-minus-two' },
-	                '-'
+	                'p',
+	                null,
+	                'Provide education on stress, emotional regulation, health and mental health problems. Stress can take the form of a major life event or a collection of daily events over time. Individuals may be more sensitive to stress and its effects due to experiences earlier in life.'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              _reactCollapsible2.default,
+	              { trigger: 'Emotional Regulation Training', transitionTime: 100, classParentString: 'collapsible-sub_header' },
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'Provide training on emotional regulation under stress by: 1) identifying unique triggers, 2) slowing down emotional response to think more planfully (ie. counting, deep breathing, mindful meditation), 3) identify what emotions may be telling you- anxiety (threat or danger), sadness (belief you have lost something important), guilt (regret), anger (blocked from getting what you want).'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              _reactCollapsible2.default,
+	              { trigger: 'ABC Model of Healthy Thinking', transitionTime: 100, classParentString: 'collapsible-sub_header' },
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'Encourage patients to record the problem, emotional reaction, method used to handle the problem, and outcomes to identify problem solving patterns.'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              _reactCollapsible2.default,
+	              { trigger: 'Positive Imagery/Visualization', transitionTime: 100, classParentString: 'collapsible-sub_header' },
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'Encourage patients to record the problem, emotional reaction, method used to handle the problem, and outcomes to identify problem solving patterns.'
 	              )
 	            ),
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'collapsible-body component-text' },
-	              _react2.default.createElement(
-	                'p',
-	                null,
-	                'Use strategies individually or in combination to address the current problem solving orientation/style. '
-	              ),
-	              _react2.default.createElement(
-	                'ul',
-	                { className: 'collapsible', 'data-collapsible': 'accordion' },
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'collapsible-header collapse-trigger-five' },
-	                    'Problem Solving Skills Training',
-	                    _react2.default.createElement('img', { className: 'down-arrow down-arrow-five', src: '/assets/down-arrow.png', alt: 'down arrow' }),
-	                    _react2.default.createElement('img', { className: 'up-arrow up-arrow-five', src: '/assets/up-arrow.png', alt: 'up arrow' })
-	                  ),
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'collapsible-body' },
-	                    _react2.default.createElement(
-	                      'p',
-	                      null,
-	                      'Provide skills training on planful problem solving: 1) select and define the problem (break down complex problems to make them manageable), 2) generate alternatives, 3) decision-making (weigh the pros and cons of alternatives), 4) implementing the preferred solution, 5) evaluating outcomes.'
-	                    )
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'collapsible-header collapse-trigger-six' },
-	                    'Psychoeducation',
-	                    _react2.default.createElement('img', { className: 'down-arrow down-arrow-six', src: '/assets/down-arrow.png', alt: 'down arrow' }),
-	                    _react2.default.createElement('img', { className: 'up-arrow up-arrow-six', src: '/assets/up-arrow.png', alt: 'up arrow' })
-	                  ),
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'collapsible-body' },
-	                    _react2.default.createElement(
-	                      'p',
-	                      null,
-	                      'Provide education on stress, emotional regulation, health and mental health problems. Stress can take the form of a major life event or a collection of daily events over time. Individuals may be more sensitive to stress and its effects due to experiences earlier in life.'
-	                    )
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'collapsible-header collapse-trigger-seven' },
-	                    'Emotional Regulation Training',
-	                    _react2.default.createElement('img', { className: 'down-arrow down-arrow-seven', src: '/assets/down-arrow.png', alt: 'down arrow' }),
-	                    _react2.default.createElement('img', { className: 'up-arrow up-arrow-seven', src: '/assets/up-arrow.png', alt: 'up arrow' })
-	                  ),
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'collapsible-body' },
-	                    _react2.default.createElement(
-	                      'p',
-	                      null,
-	                      'Provide training on emotional regulation under stress by: 1) identifying unique triggers, 2) slowing down emotional response to think more planfully (ie. counting, deep breathing, mindful meditation), 3) identify what emotions may be telling you- anxiety (threat or danger), sadness (belief you have lost something important), guilt (regret), anger (blocked from getting what you want).'
-	                    )
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'collapsible-header collapse-trigger-eight' },
-	                    'ABC Model of Healthy Thinking',
-	                    _react2.default.createElement('img', { className: 'down-arrow down-arrow-eight', src: '/assets/down-arrow.png', alt: 'down arrow' }),
-	                    _react2.default.createElement('img', { className: 'up-arrow up-arrow-eight', src: '/assets/up-arrow.png', alt: 'up arrow' })
-	                  ),
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'collapsible-body' },
-	                    _react2.default.createElement(
-	                      'p',
-	                      null,
-	                      'Encourage patients to record the problem, emotional reaction, method used to handle the problem, and outcomes to identify problem solving patterns.'
-	                    )
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'collapsible-header collapse-trigger-nine' },
-	                    'Positive Imagery/Visualization',
-	                    _react2.default.createElement('img', { className: 'down-arrow down-arrow-nine', src: '/assets/down-arrow.png', alt: 'down arrow' }),
-	                    _react2.default.createElement('img', { className: 'up-arrow up-arrow-nine', src: '/assets/up-arrow.png', alt: 'up arrow' })
-	                  ),
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'collapsible-body' },
-	                    _react2.default.createElement(
-	                      'p',
-	                      null,
-	                      'Encourage patients to record the problem, emotional reaction, method used to handle the problem, and outcomes to identify problem solving patterns.'
-	                    )
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'homework-header' },
-	                    'Homework Assignments'
-	                  )
-	                )
-	              )
+	              { className: 'collapsible-sub_header' },
+	              'Homework Assignments'
 	            )
 	          )
 	        )
@@ -28101,246 +28027,17 @@
 	}
 	
 	exports.default = ProblemSolving;
-
-/***/ },
-/* 256 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
 	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = undefined;
+	//  ------ ARROWS AND PLUSES ----------
 	
-	var _ScreeningMood = __webpack_require__(257);
-	
-	var _ScreeningMood2 = _interopRequireDefault(_ScreeningMood);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = _ScreeningMood2.default;
-
-/***/ },
-/* 257 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	__webpack_require__(258);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function ScreeningMood() {
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    'THIS VIEW'
-	  );
-	}
-	
-	exports.default = ScreeningMood;
-
-/***/ },
-/* 258 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(259);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(244)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./screening-mood.scss", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./screening-mood.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	{/* <span className="collapse-icon-plus-two">+</span>
+	  <span className="collapse-icon-minus-two">-</span>
+	  <img className="down-arrow down-arrow-nine" src="/assets/down-arrow.png" alt="down arrow" />
+	  <img className="up-arrow up-arrow-nine" src="/assets/up-arrow.png" alt="up arrow" />
+	  */}
 
 /***/ },
 /* 259 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(243)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 260 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(261);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(244)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./problem-solving.scss", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./problem-solving.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 261 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(243)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n.header {\n  background-color: #3580a1;\n  width: 100%;\n  font-family: 'Lato', sans-serif;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  /*position: fixed;\n  top: 0;*/ }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 95px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header-title {\n  font-family: 'Lato', sans-serif;\n  font-weight: 500;\n  font-size: 35px;\n  color: white;\n  padding: 30px 0; }\n\n.search-icon {\n  color: white;\n  padding: 30px 20px; }\n\n/*.nav-container {\n  min-height:100%;\n  width:100px;\n  position:relative;\n  display:inline-block;\n}*/\n.nav-bar {\n  background-color: #01152a;\n  width: 100px;\n  position: absolute;\n  left: 0;\n  top: 95px;\n  bottom: 0; }\n\n.nav-item {\n  width: 100%;\n  height: 220px;\n  font-family: 'Lato', sans-serif;\n  display: table; }\n\n.nav-item-interior {\n  display: table-cell;\n  vertical-align: middle; }\n\n.nav-icon-container {\n  width: 50px;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 20px; }\n\n.nav-icon {\n  width: 50px; }\n\n.nav-spacer {\n  background-color: #041b32;\n  height: 14px; }\n\n/*.nav-overflow-exterior {\n  height: 20vh;\n}*/\n/*.nav-overflow-exterior {\n    min-height:100%;\n    width:100%;\n    position:relative;\n    display:inline-block;\n}\n.nav-overflow-interior {\n    width:20%;\n    top:0px;\n    left:0px;\n    bottom:0px;\n    position:absolute;\n    background-color:yellow;\n}*/\n.main-body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 95px);\n  overflow: scroll; }\n\n.main-body li {\n  color: #504f4f; }\n\n.problem-solve-container {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.component-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3; }\n\n.goals-notes-container {\n  margin-bottom: 25px;\n  display: flex;\n  justify-content: space-between; }\n\n.goal-component {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.goal-component li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.goal-component li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.note-component {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.note-component li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.note-component li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74; }\n\n.Collapsible {\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700; }\n\n.collapsible-component-assessment {\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700; }\n\n.collapsible-component-techniques {\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700; }\n\n.collapsible li {\n  position: relative; }\n\n/*.clicker-parent {\n  position: absolute;\n  left: 0;\n  right: 0;\n  z-index: 1\n  background: red;\n}*/\n/*.clicker {\n  position: absolute;\n  left: 0;\n  right: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 2;\n  background: blue;\n}*/\n.down-arrow {\n  position: absolute;\n  right: 46%;\n  top: 40%;\n  width: 20px; }\n\n.up-arrow {\n  display: none;\n  position: absolute;\n  right: 46%;\n  top: 40%;\n  width: 20px; }\n\n.up-arrow-one {\n  display: none; }\n\n.up-arrow-two {\n  display: none; }\n\n.up-arrow-three {\n  display: none; }\n\n.up-arrow-four {\n  display: none; }\n\n.up-arrow-five {\n  display: none; }\n\n.up-arrow-six {\n  display: none; }\n\n.up-arrow-seven {\n  display: none; }\n\n.up-arrow-eight {\n  display: none; }\n\n.up-arrow-nine {\n  display: none; }\n\n.collapse-icon-plus-one {\n  font-weight: 900;\n  color: #154f74;\n  font-size: 28px;\n  float: right; }\n\n.collapse-icon-minus-one {\n  font-weight: 900;\n  color: #154f74;\n  font-size: 28px;\n  display: none;\n  float: right; }\n\n.collapse-icon-plus-two {\n  font-weight: 900;\n  color: #154f74;\n  font-size: 28px;\n  float: right; }\n\n.collapse-icon-minus-two {\n  font-weight: 900;\n  color: #154f74;\n  font-size: 28px;\n  display: none;\n  float: right; }\n\n.homework-header {\n  display: block;\n  cursor: pointer;\n  min-height: 3rem;\n  line-height: 3rem;\n  padding: 0 1rem;\n  color: #154f74;\n  background-color: #eeeeee; }\n\n.effective-container {\n  margin-top: 20px;\n  color: white;\n  font-family: 'Lato', sans-serif;\n  font-size: 20px;\n  font-weight: 300;\n  width: 100%;\n  float: left; }\n\n.effective-link-item {\n  background-color: #3580a1;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px; }\n\n.effective-link-item img {\n  margin-left: 10px;\n  width: 8px; }\n", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 262 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	__webpack_require__(263);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function AppIntro() {
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    'THIS VIEW'
-	  );
-	}
-	
-	exports.default = AppIntro;
-
-/***/ },
-/* 263 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(264);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(244)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./app-intro.scss", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./app-intro.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 264 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(243)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 265 */,
-/* 266 */,
-/* 267 */,
-/* 268 */,
-/* 269 */,
-/* 270 */,
-/* 271 */,
-/* 272 */,
-/* 273 */,
-/* 274 */,
-/* 275 */,
-/* 276 */,
-/* 277 */,
-/* 278 */,
-/* 279 */,
-/* 280 */,
-/* 281 */,
-/* 282 */,
-/* 283 */,
-/* 284 */,
-/* 285 */,
-/* 286 */,
-/* 287 */,
-/* 288 */,
-/* 289 */,
-/* 290 */,
-/* 291 */,
-/* 292 */,
-/* 293 */,
-/* 294 */,
-/* 295 */,
-/* 296 */,
-/* 297 */,
-/* 298 */,
-/* 299 */,
-/* 300 */,
-/* 301 */,
-/* 302 */,
-/* 303 */,
-/* 304 */,
-/* 305 */,
-/* 306 */,
-/* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28565,6 +28262,268 @@
 	exports.default = Collapsible;
 	
 
+
+/***/ },
+/* 260 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(261);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(244)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./problem-solving.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./problem-solving.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 261 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(243)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.problem-solving__header {\n  background-color: #3580a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 96px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.problem-solving__header-title {\n  font-weight: 500;\n  font-size: 35px;\n  color: white;\n  padding: 30px 0; }\n\n.search-icon {\n  color: white;\n  padding: 30px 20px; }\n\n/*.nav-container {\n  min-height:100%;\n  width:100px;\n  position:relative;\n  display:inline-block;\n}*/\n.nav-bar {\n  background-color: #01152a;\n  width: 100px;\n  position: absolute;\n  left: 0;\n  top: 95px;\n  bottom: 0; }\n\n.nav-item {\n  width: 100%;\n  height: 220px;\n  font-family: 'Lato', sans-serif;\n  display: table; }\n\n.nav-item-interior {\n  display: table-cell;\n  vertical-align: middle; }\n\n.nav-icon-container {\n  width: 50px;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 20px; }\n\n.nav-icon {\n  width: 50px; }\n\n.nav-spacer {\n  background-color: #041b32;\n  height: 14px; }\n\n/*.nav-overflow-exterior {\n  height: 20vh;\n}*/\n/*.nav-overflow-exterior {\n    min-height:100%;\n    width:100%;\n    position:relative;\n    display:inline-block;\n}\n.nav-overflow-interior {\n    width:20%;\n    top:0px;\n    left:0px;\n    bottom:0px;\n    position:absolute;\n    background-color:yellow;\n}*/\n.main-body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 95px);\n  overflow: scroll; }\n\n.main-body li {\n  color: #504f4f; }\n\n.problem-solve-container {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.component-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.goals-notes-container {\n  margin-bottom: 25px;\n  display: flex;\n  justify-content: space-between; }\n\n.goal-component {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.goal-component li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.goal-component li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.note-component {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.note-component li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.note-component li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 18px; }\n\n.collapsible-component-assessment {\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700; }\n\n.collapsible-component-techniques {\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700; }\n\n.collapsible li {\n  position: relative; }\n\n/*.clicker-parent {\n  position: absolute;\n  left: 0;\n  right: 0;\n  z-index: 1\n  background: red;\n}*/\n/*.clicker {\n  position: absolute;\n  left: 0;\n  right: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 2;\n  background: blue;\n}*/\n.down-arrow {\n  position: absolute;\n  right: 46%;\n  top: 40%;\n  width: 20px; }\n\n.up-arrow {\n  display: none;\n  position: absolute;\n  right: 46%;\n  top: 40%;\n  width: 20px; }\n\n.up-arrow-one {\n  display: none; }\n\n.up-arrow-two {\n  display: none; }\n\n.up-arrow-three {\n  display: none; }\n\n.up-arrow-four {\n  display: none; }\n\n.up-arrow-five {\n  display: none; }\n\n.up-arrow-six {\n  display: none; }\n\n.up-arrow-seven {\n  display: none; }\n\n.up-arrow-eight {\n  display: none; }\n\n.up-arrow-nine {\n  display: none; }\n\n.collapse-icon-plus-one {\n  font-weight: 900;\n  color: #154f74;\n  font-size: 28px;\n  float: right; }\n\n.collapse-icon-minus-one {\n  font-weight: 900;\n  color: #154f74;\n  font-size: 28px;\n  display: none;\n  float: right; }\n\n.collapse-icon-plus-two {\n  font-weight: 900;\n  color: #154f74;\n  font-size: 28px;\n  float: right; }\n\n.collapse-icon-minus-two {\n  font-weight: 900;\n  color: #154f74;\n  font-size: 28px;\n  display: none;\n  float: right; }\n\n.homework-header {\n  display: block;\n  cursor: pointer;\n  min-height: 3rem;\n  line-height: 3rem;\n  padding: 0 1rem;\n  color: #154f74;\n  background-color: #eeeeee; }\n\n.effective-container {\n  margin-top: 20px;\n  color: white;\n  font-family: 'Lato', sans-serif;\n  font-size: 20px;\n  font-weight: 300;\n  width: 100%;\n  float: left; }\n\n.effective-link-item {\n  background-color: #3580a1;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px; }\n\n.effective-link-item img {\n  margin-left: 10px;\n  width: 8px; }\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 262 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = undefined;
+	
+	var _ScreeningMood = __webpack_require__(263);
+	
+	var _ScreeningMood2 = _interopRequireDefault(_ScreeningMood);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = _ScreeningMood2.default;
+
+/***/ },
+/* 263 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	__webpack_require__(264);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function ScreeningMood() {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    'THIS VIEW'
+	  );
+	}
+	
+	exports.default = ScreeningMood;
+
+/***/ },
+/* 264 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(265);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(244)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./screening-mood.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./screening-mood.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 265 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(243)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 266 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = undefined;
+	
+	var _NotFound = __webpack_require__(267);
+	
+	var _NotFound2 = _interopRequireDefault(_NotFound);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = _NotFound2.default;
+
+/***/ },
+/* 267 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	__webpack_require__(268);
+	
+	var _integratedIcon = __webpack_require__(270);
+	
+	var _integratedIcon2 = _interopRequireDefault(_integratedIcon);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function NotFoundView() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'NotFoundView' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'NotFound__inner' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'NotFound-title-container' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'NotFound-title-logo' },
+	          _react2.default.createElement('img', { src: _integratedIcon2.default, alt: 'Logo' })
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'NotFound-title-main' },
+	          'Hi. Sorry.'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'NotFound-title-sub' },
+	          'We were unable to find the page you were looking for. Click the button below to go back.'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'NotFound-button-container' },
+	          _react2.default.createElement(
+	            'button',
+	            { onClick: _reactRouter.browserHistory.goBack },
+	            'Go Back'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'NotFound-error-message' },
+	          'Page Error: 404'
+	        )
+	      )
+	    )
+	  );
+	}
+	
+	exports.default = NotFoundView;
+
+/***/ },
+/* 268 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(269);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(244)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./not-found.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./not-found.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 269 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(243)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.NotFoundView {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0; }\n\n.NotFound__inner {\n  height: 100%;\n  width: 100%;\n  display: flex; }\n\n.NotFound-title-logo {\n  position: absolute;\n  top: 10%;\n  text-align: center;\n  width: 100%;\n  padding: 12px 48px;\n  margin-left: auto;\n  margin-right: auto; }\n  .NotFound-title-logo img {\n    width: 150px; }\n\n.NotFound-title-container {\n  align-self: center;\n  width: 100%; }\n\n.NotFound-title-main {\n  text-align: center; }\n\n.NotFound-title-sub {\n  text-align: center;\n  padding: 12px 16px; }\n\n.NotFound-button-container {\n  text-align: center;\n  margin-top: 50px; }\n  .NotFound-button-container button {\n    padding: 20px;\n    border: none;\n    font-size: 16px;\n    background-color: #154f74;\n    color: white; }\n\n.NotFound-error-message {\n  position: absolute;\n  width: 100%;\n  text-align: center;\n  bottom: 12px;\n  font-size: 12px; }\n\n@media (min-width: 768px) {\n  .NotFound-title-logo {\n    padding: 12px; }\n  .NotFound-title-main {\n    font-size: 64px; }\n  .NotFound-title-sub {\n    font-size: 40px;\n    padding: 24px 72px; } }\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 270 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/png;base64,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"
 
 /***/ }
 /******/ ]);
