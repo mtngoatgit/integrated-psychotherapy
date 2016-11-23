@@ -2,6 +2,7 @@ import React from 'react';
 import Collapsible from 'react-collapsible';
 import {Link }from 'react-router';
 import './problem-solving.scss';
+import SideBar from '../SideBar';
 
 function ProblemSolving() {
   return (
@@ -20,45 +21,7 @@ function ProblemSolving() {
       </div>
     </section>
 
-  <section className="nav-bar">
-    <div className="nav-item">
-      <div className="nav-item-interior">
-        <div className="nav-icon-container">
-          <img className="nav-icon" src="/assets/suitcase.png" alt="suitcase" />
-        </div>
-      </div>
-    </div>
-
-    <div className="nav-spacer"></div>
-
-    <div className="nav-item">
-      <div className="nav-item-interior">
-        <div className="nav-icon-container">
-          <img className="nav-icon" src="/assets/brain-heart.png" alt="brain-heart" />
-        </div>
-      </div>
-    </div>
-
-    <div className="nav-spacer"></div>
-
-    <div className="nav-item">
-      <div className="nav-item-interior">
-        <div className="nav-icon-container">
-          <img className="nav-icon" src="/assets/clipboard.png" alt="clipboard" />
-        </div>
-      </div>
-    </div>
-
-    <div className="nav-spacer"></div>
-
-    <div className="nav-item">
-      <div className="nav-item-interior">
-        <div className="nav-icon-container">
-          <img className="nav-icon" src="/assets/bust.png" alt="bust" />
-        </div>
-      </div>
-    </div>
-  </section>
+  <SideBar />
 
   <section className="main-body">
     <section className="problem-solve-container">
