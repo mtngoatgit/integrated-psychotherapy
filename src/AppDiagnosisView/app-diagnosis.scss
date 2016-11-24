@@ -1,0 +1,30 @@
+@import "../global";
+
+.app-diagnosis__header {
+  background-color: $blue100;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  align-items: center;
+}
+.back-arrow-parent {
+  background-color: $blue300;
+  width: 100px;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back-arrow {
+}
+.app-diagnosis__header-title {
+  font-weight: 500;
+  font-size: 35px;
+  color: white;
+  padding: 30px 0;
+}
+.search-icon {
+  color: white;
+  padding: 30px 20px;
+}

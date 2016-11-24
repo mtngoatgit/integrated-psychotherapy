@@ -1,6 +1,6 @@
 @import "../global";
 
-.nav-bar {
+.side-nav__bar {
   background-color: $blue400;
   width: 100px;
   position: absolute;
@@ -8,26 +8,26 @@
   top: 95px;
   bottom: 0;
 }
-.nav-item {
+.side-nav__item {
   width: 100%;
   height: 220px;
   font-family: 'Lato', sans-serif;
   display: table;
 }
-.nav-item-interior {
+.side-nav__item-interior {
   display: table-cell;
   vertical-align: middle;
 }
-.nav-icon-container {
+.side-nav__icon-container {
   width: 50px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
 }
-.nav-icon {
+.side-nav__icon {
   width: 50px;
 }
-.nav-spacer {
+.side-nav__spacer {
   background-color: #041b32;
   height: 14px;
 }

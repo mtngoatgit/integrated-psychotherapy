@@ -64,27 +64,27 @@
 	
 	var _AppDiagnosisView2 = _interopRequireDefault(_AppDiagnosisView);
 	
-	var _AppIntroView = __webpack_require__(245);
+	var _AppIntroView = __webpack_require__(250);
 	
 	var _AppIntroView2 = _interopRequireDefault(_AppIntroView);
 	
-	var _DiagnosisExpandedView = __webpack_require__(249);
+	var _DiagnosisExpandedView = __webpack_require__(254);
 	
 	var _DiagnosisExpandedView2 = _interopRequireDefault(_DiagnosisExpandedView);
 	
-	var _HomeView = __webpack_require__(253);
+	var _HomeView = __webpack_require__(258);
 	
 	var _HomeView2 = _interopRequireDefault(_HomeView);
 	
-	var _NotFoundView = __webpack_require__(266);
+	var _NotFoundView = __webpack_require__(262);
 	
 	var _NotFoundView2 = _interopRequireDefault(_NotFoundView);
 	
-	var _ProblemSolvingView = __webpack_require__(257);
+	var _ProblemSolvingView = __webpack_require__(267);
 	
 	var _ProblemSolvingView2 = _interopRequireDefault(_ProblemSolvingView);
 	
-	var _ScreeningMoodView = __webpack_require__(262);
+	var _ScreeningMoodView = __webpack_require__(271);
 	
 	var _ScreeningMoodView2 = _interopRequireDefault(_ScreeningMoodView);
 	
@@ -26844,7 +26844,17 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	__webpack_require__(241);
+	var _reactCollapsible = __webpack_require__(241);
+	
+	var _reactCollapsible2 = _interopRequireDefault(_reactCollapsible);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	var _SideBar = __webpack_require__(242);
+	
+	var _SideBar2 = _interopRequireDefault(_SideBar);
+	
+	__webpack_require__(248);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -26852,7 +26862,82 @@
 	  return _react2.default.createElement(
 	    'div',
 	    null,
-	    'THIS VIEW'
+	    _react2.default.createElement(
+	      'section',
+	      { className: 'app-diagnosis__header' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'back-arrow-parent' },
+	        _react2.default.createElement(
+	          'button',
+	          { onClick: _reactRouter.browserHistory.goBack },
+	          _react2.default.createElement('img', { className: 'back-arrow', src: '/assets/back-arrow.png', alt: '' })
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'app-diagnosis__header-title' },
+	        'Diagnosis'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'search-icon' },
+	        _react2.default.createElement('i', { className: 'fa fa-search fa-2x', 'aria-hidden': 'true' })
+	      )
+	    ),
+	    _react2.default.createElement(_SideBar2.default, null),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'main__body' },
+	      _react2.default.createElement(
+	        'section',
+	        { className: 'view__overview' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'view__overview-title' },
+	          'Diagnosis Name'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'view__overview-text' },
+	          'Tumblr mixtape banjo sriracha tote bag 90\'s. Waistcoat dreamcatcher succulents unicorn cred, try-hard put a bird on it hella photo booth crucifix beard. Try-hard cliche salvia plaid, mumblecore tote bag coloring book literally street art pabst post-ironic humblebrag tofu. Direct trade try-hard kickstarter enamel pin pork belly, aesthetic 90\'s hammock. Schlitz intelligentsia green juice, put a bird on it offal taxidermy subway tile you probably haven\'t heard of them blog mumblecore. Meditation sustainable +1, heirloom church-key kitsch bespoke offal tousled. Selfies squid lyft scenester kinfolk, ennui franzen normcore semiotics cardigan chartreuse shabby chic.'
+	        )
+	      ),
+	      _react2.default.createElement('div', { className: '' }),
+	      _react2.default.createElement('div', { className: '' }),
+	      _react2.default.createElement('div', { className: '' }),
+	      _react2.default.createElement(
+	        'section',
+	        { className: 'collapsible__section' },
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            _reactCollapsible2.default,
+	            { trigger: 'Comorbid Conditions', transitionTime: 100 },
+	            _react2.default.createElement('div', { className: '' }),
+	            _react2.default.createElement('div', { className: '' }),
+	            _react2.default.createElement('div', { className: '' })
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'section',
+	        { className: 'collapsible__section' },
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            _reactCollapsible2.default,
+	            { trigger: 'Interventions', transitionTime: 100 },
+	            _react2.default.createElement('div', { className: '' }),
+	            _react2.default.createElement('div', { className: '' }),
+	            _react2.default.createElement('div', { className: '' }),
+	            _react2.default.createElement('div', { className: '' })
+	          )
+	        )
+	      )
+	    )
 	  );
 	}
 	
@@ -26862,20 +26947,370 @@
 /* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Collapsible = _react2.default.createClass({
+	  displayName: 'Collapsible',
+	
+	
+	  //Set validation for prop types
+	  propTypes: {
+	    transitionTime: _react2.default.PropTypes.number,
+	    easing: _react2.default.PropTypes.string,
+	    open: _react2.default.PropTypes.bool,
+	    classParentString: _react2.default.PropTypes.string,
+	    accordionPosition: _react2.default.PropTypes.number,
+	    handleTriggerClick: _react2.default.PropTypes.func,
+	    trigger: _react2.default.PropTypes.oneOfType([_react2.default.PropTypes.string, _react2.default.PropTypes.element]),
+	    triggerWhenOpen: _react2.default.PropTypes.oneOfType([_react2.default.PropTypes.string, _react2.default.PropTypes.element]),
+	    lazyRender: _react2.default.PropTypes.bool,
+	    overflowWhenOpen: _react2.default.PropTypes.oneOf(['hidden', 'visible', 'auto', 'scroll', 'inherit', 'initial', 'unset'])
+	  },
+	
+	  //If no transition time or easing is passed then default to this
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      transitionTime: 400,
+	      easing: 'linear',
+	      open: false,
+	      classParentString: 'Collapsible',
+	      lazyRender: false,
+	      overflowWhenOpen: 'hidden'
+	    };
+	  },
+	
+	  //Defaults the dropdown to be closed
+	  getInitialState: function getInitialState() {
+	
+	    if (this.props.open) {
+	      return {
+	        isClosed: false,
+	        shouldSwitchAutoOnNextCycle: false,
+	        height: 'auto',
+	        transition: 'none',
+	        hasBeenOpened: true,
+	        overflow: this.props.overflowWhenOpen
+	      };
+	    } else {
+	      return {
+	        isClosed: true,
+	        shouldSwitchAutoOnNextCycle: false,
+	        height: 0,
+	        transition: 'height ' + this.props.transitionTime + 'ms ' + this.props.easing,
+	        hasBeenOpened: false,
+	        overflow: 'hidden'
+	      };
+	    }
+	  },
+	
+	  // Taken from https://github.com/EvandroLG/transitionEnd/
+	  // Determines which prefixed event to listen for
+	  whichTransitionEnd: function whichTransitionEnd(element) {
+	    var transitions = {
+	      'WebkitTransition': 'webkitTransitionEnd',
+	      'MozTransition': 'transitionend',
+	      'OTransition': 'oTransitionEnd otransitionend',
+	      'transition': 'transitionend'
+	    };
+	
+	    for (var t in transitions) {
+	      if (element.style[t] !== undefined) {
+	        return transitions[t];
+	      }
+	    }
+	  },
+	
+	  componentDidMount: function componentDidMount() {
+	    var _this = this;
+	
+	    //Set up event listener to listen to transitionend so we can switch the height from fixed pixel to auto for much responsiveness;
+	    //TODO:  Once Synthetic transitionend events have been exposed in the next release of React move this funciton to a function handed to the onTransitionEnd prop
+	
+	    this.refs.outer.addEventListener(this.whichTransitionEnd(this.refs.outer), function (event) {
+	      if (_this.state.isClosed === false) {
+	        _this.setState({
+	          shouldSwitchAutoOnNextCycle: true
+	        });
+	      }
+	    });
+	  },
+	
+	  componentDidUpdate: function componentDidUpdate(prevProps) {
+	
+	    if (this.state.shouldSwitchAutoOnNextCycle === true && this.state.isClosed === false) {
+	      //Set the height to auto to make compoenent re-render with the height set to auto.
+	      //This way the dropdown will be responsive and also change height if there is another dropdown within it.
+	      this.makeResponsive();
+	    }
+	
+	    if (this.state.shouldSwitchAutoOnNextCycle === true && this.state.isClosed === true) {
+	      this.prepareToOpen();
+	    }
+	
+	    //If there has been a change in the open prop (controlled by accordion)
+	    if (prevProps.open != this.props.open) {
+	      console.log('Open state changed!', this.props.accordionPosition);
+	
+	      if (this.props.open === true) {
+	        this.openCollasible();
+	      } else {
+	        this.closeCollapsible();
+	      }
+	    }
+	  },
+	
+	  handleTriggerClick: function handleTriggerClick(event) {
+	
+	    event.preventDefault();
+	
+	    if (this.props.handleTriggerClick) {
+	      this.props.handleTriggerClick(this.props.accordionPosition);
+	    } else {
+	
+	      if (this.state.isClosed === true) {
+	        this.openCollasible();
+	      } else {
+	        this.closeCollapsible();
+	      }
+	    }
+	  },
+	
+	  closeCollapsible: function closeCollapsible() {
+	    this.setState({
+	      isClosed: true,
+	      shouldSwitchAutoOnNextCycle: true,
+	      height: this.refs.inner.offsetHeight,
+	      overflow: 'hidden'
+	    });
+	  },
+	
+	  openCollasible: function openCollasible() {
+	    this.setState({
+	      height: this.refs.inner.offsetHeight,
+	      transition: 'height ' + this.props.transitionTime + 'ms ' + this.props.easing,
+	      isClosed: false,
+	      hasBeenOpened: true
+	    });
+	  },
+	
+	  makeResponsive: function makeResponsive() {
+	    this.setState({
+	      height: 'auto',
+	      transition: 'none',
+	      shouldSwitchAutoOnNextCycle: false,
+	      overflow: this.props.overflowWhenOpen
+	    });
+	  },
+	
+	  prepareToOpen: function prepareToOpen() {
+	    var _this2 = this;
+	
+	    //The height has been changes back to fixed pixel, we set a small timeout to force the CSS transition back to 0 on the next tick.
+	    window.setTimeout(function () {
+	      _this2.setState({
+	        height: 0,
+	        shouldSwitchAutoOnNextCycle: false,
+	        transition: 'height ' + _this2.props.transitionTime + 'ms ' + _this2.props.easing
+	      });
+	    }, 50);
+	  },
+	
+	  render: function render() {
+	
+	    var dropdownStyle = {
+	      height: this.state.height,
+	      WebkitTransition: this.state.transition,
+	      msTransition: this.state.transition,
+	      transition: this.state.transition,
+	      overflow: this.state.overflow
+	    };
+	
+	    var openClass = this.state.isClosed ? 'is-closed' : 'is-open';
+	
+	    //If user wants different text when tray is open
+	    var trigger = this.state.isClosed === false && this.props.triggerWhenOpen !== undefined ? this.props.triggerWhenOpen : this.props.trigger;
+	
+	    // Don't render children until the first opening of the Collapsible if lazy rendering is enabled
+	    var children = this.props.children;
+	    if (this.props.lazyRender) if (!this.state.hasBeenOpened) children = null;
+	
+	    return _react2.default.createElement(
+	      'div',
+	      { className: this.props.classParentString },
+	      _react2.default.createElement(
+	        'span',
+	        { className: this.props.classParentString + "__trigger" + ' ' + openClass, onClick: this.handleTriggerClick },
+	        trigger
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: this.props.classParentString + "__contentOuter", ref: 'outer', style: dropdownStyle },
+	        _react2.default.createElement(
+	          'div',
+	          { className: this.props.classParentString + "__contentInner", ref: 'inner' },
+	          children
+	        )
+	      )
+	    );
+	  }
+	
+	});
+	
+	exports.default = Collapsible;
+	
+
+
+/***/ },
+/* 242 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = undefined;
+	
+	var _SideBar = __webpack_require__(243);
+	
+	var _SideBar2 = _interopRequireDefault(_SideBar);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = _SideBar2.default;
+
+/***/ },
+/* 243 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	__webpack_require__(244);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function SideBar() {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'section',
+	      { className: 'side-nav__bar' },
+	      _react2.default.createElement(
+	        _reactRouter.Link,
+	        { to: '/' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'side-nav__item' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'side-nav__item-interior' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'side-nav__icon-container' },
+	              _react2.default.createElement('img', { className: 'side-nav__icon', src: '/assets/suitcase.png', alt: 'suitcase' })
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement('div', { className: 'side-nav__spacer' }),
+	      _react2.default.createElement(
+	        _reactRouter.Link,
+	        { to: '/diagnosis' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'side-nav__item' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'side-nav__item-interior' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'side-nav__icon-container' },
+	              _react2.default.createElement('img', { className: 'side-nav__icon', src: '/assets/brain-heart.png', alt: 'brain-heart' })
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement('div', { className: 'side-nav__spacer' }),
+	      _react2.default.createElement(
+	        _reactRouter.Link,
+	        { to: '/screening_mood' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'side-nav__item' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'side-nav__item-interior' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'side-nav__icon-container' },
+	              _react2.default.createElement('img', { className: 'side-nav__icon', src: '/assets/clipboard.png', alt: 'clipboard' })
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement('div', { className: 'side-nav__spacer' }),
+	      _react2.default.createElement(
+	        _reactRouter.Link,
+	        { to: '/behavioral_interventions' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'side-nav__item' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'side-nav__item-interior' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'side-nav__icon-container' },
+	              _react2.default.createElement('img', { className: 'side-nav__icon', src: '/assets/puzzle.png', alt: 'bust' })
+	            )
+	          )
+	        )
+	      )
+	    )
+	  );
+	}
+	
+	exports.default = SideBar;
+
+/***/ },
+/* 244 */
+/***/ function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(242);
+	var content = __webpack_require__(245);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(244)(content, {});
+	var update = __webpack_require__(247)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./app-diagnosis.scss", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./app-diagnosis.scss");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./side-bar.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./side-bar.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -26885,21 +27320,21 @@
 	}
 
 /***/ },
-/* 242 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(243)();
+	exports = module.exports = __webpack_require__(246)();
 	// imports
 	
 	
 	// module
-	exports.push([module.id, "", ""]);
+	exports.push([module.id, "*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 95px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 96px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 32px 0; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.side-nav__bar {\n  background-color: #01152a;\n  width: 100px;\n  position: absolute;\n  left: 0;\n  top: 95px;\n  bottom: 0; }\n\n.side-nav__item {\n  width: 100%;\n  height: 220px;\n  font-family: 'Lato', sans-serif;\n  display: table; }\n\n.side-nav__item-interior {\n  display: table-cell;\n  vertical-align: middle; }\n\n.side-nav__icon-container {\n  width: 50px;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 20px; }\n\n.side-nav__icon {\n  width: 50px; }\n\n.side-nav__spacer {\n  background-color: #041b32;\n  height: 14px; }\n", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 243 */
+/* 246 */
 /***/ function(module, exports) {
 
 	/*
@@ -26955,7 +27390,7 @@
 
 
 /***/ },
-/* 244 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -27207,7 +27642,47 @@
 
 
 /***/ },
-/* 245 */
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(249);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(247)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./app-diagnosis.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./app-diagnosis.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 249 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(246)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 95px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 96px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 32px 0; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.app-diagnosis__header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 96px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.app-diagnosis__header-title {\n  font-weight: 500;\n  font-size: 35px;\n  color: white;\n  padding: 30px 0; }\n\n.search-icon {\n  color: white;\n  padding: 30px 20px; }\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27217,7 +27692,7 @@
 	});
 	exports.default = undefined;
 	
-	var _AppIntro = __webpack_require__(246);
+	var _AppIntro = __webpack_require__(251);
 	
 	var _AppIntro2 = _interopRequireDefault(_AppIntro);
 	
@@ -27226,7 +27701,7 @@
 	exports.default = _AppIntro2.default;
 
 /***/ },
-/* 246 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27239,31 +27714,67 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	__webpack_require__(247);
+	__webpack_require__(252);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function AppIntro() {
 	  return _react2.default.createElement(
 	    'div',
-	    null,
-	    'THIS VIEW'
+	    { className: 'app-intro__main' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'app-intro__inner' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'app-intro__logo' },
+	        _react2.default.createElement('img', { className: 'app-intro__icon', src: '/assets/integrated-icon.png', alt: '' }),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'app-intro__trademark' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'app-intro__trademark-top' },
+	            'integrated'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'app-intro__trademark-bottom' },
+	            'Healthcare',
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'TM'
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'app-intro__body' },
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Integrated Healthcare v 1.0 is a learning tool developed for mental health clinicians to obtain information essential to practice in adult integrated medical or behavioral healthcare settings.'
+	        )
+	      )
+	    )
 	  );
 	}
 	
 	exports.default = AppIntro;
 
 /***/ },
-/* 247 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(248);
+	var content = __webpack_require__(253);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(244)(content, {});
+	var update = __webpack_require__(247)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -27280,21 +27791,21 @@
 	}
 
 /***/ },
-/* 248 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(243)();
+	exports = module.exports = __webpack_require__(246)();
 	// imports
 	
 	
 	// module
-	exports.push([module.id, "", ""]);
+	exports.push([module.id, "*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 95px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 96px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 32px 0; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.app-intro__main {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  background-color: #3480a1;\n  display: flex;\n  align-items: center;\n  justify-content: center; }\n\n.app-intro__inner {\n  padding: 190px 0;\n  background-image: radial-gradient(circle at 50% 36%, #7aabc1 0%, #3480a1 50%); }\n\n.app-intro__logo {\n  width: 100vw;\n  display: flex;\n  flex-direction: column;\n  text-align: center; }\n\n.app-intro__icon {\n  width: 130px;\n  margin: 0 auto 60px auto; }\n\n.app-intro__trademark-top {\n  text-transform: uppercase;\n  color: #7bd5f0;\n  font-weight: 200;\n  font-size: 48px;\n  letter-spacing: 16px; }\n\n.app-intro__trademark-bottom {\n  color: white;\n  font-size: 88px;\n  font-weight: 700; }\n  .app-intro__trademark-bottom span {\n    font-size: 12px;\n    font-weight: 100; }\n\n.app-intro__body p {\n  width: 57%;\n  margin: 100px auto;\n  color: white;\n  line-height: 1.3;\n  font-weight: 300;\n  text-align: center; }\n", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 249 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27304,7 +27815,7 @@
 	});
 	exports.default = undefined;
 	
-	var _DiagnosisExpanded = __webpack_require__(250);
+	var _DiagnosisExpanded = __webpack_require__(255);
 	
 	var _DiagnosisExpanded2 = _interopRequireDefault(_DiagnosisExpanded);
 	
@@ -27313,7 +27824,7 @@
 	exports.default = _DiagnosisExpanded2.default;
 
 /***/ },
-/* 250 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27326,7 +27837,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	__webpack_require__(251);
+	__webpack_require__(256);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -27341,16 +27852,16 @@
 	exports.default = DiagnosisExpanded;
 
 /***/ },
-/* 251 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(252);
+	var content = __webpack_require__(257);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(244)(content, {});
+	var update = __webpack_require__(247)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -27367,10 +27878,10 @@
 	}
 
 /***/ },
-/* 252 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(243)();
+	exports = module.exports = __webpack_require__(246)();
 	// imports
 	
 	
@@ -27381,7 +27892,7 @@
 
 
 /***/ },
-/* 253 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27391,7 +27902,7 @@
 	});
 	exports.default = undefined;
 	
-	var _Home = __webpack_require__(254);
+	var _Home = __webpack_require__(259);
 	
 	var _Home2 = _interopRequireDefault(_Home);
 	
@@ -27400,7 +27911,7 @@
 	exports.default = _Home2.default;
 
 /***/ },
-/* 254 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27413,7 +27924,9 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	__webpack_require__(255);
+	__webpack_require__(260);
+	
+	var _reactRouter = __webpack_require__(178);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -27423,11 +27936,11 @@
 	    null,
 	    _react2.default.createElement(
 	      'section',
-	      { className: 'header' },
+	      { className: 'home__header' },
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'logo-container' },
-	        _react2.default.createElement('img', { className: 'logo', src: '/assets/integrated-icon.png', alt: '' }),
+	        { className: 'home__logo' },
+	        _react2.default.createElement('img', { className: 'home__icon', src: '/assets/integrated-icon.png', alt: '' }),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'logo-title' },
@@ -27450,85 +27963,97 @@
 	      ),
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'search-icon' },
+	        { className: 'home__search-icon' },
 	        _react2.default.createElement('i', { className: 'fa fa-search fa-2x', 'aria-hidden': 'true' })
 	      )
 	    ),
 	    _react2.default.createElement(
 	      'section',
-	      { className: 'nav-bar' },
+	      { className: 'home-nav__bar' },
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'nav-item' },
+	        { className: 'home-nav__item' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'nav-item-interior' },
+	          { className: 'home-nav__item-interior' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'nav-icon-container' },
-	            _react2.default.createElement('img', { className: 'nav-icon', src: '/assets/suitcase.png', alt: 'suitcase' })
+	            { className: 'home-nav__icon-container' },
+	            _react2.default.createElement('img', { className: 'home-nav__icon', src: '/assets/suitcase.png', alt: 'suitcase' })
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'nav-title' },
+	            { className: 'home-nav__title' },
 	            'Integrated Healthcare'
 	          )
 	        )
 	      ),
-	      _react2.default.createElement('div', { className: 'nav-spacer' }),
+	      _react2.default.createElement('div', { className: 'home-nav__spacer' }),
 	      _react2.default.createElement(
-	        'div',
-	        { className: 'nav-item' },
+	        _reactRouter.Link,
+	        { to: '/diagnosis' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'nav-item-interior' },
+	          { className: 'home-nav__item' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'nav-icon-container' },
-	            _react2.default.createElement('img', { className: 'nav-icon', src: '/assets/brain-heart.png', alt: 'brain-heart' })
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'nav-title' },
-	            'Diagnoses'
+	            { className: 'home-nav__item-interior' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'home-nav__icon-container' },
+	              _react2.default.createElement('img', { className: 'home-nav__icon', src: '/assets/brain-heart.png', alt: 'brain-heart' })
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'home-nav__title' },
+	              'Diagnoses'
+	            )
 	          )
 	        )
 	      ),
-	      _react2.default.createElement('div', { className: 'nav-spacer' }),
+	      _react2.default.createElement('div', { className: 'home-nav__spacer' }),
 	      _react2.default.createElement(
-	        'div',
-	        { className: 'nav-item' },
+	        _reactRouter.Link,
+	        { to: '/screening_mood' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'nav-item-interior' },
+	          { className: 'home-nav__item' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'nav-icon-container' },
-	            _react2.default.createElement('img', { className: 'nav-icon', src: '/assets/clipboard.png', alt: 'clipboard' })
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'nav-title' },
-	            'Screening Measures'
+	            { className: 'home-nav__item-interior' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'home-nav__icon-container' },
+	              _react2.default.createElement('img', { className: 'home-nav__icon', src: '/assets/clipboard.png', alt: 'clipboard' })
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'home-nav__title' },
+	              'Screening Measures'
+	            )
 	          )
 	        )
 	      ),
-	      _react2.default.createElement('div', { className: 'nav-spacer' }),
+	      _react2.default.createElement('div', { className: 'home-nav__spacer' }),
 	      _react2.default.createElement(
-	        'div',
-	        { className: 'nav-item' },
+	        _reactRouter.Link,
+	        { to: '/behavioral_interventions' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'nav-item-interior' },
+	          { className: 'home-nav__item' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'nav-icon-container' },
-	            _react2.default.createElement('img', { className: 'nav-icon', src: '/assets/bust.png', alt: 'bust' })
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'nav-title' },
-	            'Behavioral Interventions'
+	            { className: 'home-nav__item-interior' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'home-nav__icon-container' },
+	              _react2.default.createElement('img', { className: 'home-nav__icon', src: '/assets/puzzle.png', alt: 'bust' })
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'home-nav__title' },
+	              'Behavioral Interventions'
+	            )
 	          )
 	        )
 	      )
@@ -27540,8 +28065,8 @@
 	        'div',
 	        { className: 'menu-container' },
 	        _react2.default.createElement(
-	          'a',
-	          { href: 'https://www.alpinist.com', target: '_blank' },
+	          _reactRouter.Link,
+	          { to: '/overview' },
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'menu-item' },
@@ -27550,16 +28075,24 @@
 	          )
 	        ),
 	        _react2.default.createElement(
-	          'div',
-	          { className: 'menu-item' },
-	          'Terminology',
-	          _react2.default.createElement('img', { className: 'arrow-icon', src: '/assets/right-arrow.png', alt: '' })
+	          _reactRouter.Link,
+	          { to: '/terminology' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'menu-item' },
+	            'Terminology',
+	            _react2.default.createElement('img', { className: 'arrow-icon', src: '/assets/right-arrow.png', alt: '' })
+	          )
 	        ),
 	        _react2.default.createElement(
-	          'div',
-	          { className: 'menu-item' },
-	          'Models',
-	          _react2.default.createElement('img', { className: 'arrow-icon', src: '/assets/right-arrow.png', alt: '' })
+	          _reactRouter.Link,
+	          { to: '/models' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'menu-item' },
+	            'Models',
+	            _react2.default.createElement('img', { className: 'arrow-icon', src: '/assets/right-arrow.png', alt: '' })
+	          )
 	        )
 	      )
 	    )
@@ -27569,16 +28102,16 @@
 	exports.default = Home;
 
 /***/ },
-/* 255 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(256);
+	var content = __webpack_require__(261);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(244)(content, {});
+	var update = __webpack_require__(247)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -27595,21 +28128,21 @@
 	}
 
 /***/ },
-/* 256 */
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(243)();
+	exports = module.exports = __webpack_require__(246)();
 	// imports
 	
 	
 	// module
-	exports.push([module.id, "*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n* {\n  font-family: 'Lato', sans-serif; }\n\na {\n  text-decoration: none; }\n\n.header {\n  background-color: #3580a1;\n  width: 100%;\n  height: auto;\n  font-family: 'Lato', sans-serif;\n  padding: 20px;\n  display: flex;\n  justify-content: center; }\n\n.logo-container {\n  display: flex;\n  flex-direction: row; }\n\n.logo-title {\n  display: flex;\n  flex-direction: column;\n  margin-left: 20px; }\n\n.logo-title_one {\n  text-transform: uppercase;\n  color: #7bd5f0;\n  font-weight: 100;\n  font-size: 22px;\n  letter-spacing: 7px; }\n\n.logo-title_two {\n  color: white;\n  font-size: 40px;\n  font-weight: 700; }\n\n.logo-title_two span {\n  font-size: 6px;\n  font-weight: 100; }\n\n.logo {\n  width: 60px;\n  height: 60px; }\n\n.nav-bar {\n  background-color: #01152a;\n  width: 178px;\n  position: absolute;\n  left: 0; }\n\n.nav-item {\n  width: 100%;\n  height: 220px;\n  font-family: 'Lato', sans-serif;\n  display: table; }\n\n.nav-item-interior {\n  display: table-cell;\n  vertical-align: middle; }\n\n.nav-icon-container {\n  width: 50px;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 20px; }\n\n.nav-icon {\n  width: 50px; }\n\n.nav-title {\n  text-align: center;\n  color: white;\n  font-size: 14px;\n  font-weight: 300;\n  line-height: 1.3;\n  width: 65%;\n  margin: auto;\n  font-family: 'Lato', sans-serif; }\n\n.nav-spacer {\n  background-color: #041b32;\n  height: 14px; }\n\n.content-container {\n  margin-left: 178px;\n  padding-top: 20px;\n  height: auto; }\n\n.menu-container {\n  width: 90%;\n  margin-left: auto;\n  margin-right: auto;\n  font-family: 'Lato', sans-serif;\n  font-weight: 400; }\n\n.menu-item {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  line-height: 2;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  position: relative; }\n\n.menu-item a {\n  text-decoration: none; }\n\n.arrow-icon {\n  position: absolute;\n  right: 15px;\n  top: 9px; }\n", ""]);
+	exports.push([module.id, "*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 95px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 96px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 32px 0; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n* {\n  font-family: 'Lato', sans-serif; }\n\na {\n  text-decoration: none; }\n\n.home__header {\n  background-color: #3480a1;\n  width: 100%;\n  height: auto;\n  font-family: 'Lato', sans-serif;\n  padding: 20px;\n  display: flex;\n  justify-content: center; }\n\n.home__logo {\n  display: flex;\n  flex-direction: row; }\n\n.logo-title {\n  display: flex;\n  flex-direction: column;\n  margin-left: 20px; }\n\n.logo-title_one {\n  text-transform: uppercase;\n  color: #7bd5f0;\n  font-weight: 100;\n  font-size: 22px;\n  letter-spacing: 7px; }\n\n.logo-title_two {\n  color: white;\n  font-size: 40px;\n  font-weight: 700; }\n\n.logo-title_two span {\n  font-size: 6px;\n  font-weight: 100; }\n\n.home__icon {\n  width: 60px;\n  height: 60px; }\n\n.home__search-icon {\n  color: white;\n  position: absolute;\n  top: 35px;\n  right: 15px; }\n\n.home-nav__bar {\n  background-color: #01152a;\n  width: 178px;\n  position: absolute;\n  left: 0; }\n\n.home-nav__item {\n  width: 100%;\n  height: 220px;\n  font-family: 'Lato', sans-serif;\n  display: table; }\n\n.home-nav__item-interior {\n  display: table-cell;\n  vertical-align: middle; }\n\n.home-nav__icon-container {\n  width: 50px;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 20px; }\n\n.home-nav__icon {\n  width: 50px; }\n\n.home-nav__title {\n  text-align: center;\n  color: white;\n  font-size: 14px;\n  font-weight: 300;\n  line-height: 1.3;\n  width: 65%;\n  margin: auto;\n  font-family: 'Lato', sans-serif; }\n\n.home-nav__spacer {\n  background-color: #041b32;\n  height: 14px; }\n\n.content-container {\n  margin-left: 178px;\n  padding-top: 20px;\n  height: auto; }\n\n.menu-container {\n  width: 90%;\n  margin-left: auto;\n  margin-right: auto;\n  font-family: 'Lato', sans-serif;\n  font-weight: 400; }\n\n.menu-item {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  line-height: 2;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  position: relative; }\n\n.menu-item a {\n  text-decoration: none; }\n\n.arrow-icon {\n  position: absolute;\n  right: 15px;\n  top: 9px; }\n", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 257 */
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27619,16 +28152,16 @@
 	});
 	exports.default = undefined;
 	
-	var _ProblemSolving = __webpack_require__(258);
+	var _NotFound = __webpack_require__(263);
 	
-	var _ProblemSolving2 = _interopRequireDefault(_ProblemSolving);
+	var _NotFound2 = _interopRequireDefault(_NotFound);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	exports.default = _ProblemSolving2.default;
+	exports.default = _NotFound2.default;
 
 /***/ },
-/* 258 */
+/* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27641,13 +28174,201 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactCollapsible = __webpack_require__(259);
+	var _reactRouter = __webpack_require__(178);
+	
+	__webpack_require__(264);
+	
+	var _integratedIcon = __webpack_require__(266);
+	
+	var _integratedIcon2 = _interopRequireDefault(_integratedIcon);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function NotFoundView() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'NotFoundView' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'NotFound__inner' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'NotFound-title-container' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'NotFound-title-logo' },
+	          _react2.default.createElement('img', { src: _integratedIcon2.default, alt: 'Logo' })
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'NotFound-title-main' },
+	          'Hi. Sorry.'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'NotFound-title-sub' },
+	          'We were unable to find the page you were looking for. Click the button below to go back.'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'NotFound-button-container' },
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	              'button',
+	              { className: 'navigation', onClick: _reactRouter.browserHistory.goBack },
+	              'Go Back'
+	            ),
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/intro' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'navigation' },
+	                'App Intro'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/screening_mood' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'navigation' },
+	                'Screening Measures'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/diagnosis' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'navigation' },
+	                'Diagnosis'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/problem_solving' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'navigation' },
+	                'Problem Solving'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'navigation' },
+	                'Home'
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'NotFound-error-message' },
+	          'Page Error: 404'
+	        )
+	      )
+	    )
+	  );
+	}
+	
+	exports.default = NotFoundView;
+
+/***/ },
+/* 264 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(265);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(247)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./not-found.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./not-found.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 265 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(246)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 95px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 96px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 32px 0; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.NotFoundView {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0; }\n\n.NotFound__inner {\n  height: 100%;\n  width: 100%;\n  display: flex; }\n\n.NotFound-title-logo {\n  position: absolute;\n  top: 10%;\n  text-align: center;\n  width: 100%;\n  padding: 12px 48px;\n  margin-left: auto;\n  margin-right: auto; }\n  .NotFound-title-logo img {\n    width: 150px; }\n\n.NotFound-title-container {\n  align-self: center;\n  width: 100%; }\n\n.NotFound-title-main {\n  text-align: center; }\n\n.NotFound-title-sub {\n  text-align: center;\n  padding: 12px 16px; }\n\n.NotFound-button-container {\n  display: flex;\n  justify-content: center;\n  margin-top: 50px;\n  width: 80%; }\n  .NotFound-button-container button {\n    padding: 20px;\n    border: none;\n    font-size: 16px;\n    background-color: #154f74;\n    color: white; }\n\n.navigation {\n  padding: 20px;\n  text-decoration: none;\n  font-size: 16px;\n  background-color: #154f74;\n  color: white; }\n\n.NotFound-error-message {\n  position: absolute;\n  width: 100%;\n  text-align: center;\n  bottom: 12px;\n  font-size: 12px; }\n\n@media (min-width: 768px) {\n  .NotFound-title-logo {\n    padding: 12px; }\n  .NotFound-title-main {\n    font-size: 64px; }\n  .NotFound-title-sub {\n    font-size: 40px;\n    padding: 24px 72px; } }\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 266 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/png;base64,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"
+
+/***/ },
+/* 267 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = undefined;
+	
+	var _ProblemSolving = __webpack_require__(268);
+	
+	var _ProblemSolving2 = _interopRequireDefault(_ProblemSolving);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = _ProblemSolving2.default;
+
+/***/ },
+/* 268 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactCollapsible = __webpack_require__(241);
 	
 	var _reactCollapsible2 = _interopRequireDefault(_reactCollapsible);
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	__webpack_require__(260);
+	__webpack_require__(269);
+	
+	var _SideBar = __webpack_require__(242);
+	
+	var _SideBar2 = _interopRequireDefault(_SideBar);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -27657,19 +28378,19 @@
 	    null,
 	    _react2.default.createElement(
 	      'section',
-	      { className: 'problem-solving__header' },
+	      { className: 'header' },
 	      _react2.default.createElement(
-	        _reactRouter.Link,
-	        { to: '/' },
+	        'div',
+	        { className: 'back-arrow-parent' },
 	        _react2.default.createElement(
-	          'div',
-	          { className: 'back-arrow-parent' },
+	          'button',
+	          { onClick: _reactRouter.browserHistory.goBack },
 	          _react2.default.createElement('img', { className: 'back-arrow', src: '/assets/back-arrow.png', alt: '' })
 	        )
 	      ),
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'problem-solving__header-title' },
+	        { className: 'header__title' },
 	        'Psychotherapy'
 	      ),
 	      _react2.default.createElement(
@@ -27678,79 +28399,21 @@
 	        _react2.default.createElement('i', { className: 'fa fa-search fa-2x', 'aria-hidden': 'true' })
 	      )
 	    ),
+	    _react2.default.createElement(_SideBar2.default, null),
 	    _react2.default.createElement(
 	      'section',
-	      { className: 'nav-bar' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'nav-item' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'nav-item-interior' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'nav-icon-container' },
-	            _react2.default.createElement('img', { className: 'nav-icon', src: '/assets/suitcase.png', alt: 'suitcase' })
-	          )
-	        )
-	      ),
-	      _react2.default.createElement('div', { className: 'nav-spacer' }),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'nav-item' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'nav-item-interior' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'nav-icon-container' },
-	            _react2.default.createElement('img', { className: 'nav-icon', src: '/assets/brain-heart.png', alt: 'brain-heart' })
-	          )
-	        )
-	      ),
-	      _react2.default.createElement('div', { className: 'nav-spacer' }),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'nav-item' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'nav-item-interior' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'nav-icon-container' },
-	            _react2.default.createElement('img', { className: 'nav-icon', src: '/assets/clipboard.png', alt: 'clipboard' })
-	          )
-	        )
-	      ),
-	      _react2.default.createElement('div', { className: 'nav-spacer' }),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'nav-item' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'nav-item-interior' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'nav-icon-container' },
-	            _react2.default.createElement('img', { className: 'nav-icon', src: '/assets/bust.png', alt: 'bust' })
-	          )
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'section',
-	      { className: 'main-body' },
+	      { className: 'main__body' },
 	      _react2.default.createElement(
 	        'section',
-	        { className: 'problem-solve-container' },
+	        { className: 'view__overview' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'component-title' },
+	          { className: 'view__overview-title' },
 	          'Problem-solving Therapy'
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'component-text' },
+	          { className: 'view__overview-text' },
 	          'Problem-solving therapy is a brief, structured intervention focused on improving an individual\'s ability to cope with stressful life experiences through reducing problems to smaller sections and identifying specific steps toward positive change.'
 	        )
 	      ),
@@ -27762,7 +28425,7 @@
 	          { className: 'goal-component' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'component-title' },
+	            { className: 'component__title' },
 	            'Goals'
 	          ),
 	          _react2.default.createElement(
@@ -27790,7 +28453,7 @@
 	          { className: 'note-component' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'component-title' },
+	            { className: 'component__title' },
 	            'Notes'
 	          ),
 	          _react2.default.createElement(
@@ -28037,243 +28700,16 @@
 	  */}
 
 /***/ },
-/* 259 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Collapsible = _react2.default.createClass({
-	  displayName: 'Collapsible',
-	
-	
-	  //Set validation for prop types
-	  propTypes: {
-	    transitionTime: _react2.default.PropTypes.number,
-	    easing: _react2.default.PropTypes.string,
-	    open: _react2.default.PropTypes.bool,
-	    classParentString: _react2.default.PropTypes.string,
-	    accordionPosition: _react2.default.PropTypes.number,
-	    handleTriggerClick: _react2.default.PropTypes.func,
-	    trigger: _react2.default.PropTypes.oneOfType([_react2.default.PropTypes.string, _react2.default.PropTypes.element]),
-	    triggerWhenOpen: _react2.default.PropTypes.oneOfType([_react2.default.PropTypes.string, _react2.default.PropTypes.element]),
-	    lazyRender: _react2.default.PropTypes.bool,
-	    overflowWhenOpen: _react2.default.PropTypes.oneOf(['hidden', 'visible', 'auto', 'scroll', 'inherit', 'initial', 'unset'])
-	  },
-	
-	  //If no transition time or easing is passed then default to this
-	  getDefaultProps: function getDefaultProps() {
-	    return {
-	      transitionTime: 400,
-	      easing: 'linear',
-	      open: false,
-	      classParentString: 'Collapsible',
-	      lazyRender: false,
-	      overflowWhenOpen: 'hidden'
-	    };
-	  },
-	
-	  //Defaults the dropdown to be closed
-	  getInitialState: function getInitialState() {
-	
-	    if (this.props.open) {
-	      return {
-	        isClosed: false,
-	        shouldSwitchAutoOnNextCycle: false,
-	        height: 'auto',
-	        transition: 'none',
-	        hasBeenOpened: true,
-	        overflow: this.props.overflowWhenOpen
-	      };
-	    } else {
-	      return {
-	        isClosed: true,
-	        shouldSwitchAutoOnNextCycle: false,
-	        height: 0,
-	        transition: 'height ' + this.props.transitionTime + 'ms ' + this.props.easing,
-	        hasBeenOpened: false,
-	        overflow: 'hidden'
-	      };
-	    }
-	  },
-	
-	  // Taken from https://github.com/EvandroLG/transitionEnd/
-	  // Determines which prefixed event to listen for
-	  whichTransitionEnd: function whichTransitionEnd(element) {
-	    var transitions = {
-	      'WebkitTransition': 'webkitTransitionEnd',
-	      'MozTransition': 'transitionend',
-	      'OTransition': 'oTransitionEnd otransitionend',
-	      'transition': 'transitionend'
-	    };
-	
-	    for (var t in transitions) {
-	      if (element.style[t] !== undefined) {
-	        return transitions[t];
-	      }
-	    }
-	  },
-	
-	  componentDidMount: function componentDidMount() {
-	    var _this = this;
-	
-	    //Set up event listener to listen to transitionend so we can switch the height from fixed pixel to auto for much responsiveness;
-	    //TODO:  Once Synthetic transitionend events have been exposed in the next release of React move this funciton to a function handed to the onTransitionEnd prop
-	
-	    this.refs.outer.addEventListener(this.whichTransitionEnd(this.refs.outer), function (event) {
-	      if (_this.state.isClosed === false) {
-	        _this.setState({
-	          shouldSwitchAutoOnNextCycle: true
-	        });
-	      }
-	    });
-	  },
-	
-	  componentDidUpdate: function componentDidUpdate(prevProps) {
-	
-	    if (this.state.shouldSwitchAutoOnNextCycle === true && this.state.isClosed === false) {
-	      //Set the height to auto to make compoenent re-render with the height set to auto.
-	      //This way the dropdown will be responsive and also change height if there is another dropdown within it.
-	      this.makeResponsive();
-	    }
-	
-	    if (this.state.shouldSwitchAutoOnNextCycle === true && this.state.isClosed === true) {
-	      this.prepareToOpen();
-	    }
-	
-	    //If there has been a change in the open prop (controlled by accordion)
-	    if (prevProps.open != this.props.open) {
-	      console.log('Open state changed!', this.props.accordionPosition);
-	
-	      if (this.props.open === true) {
-	        this.openCollasible();
-	      } else {
-	        this.closeCollapsible();
-	      }
-	    }
-	  },
-	
-	  handleTriggerClick: function handleTriggerClick(event) {
-	
-	    event.preventDefault();
-	
-	    if (this.props.handleTriggerClick) {
-	      this.props.handleTriggerClick(this.props.accordionPosition);
-	    } else {
-	
-	      if (this.state.isClosed === true) {
-	        this.openCollasible();
-	      } else {
-	        this.closeCollapsible();
-	      }
-	    }
-	  },
-	
-	  closeCollapsible: function closeCollapsible() {
-	    this.setState({
-	      isClosed: true,
-	      shouldSwitchAutoOnNextCycle: true,
-	      height: this.refs.inner.offsetHeight,
-	      overflow: 'hidden'
-	    });
-	  },
-	
-	  openCollasible: function openCollasible() {
-	    this.setState({
-	      height: this.refs.inner.offsetHeight,
-	      transition: 'height ' + this.props.transitionTime + 'ms ' + this.props.easing,
-	      isClosed: false,
-	      hasBeenOpened: true
-	    });
-	  },
-	
-	  makeResponsive: function makeResponsive() {
-	    this.setState({
-	      height: 'auto',
-	      transition: 'none',
-	      shouldSwitchAutoOnNextCycle: false,
-	      overflow: this.props.overflowWhenOpen
-	    });
-	  },
-	
-	  prepareToOpen: function prepareToOpen() {
-	    var _this2 = this;
-	
-	    //The height has been changes back to fixed pixel, we set a small timeout to force the CSS transition back to 0 on the next tick.
-	    window.setTimeout(function () {
-	      _this2.setState({
-	        height: 0,
-	        shouldSwitchAutoOnNextCycle: false,
-	        transition: 'height ' + _this2.props.transitionTime + 'ms ' + _this2.props.easing
-	      });
-	    }, 50);
-	  },
-	
-	  render: function render() {
-	
-	    var dropdownStyle = {
-	      height: this.state.height,
-	      WebkitTransition: this.state.transition,
-	      msTransition: this.state.transition,
-	      transition: this.state.transition,
-	      overflow: this.state.overflow
-	    };
-	
-	    var openClass = this.state.isClosed ? 'is-closed' : 'is-open';
-	
-	    //If user wants different text when tray is open
-	    var trigger = this.state.isClosed === false && this.props.triggerWhenOpen !== undefined ? this.props.triggerWhenOpen : this.props.trigger;
-	
-	    // Don't render children until the first opening of the Collapsible if lazy rendering is enabled
-	    var children = this.props.children;
-	    if (this.props.lazyRender) if (!this.state.hasBeenOpened) children = null;
-	
-	    return _react2.default.createElement(
-	      'div',
-	      { className: this.props.classParentString },
-	      _react2.default.createElement(
-	        'span',
-	        { className: this.props.classParentString + "__trigger" + ' ' + openClass, onClick: this.handleTriggerClick },
-	        trigger
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: this.props.classParentString + "__contentOuter", ref: 'outer', style: dropdownStyle },
-	        _react2.default.createElement(
-	          'div',
-	          { className: this.props.classParentString + "__contentInner", ref: 'inner' },
-	          children
-	        )
-	      )
-	    );
-	  }
-	
-	});
-	
-	exports.default = Collapsible;
-	
-
-
-/***/ },
-/* 260 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(261);
+	var content = __webpack_require__(270);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(244)(content, {});
+	var update = __webpack_require__(247)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -28290,21 +28726,21 @@
 	}
 
 /***/ },
-/* 261 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(243)();
+	exports = module.exports = __webpack_require__(246)();
 	// imports
 	
 	
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.problem-solving__header {\n  background-color: #3580a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 96px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.problem-solving__header-title {\n  font-weight: 500;\n  font-size: 35px;\n  color: white;\n  padding: 30px 0; }\n\n.search-icon {\n  color: white;\n  padding: 30px 20px; }\n\n/*.nav-container {\n  min-height:100%;\n  width:100px;\n  position:relative;\n  display:inline-block;\n}*/\n.nav-bar {\n  background-color: #01152a;\n  width: 100px;\n  position: absolute;\n  left: 0;\n  top: 95px;\n  bottom: 0; }\n\n.nav-item {\n  width: 100%;\n  height: 220px;\n  font-family: 'Lato', sans-serif;\n  display: table; }\n\n.nav-item-interior {\n  display: table-cell;\n  vertical-align: middle; }\n\n.nav-icon-container {\n  width: 50px;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 20px; }\n\n.nav-icon {\n  width: 50px; }\n\n.nav-spacer {\n  background-color: #041b32;\n  height: 14px; }\n\n/*.nav-overflow-exterior {\n  height: 20vh;\n}*/\n/*.nav-overflow-exterior {\n    min-height:100%;\n    width:100%;\n    position:relative;\n    display:inline-block;\n}\n.nav-overflow-interior {\n    width:20%;\n    top:0px;\n    left:0px;\n    bottom:0px;\n    position:absolute;\n    background-color:yellow;\n}*/\n.main-body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 95px);\n  overflow: scroll; }\n\n.main-body li {\n  color: #504f4f; }\n\n.problem-solve-container {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.component-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.goals-notes-container {\n  margin-bottom: 25px;\n  display: flex;\n  justify-content: space-between; }\n\n.goal-component {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.goal-component li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.goal-component li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.note-component {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.note-component li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.note-component li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 18px; }\n\n.collapsible-component-assessment {\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700; }\n\n.collapsible-component-techniques {\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700; }\n\n.collapsible li {\n  position: relative; }\n\n/*.clicker-parent {\n  position: absolute;\n  left: 0;\n  right: 0;\n  z-index: 1\n  background: red;\n}*/\n/*.clicker {\n  position: absolute;\n  left: 0;\n  right: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 2;\n  background: blue;\n}*/\n.down-arrow {\n  position: absolute;\n  right: 46%;\n  top: 40%;\n  width: 20px; }\n\n.up-arrow {\n  display: none;\n  position: absolute;\n  right: 46%;\n  top: 40%;\n  width: 20px; }\n\n.up-arrow-one {\n  display: none; }\n\n.up-arrow-two {\n  display: none; }\n\n.up-arrow-three {\n  display: none; }\n\n.up-arrow-four {\n  display: none; }\n\n.up-arrow-five {\n  display: none; }\n\n.up-arrow-six {\n  display: none; }\n\n.up-arrow-seven {\n  display: none; }\n\n.up-arrow-eight {\n  display: none; }\n\n.up-arrow-nine {\n  display: none; }\n\n.collapse-icon-plus-one {\n  font-weight: 900;\n  color: #154f74;\n  font-size: 28px;\n  float: right; }\n\n.collapse-icon-minus-one {\n  font-weight: 900;\n  color: #154f74;\n  font-size: 28px;\n  display: none;\n  float: right; }\n\n.collapse-icon-plus-two {\n  font-weight: 900;\n  color: #154f74;\n  font-size: 28px;\n  float: right; }\n\n.collapse-icon-minus-two {\n  font-weight: 900;\n  color: #154f74;\n  font-size: 28px;\n  display: none;\n  float: right; }\n\n.homework-header {\n  display: block;\n  cursor: pointer;\n  min-height: 3rem;\n  line-height: 3rem;\n  padding: 0 1rem;\n  color: #154f74;\n  background-color: #eeeeee; }\n\n.effective-container {\n  margin-top: 20px;\n  color: white;\n  font-family: 'Lato', sans-serif;\n  font-size: 20px;\n  font-weight: 300;\n  width: 100%;\n  float: left; }\n\n.effective-link-item {\n  background-color: #3580a1;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px; }\n\n.effective-link-item img {\n  margin-left: 10px;\n  width: 8px; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 95px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 96px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 32px 0; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.search-icon {\n  color: white;\n  padding: 30px 20px; }\n\n.main__body li {\n  color: #504f4f; }\n\n.goals-notes-container {\n  margin-bottom: 25px;\n  display: flex;\n  justify-content: space-between; }\n\n.goal-component {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.goal-component li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.goal-component li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.note-component {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.note-component li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.note-component li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74; }\n\n.collapsible-component-assessment {\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700; }\n\n.collapsible-component-techniques {\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700; }\n\n.collapsible li {\n  position: relative; }\n\n/*.clicker-parent {\n  position: absolute;\n  left: 0;\n  right: 0;\n  z-index: 1\n  background: red;\n}*/\n/*.clicker {\n  position: absolute;\n  left: 0;\n  right: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 2;\n  background: blue;\n}*/\n.down-arrow {\n  position: absolute;\n  right: 46%;\n  top: 40%;\n  width: 20px; }\n\n.up-arrow {\n  display: none;\n  position: absolute;\n  right: 46%;\n  top: 40%;\n  width: 20px; }\n\n.up-arrow-one {\n  display: none; }\n\n.up-arrow-two {\n  display: none; }\n\n.up-arrow-three {\n  display: none; }\n\n.up-arrow-four {\n  display: none; }\n\n.up-arrow-five {\n  display: none; }\n\n.up-arrow-six {\n  display: none; }\n\n.up-arrow-seven {\n  display: none; }\n\n.up-arrow-eight {\n  display: none; }\n\n.up-arrow-nine {\n  display: none; }\n\n.collapse-icon-plus-one {\n  font-weight: 900;\n  color: #154f74;\n  font-size: 28px;\n  float: right; }\n\n.collapse-icon-minus-one {\n  font-weight: 900;\n  color: #154f74;\n  font-size: 28px;\n  display: none;\n  float: right; }\n\n.collapse-icon-plus-two {\n  font-weight: 900;\n  color: #154f74;\n  font-size: 28px;\n  float: right; }\n\n.collapse-icon-minus-two {\n  font-weight: 900;\n  color: #154f74;\n  font-size: 28px;\n  display: none;\n  float: right; }\n\n.homework-header {\n  display: block;\n  cursor: pointer;\n  min-height: 3rem;\n  line-height: 3rem;\n  padding: 0 1rem;\n  color: #154f74;\n  background-color: #eeeeee; }\n\n.effective-container {\n  margin-top: 20px;\n  color: white;\n  font-family: 'Lato', sans-serif;\n  font-size: 20px;\n  font-weight: 300;\n  width: 100%;\n  float: left; }\n\n.effective-link-item {\n  background-color: #3580a1;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px; }\n\n.effective-link-item img {\n  margin-left: 10px;\n  width: 8px; }\n", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 262 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28314,7 +28750,7 @@
 	});
 	exports.default = undefined;
 	
-	var _ScreeningMood = __webpack_require__(263);
+	var _ScreeningMood = __webpack_require__(272);
 	
 	var _ScreeningMood2 = _interopRequireDefault(_ScreeningMood);
 	
@@ -28323,7 +28759,7 @@
 	exports.default = _ScreeningMood2.default;
 
 /***/ },
-/* 263 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28336,31 +28772,229 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	__webpack_require__(264);
+	var _reactRouter = __webpack_require__(178);
+	
+	var _SideBar = __webpack_require__(242);
+	
+	var _SideBar2 = _interopRequireDefault(_SideBar);
+	
+	__webpack_require__(273);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	// import React from 'react';
+	// import { browserHistory } from 'react-router';
+	// import SideBar from '../SideBar';
+	// import './screening-mood.scss';
+	//
+	// function ScreeningMood() {
+	//   return(
+	//     <div>
+	//     <section className="header">
+	//     <div className="back-arrow-parent">
+	//       <button onClick={browserHistory.goBack}>
+	//         <img className="back-arrow" src="/assets/back-arrow.png" alt="" />
+	//       </button>
+	//     </div>
+	//       <div className="header__title">
+	//         Screening Measures
+	//       </div>
+	//       <div className="search-icon">
+	//           <i className="fa fa-search fa-2x" aria-hidden="true"></i>
+	//       </div>
+	//     </section>
+	//
+	//   <SideBar />
+	//
+	//   <section className="main__body">
+	//     <section className="view__overview">
+	//       <div className="view__overview-title">
+	//         Mood Disorders Questionnaire (MDQ)
+	//       </div>
+	//       <div className="view__overview-text">
+	//         The Mood Disorders Questionnaire is a 5 question (17 item) measure of
+	//         the lifetime history of manic or hypomanic symptoms derived from the
+	//         DSM IV criteria and clinical experience.
+	//         Question 1 contains 13 “yes/no” items assessing bipolar symptoms
+	//         with 4 additional questions assessing clustering of symptoms,
+	//         functional impairment, family history, and previous diagnoses.
+	//       </div>
+	//     </section>
+	//
+	//     <section className="scoring__container">
+	//       <div className="scoring__instructions">
+	//         <div className="component__title">Administration and Scoring</div>
+	//         <div className="component__title-sub">Administration </div>
+	//         <p>The MDQ is a self-report measure that requires 5 minutes
+	//         to complete.</p>
+	//         <div className="component__title-sub">Scoring</div>
+	//         <p>Scoring a “yes” in 7 of the 13 criteria items and a “yes” to
+	//         questions 2 AND “Moderate” or “Severe” to question 3 results
+	//         in a positive screen.</p>
+	//         <div className="component__spacer"></div>
+	//       </div>
+	//       <div className="scoring__document">
+	//         <img className="pdf" src="/assets/pdf.png" alt="pdf" />
+	//         {/* <img className="pdf-lines" src="/assets/pdf-lines.png" alt="pdf-lines" /> */}
+	//       </div>
+	//     </section>
+	//   </section>
+	//
+	//   <section className="">
+	//
+	//   </section>
+	//     </div>
+	//   );
+	// }
+	//
+	//
+	// export default ScreeningMood;
+	
+	function Header() {
+	  return _react2.default.createElement(
+	    'section',
+	    { className: 'header' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'back-arrow-parent' },
+	      _react2.default.createElement(
+	        'button',
+	        { onClick: _reactRouter.browserHistory.goBack },
+	        _react2.default.createElement('img', { className: 'back-arrow', src: '/assets/back-arrow.png', alt: '' })
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'header__title' },
+	      'Screening Measures'
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'search-icon' },
+	      _react2.default.createElement('i', { className: 'fa fa-search fa-2x', 'aria-hidden': 'true' })
+	    )
+	  );
+	}
+	
+	function ViewOverview() {
+	  return _react2.default.createElement(
+	    'section',
+	    { className: 'view__overview' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'view__overview-title' },
+	      'Mood Disorders Questionnaire (MDQ)'
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'view__overview-text' },
+	      'The Mood Disorders Questionnaire is a 5 question (17 item) measure of the lifetime history of manic or hypomanic symptoms derived from the DSM IV criteria and clinical experience. Question 1 contains 13 \u201Cyes/no\u201D items assessing bipolar symptoms with 4 additional questions assessing clustering of symptoms, functional impairment, family history, and previous diagnoses.'
+	    )
+	  );
+	}
+	
+	function Scoring() {
+	  return _react2.default.createElement(
+	    'section',
+	    { className: 'scoring__container' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'scoring__instructions' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'component__title' },
+	        'Administration and Scoring'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'component__title-sub' },
+	        'Administration '
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'The MDQ is a self-report measure that requires 5 minutes to complete.'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'component__title-sub' },
+	        'Scoring'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'Scoring a \u201Cyes\u201D in 7 of the 13 criteria items and a \u201Cyes\u201D to questions 2 AND \u201CModerate\u201D or \u201CSevere\u201D to question 3 results in a positive screen.'
+	      ),
+	      _react2.default.createElement('div', { className: 'component__spacer' })
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'scoring__document' },
+	      _react2.default.createElement('img', { className: 'pdf', src: '/assets/pdf.png', alt: 'pdf' })
+	    )
+	  );
+	}
+	
+	function Graphs() {
+	  return _react2.default.createElement('div', { className: 'Graphs' });
+	}
+	
+	function RelatedDiagnoses() {
+	  return _react2.default.createElement('div', { className: 'RelatedDiagnoses' });
+	}
+	
+	function Notes() {
+	  return _react2.default.createElement(
+	    'section',
+	    { className: 'view__overview' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'view__overview-title' },
+	      'Notes'
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'view__overview-text' },
+	      'Chartreuse chia fashion axe, kickstarter umami pinterest vaporware polaroid skateboard hammock edison bulb. Lomo readymade edison bulb authentic. Swag viral iPhone 3 wolf moon. Meditation yuccie skateboard, neutra fanny pack beard hexagon. Raw denim lyft actually 90\'s vape skateboard. Aesthetic echo park austin, tousled copper mug brooklyn woke tofu organic bespoke fanny pack drinking vinegar iPhone edison bulb kinfolk. Banjo tumblr brooklyn kitsch unicorn art party distillery, mixtape XOXO vegan forage cronut.'
+	    )
+	  );
+	}
+	
+	function MainBody() {
+	  return _react2.default.createElement(
+	    'section',
+	    { className: 'main__body' },
+	    _react2.default.createElement(ViewOverview, null),
+	    _react2.default.createElement(Scoring, null),
+	    _react2.default.createElement(Graphs, null),
+	    _react2.default.createElement(RelatedDiagnoses, null),
+	    _react2.default.createElement(Notes, null)
+	  );
+	}
 	
 	function ScreeningMood() {
 	  return _react2.default.createElement(
 	    'div',
 	    null,
-	    'THIS VIEW'
+	    _react2.default.createElement(Header, null),
+	    _react2.default.createElement(MainBody, null),
+	    _react2.default.createElement(_SideBar2.default, null)
 	  );
 	}
 	
 	exports.default = ScreeningMood;
 
 /***/ },
-/* 264 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(265);
+	var content = __webpack_require__(274);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(244)(content, {});
+	var update = __webpack_require__(247)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -28377,153 +29011,18 @@
 	}
 
 /***/ },
-/* 265 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(243)();
+	exports = module.exports = __webpack_require__(246)();
 	// imports
 	
 	
 	// module
-	exports.push([module.id, "", ""]);
+	exports.push([module.id, "*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 95px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 96px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 32px 0; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.scoring__container {\n  margin-bottom: 25px;\n  display: flex;\n  justify-content: space-between; }\n\n.scoring__instructions {\n  background-color: #eeeeee;\n  width: 52%;\n  padding: 2em 1.5em; }\n\n.component__spacer {\n  height: 24px; }\n\n.scoring__document {\n  width: 48%;\n  position: relative; }\n\n.pdf {\n  position: absolute;\n  right: 0;\n  z-index: 0;\n  width: 85%;\n  background: white; }\n\n.pdf-lines {\n  position: absolute;\n  right: 5px;\n  top: 20px;\n  z-index: 1;\n  width: 70%; }\n", ""]);
 	
 	// exports
 
-
-/***/ },
-/* 266 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = undefined;
-	
-	var _NotFound = __webpack_require__(267);
-	
-	var _NotFound2 = _interopRequireDefault(_NotFound);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = _NotFound2.default;
-
-/***/ },
-/* 267 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRouter = __webpack_require__(178);
-	
-	__webpack_require__(268);
-	
-	var _integratedIcon = __webpack_require__(270);
-	
-	var _integratedIcon2 = _interopRequireDefault(_integratedIcon);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function NotFoundView() {
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'NotFoundView' },
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'NotFound__inner' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'NotFound-title-container' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'NotFound-title-logo' },
-	          _react2.default.createElement('img', { src: _integratedIcon2.default, alt: 'Logo' })
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'NotFound-title-main' },
-	          'Hi. Sorry.'
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'NotFound-title-sub' },
-	          'We were unable to find the page you were looking for. Click the button below to go back.'
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'NotFound-button-container' },
-	          _react2.default.createElement(
-	            'button',
-	            { onClick: _reactRouter.browserHistory.goBack },
-	            'Go Back'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'NotFound-error-message' },
-	          'Page Error: 404'
-	        )
-	      )
-	    )
-	  );
-	}
-	
-	exports.default = NotFoundView;
-
-/***/ },
-/* 268 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(269);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(244)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./not-found.scss", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./not-found.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 269 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(243)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.NotFoundView {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0; }\n\n.NotFound__inner {\n  height: 100%;\n  width: 100%;\n  display: flex; }\n\n.NotFound-title-logo {\n  position: absolute;\n  top: 10%;\n  text-align: center;\n  width: 100%;\n  padding: 12px 48px;\n  margin-left: auto;\n  margin-right: auto; }\n  .NotFound-title-logo img {\n    width: 150px; }\n\n.NotFound-title-container {\n  align-self: center;\n  width: 100%; }\n\n.NotFound-title-main {\n  text-align: center; }\n\n.NotFound-title-sub {\n  text-align: center;\n  padding: 12px 16px; }\n\n.NotFound-button-container {\n  text-align: center;\n  margin-top: 50px; }\n  .NotFound-button-container button {\n    padding: 20px;\n    border: none;\n    font-size: 16px;\n    background-color: #154f74;\n    color: white; }\n\n.NotFound-error-message {\n  position: absolute;\n  width: 100%;\n  text-align: center;\n  bottom: 12px;\n  font-size: 12px; }\n\n@media (min-width: 768px) {\n  .NotFound-title-logo {\n    padding: 12px; }\n  .NotFound-title-main {\n    font-size: 64px; }\n  .NotFound-title-sub {\n    font-size: 40px;\n    padding: 24px 72px; } }\n", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 270 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/png;base64,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"
 
 /***/ }
 /******/ ]);

@@ -1,5 +1,5 @@
 import React from 'react';
-import { browserHistory } from 'react-router';
+import { Link, browserHistory } from 'react-router';
 import './not-found.scss';
 import Logo from './integrated-icon.png';
 
@@ -19,9 +19,26 @@ function NotFoundView() {
             Click the button below to go back.
           </div>
           <div className="NotFound-button-container">
-              <button onClick={browserHistory.goBack}>
-                Go Back
-              </button>
+          <div>
+            <button className="navigation" onClick={browserHistory.goBack}>
+              Go Back
+            </button>
+            <Link to="/intro">
+              <div className="navigation">App Intro</div>
+            </Link>
+            <Link to="/screening_mood">
+              <div className="navigation">Screening Measures</div>
+            </Link>
+            <Link to="/diagnosis">
+              <div className="navigation">Diagnosis</div>
+            </Link>
+            <Link to="/problem_solving">
+              <div className="navigation">Problem Solving</div>
+            </Link>
+            <Link to="/">
+              <div className="navigation">Home</div>
+            </Link>
+          </div>
           </div>
           <div className="NotFound-error-message">
             Page Error: 404

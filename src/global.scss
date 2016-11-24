@@ -26,3 +26,127 @@ $blue400: #01152a;
 
 $gray100: #eeeeee;
 // $gray200: ;
+
+
+.main__body {
+  background-color: white;
+  width: calc(100% - 100px);
+  margin-left: 100px;
+  padding: 25px;
+  font-family: 'Lato', sans-serif;
+  height: calc(1024px - 95px);
+  overflow: scroll;
+}
+.view__overview {
+  background-color: #eeeeee;
+  width: 100%;
+  padding: 2em 1.5em;
+  margin-bottom: 25px;
+}
+
+.view__overview-title {
+  font-size: 23px;
+  color: $blue300;
+  margin-bottom: 13px;
+  font-weight: 700;
+}
+.view__overview-text {
+  color: #504f4f;
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 400;
+}
+.Collapsible {
+  background: $gray100;
+  padding: 20px 28px;
+  font-size: 24px;
+  color: $blue300;
+  font-weight: 700;
+  margin-bottom: 16px;
+  & p {
+    margin: 16px 0;
+  }
+}
+.Collapsible__trigger {
+  display: block;
+  // font-weight: 400;
+  // text-decoration: none;
+  position: relative;
+  background: $gray100;
+  color: $blue300;
+  &:after {
+    font-family: 'FontAwesome';
+    content: '\f067';
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    display: block;
+    transition: transform 300ms;
+  }
+  &.is-open {
+    &:after {
+      transform: rotateZ(180deg);
+      content: '\f068';
+    }
+  }
+}
+.collapsible-sub_header__trigger {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 16px;
+  display: block;
+  position: relative;
+  &:after {
+    font-family: 'FontAwesome';
+    display: block;
+    content: '\f107';
+    position: absolute;
+    right: 50%;
+    top: 2px;
+    display: block;
+    transition: transform 300ms;
+  }
+  &.is-open {
+    margin-bottom: 0;
+    &:after {
+      transform: rotateZ(180deg);
+    }
+  }
+}
+.collapsible-sub_header {
+  font-weight: 400;
+  font-size: 20px;
+}
+.header {
+  background-color: $blue100;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  align-items: center;
+}
+.back-arrow-parent {
+  background-color: $blue300;
+  width: 100px;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__title {
+  font-weight: 500;
+  font-size: 36px;
+  color: white;
+  padding: 32px 0;
+}
+.component__title {
+  font-size: 23px;
+  color: $blue300;
+  margin-bottom: 13px;
+  font-weight: 700;
+}
+.component__title-sub {
+  font-size: 18px;
+  color: $blue300;
+  line-height: 4;
+}

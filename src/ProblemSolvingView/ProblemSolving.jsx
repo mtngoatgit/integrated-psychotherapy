@@ -1,19 +1,19 @@
 import React from 'react';
 import Collapsible from 'react-collapsible';
-import {Link }from 'react-router';
+import { browserHistory }from 'react-router';
 import './problem-solving.scss';
 import SideBar from '../SideBar';
 
 function ProblemSolving() {
   return (
     <div>
-    <section className="problem-solving__header">
-      <Link to='/'>
-        <div className="back-arrow-parent">
-          <img className="back-arrow" src="/assets/back-arrow.png" alt="" />
-        </div>
-      </Link>
-      <div className="problem-solving__header-title">
+    <section className="header">
+    <div className="back-arrow-parent">
+      <button onClick={browserHistory.goBack}>
+        <img className="back-arrow" src="/assets/back-arrow.png" alt="" />
+      </button>
+    </div>
+      <div className="header__title">
         Psychotherapy
       </div>
       <div className="search-icon">
@@ -23,12 +23,12 @@ function ProblemSolving() {
 
   <SideBar />
 
-  <section className="main-body">
-    <section className="problem-solve-container">
-      <div className="component-title">
+  <section className="main__body">
+    <section className="view__overview">
+      <div className="view__overview-title">
         Problem-solving Therapy
       </div>
-      <div className="component-text">
+      <div className="view__overview-text">
         Problem-solving therapy is a brief, structured intervention focused on
         improving an individual's ability to cope with stressful life experiences
         through reducing problems to smaller sections and identifying specific steps
@@ -38,7 +38,7 @@ function ProblemSolving() {
 
     <section className="goals-notes-container">
       <div className="goal-component">
-        <div className="component-title">
+        <div className="component__title">
           Goals
         </div>
         <div className="goal-items component-text">
@@ -48,7 +48,7 @@ function ProblemSolving() {
         </div>
       </div>
       <div className="note-component">
-        <div className="component-title">
+        <div className="component__title">
           Notes
         </div>
         <div className="note-items component-text">
