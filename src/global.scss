@@ -1,15 +1,4 @@
 //   SCSS VARIABLES
-*, div, p {
-  font-family: 'Lato', sans-serif;
-}
-
-p {
-  color: #504f4f;
-  font-size: 18px;
-  line-height: 1.3;
-  font-weight: 400;
-}
-
 // FONT WEIGHTS
     // 100
     // 300
@@ -19,14 +8,25 @@ p {
 
 
 // PALETTE
+$blue50: #DAE0E6;
 $blue100: #3480a1;
 // $blue200: ;
 $blue300: #154f74;
 $blue400: #01152a;
 
 $gray100: #eeeeee;
-// $gray200: ;
+$gray200: #504f4f;
 
+*, div, p {
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+  color: $gray200;
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 400;
+}
 
 .main__body {
   background-color: white;
@@ -128,7 +128,7 @@ $gray100: #eeeeee;
 .back-arrow-parent {
   background-color: $blue300;
   width: 100px;
-  height: 96px;
+  height: 97px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,7 +137,52 @@ $gray100: #eeeeee;
   font-weight: 500;
   font-size: 36px;
   color: white;
-  padding: 32px 0;
+  padding: 30px 0;
+}
+.box {
+  background-color: $gray100;
+  width: 100%;
+  padding: 2em 1.5em;
+  margin-bottom: 25px;
+}
+.box__title {
+  font-size: 23px;
+  color: $blue300;
+  margin-bottom: 13px;
+  font-weight: 700;
+}
+.box__body {
+  color: $gray200;
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 400;
+}
+.box li {
+  list-style: none;
+  margin-top: 25px;
+  margin-left: 20px;
+  text-indent: -20px;
+}
+.box li:before {
+    content: "• ";
+    letter-spacing: 3px;
+    color: $blue300; /* or whatever color you prefer */
+}
+.half-box {
+  background-color: $gray100;
+  width: 48%;
+  padding: 2em 1.5em;
+}
+.half-box li {
+  list-style: none;
+  margin-top: 25px;
+  margin-left: 20px;
+  text-indent: -20px;
+}
+.half-box li:before {
+    content: "• ";
+    letter-spacing: 3px;
+    color: $blue300; /* or whatever color you prefer */
 }
 .component__title {
   font-size: 23px;
@@ -149,4 +194,31 @@ $gray100: #eeeeee;
   font-size: 18px;
   color: $blue300;
   line-height: 4;
+}
+.ih-button__container {
+  margin: 24px 0;
+  width: 100%;
+}
+.ih-button__container-title {
+  font-size: 23px;
+  color: $blue300;
+  margin-bottom: 13px;
+  font-weight: 700;
+  line-height: 2;
+}
+.ih-button {
+  background-color: $blue100;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 15px 15px 15px 0;
+  padding: 14px;
+  display: inline-block;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  &:after {
+    content: url('/assets/white-right-arrow.png');
+    margin-left: 10px;
+    width: 8px;
+  }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 import './app-intro.scss';
 
 function AppIntro () {
@@ -6,7 +7,9 @@ function AppIntro () {
     <div className="app-intro__main">
       <div className="app-intro__inner">
         <div className="app-intro__logo">
-        <img className="app-intro__icon" src="/assets/integrated-icon.png" alt="" />
+        <Link to='/'>
+          <img className="app-intro__icon" src="/assets/integrated-icon.png" alt="" />
+        </Link>
         <div className="app-intro__trademark">
           <div className="app-intro__trademark-top">
             integrated

@@ -16,6 +16,7 @@ Run 'webpack -w' from command line to compile React, ES6, etc.
 
 Run 'live-server' from public folder
 
+** In header titles reveals places where the data will be fetched from the back end
 
 #### Styling
 

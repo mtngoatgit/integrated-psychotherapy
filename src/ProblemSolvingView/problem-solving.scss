@@ -12,22 +12,6 @@
   display: flex;
   justify-content: space-between;
 }
-.goal-component {
-  background-color: #eeeeee;
-  width: 48%;
-  padding: 2em 1.5em;
-}
-.goal-component li {
-  list-style: none;
-  margin-top: 25px;
-  margin-left: 20px;
-  text-indent: -20px;
-}
-.goal-component li:before {
-    content: "• ";
-    letter-spacing: 3px;
-    color: $blue300; /* or whatever color you prefer */
-}
 .note-component {
   background-color: #eeeeee;
   width: 48%;
@@ -129,24 +113,4 @@
   padding: 0 1rem;
   color: $blue300;
   background-color: $gray100;
-}
-.effective-container {
-  margin-top: 20px;
-  color: white;
-  font-family: 'Lato', sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  width: 100%;
-  float: left;
-}
-.effective-link-item {
-  background-color: #3580a1;
-  margin: 15px 15px 15px 0;
-  padding: 14px;
-  display: inline-block;
-  letter-spacing: 1px;
-}
-.effective-link-item img {
-  margin-left: 10px;
-  width: 8px;
 }

@@ -6,6 +6,7 @@
   bottom: 0;
   right: 0;
   left: 0;
+  background-color: $blue100;
 }
 .NotFound__inner {
   height: 100%;
@@ -13,13 +14,12 @@
   display: flex;
 }
 .NotFound-title-logo {
-  position: absolute;
-  top: 10%;
   text-align: center;
   width: 100%;
   padding: 12px 48px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
   img {
     width: 150px;
   }
@@ -35,14 +35,17 @@
 .NotFound-title-sub {
   text-align: center;
   padding: 12px 16px;
+  margin-bottom: 50px;
 }
 .NotFound-button-container {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
-  width: 80%;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 50px;
   button {
     padding: 20px;
+    width: 30%;
     border: none;
     font-size: 16px;
     background-color: $blue300;
@@ -50,7 +53,10 @@
   }
 }
 .navigation {
+  float: left;
+  margin: 10px;
   padding: 20px;
+  width: 30%;
   text-decoration: none;
   font-size: 16px;
   background-color: $blue300;

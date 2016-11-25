@@ -37,15 +37,11 @@ function ProblemSolving() {
     </section>
 
     <section className="goals-notes-container">
-      <div className="goal-component">
-        <div className="component__title">
-          Goals
-        </div>
-        <div className="goal-items component-text">
-          <li>Develop an optimistic view of coping</li>
-          <li>Develop an understanding of the role of emotions</li>
-          <li>Develop skills to alleviate problems that interfere with psychosocial functioning</li>
-        </div>
+      <div className="half-box">
+        <div className="box__title">Goals</div>
+        <li>Develop an optimistic view of coping</li>
+        <li>Develop an understanding of the role of emotions</li>
+        <li>Develop skills to alleviate problems that interfere with psychosocial functioning</li>
       </div>
       <div className="note-component">
         <div className="component__title">
@@ -130,50 +126,18 @@ function ProblemSolving() {
       </div>
     </section>
 
-    <section className="effective-container">
-      <div className="component-title">Effective for the following:</div>
-      <div className="effective-link-container">
-        <div className="effective-link-item">
-          Diabetes
-          <img src="/assets/white-right-arrow.png" alt="arrow" />
-        </div>
-        <div className="effective-link-item">
-          Generalized Anxiety Disorder
-          <img src="/assets/white-right-arrow.png" alt="arrow" />
-        </div>
-        <div className="effective-link-item">
-          Hypertension
-          <img src="/assets/white-right-arrow.png" alt="arrow" />
-        </div>
-        <div className="effective-link-item">
-          Cardiovascular Disease
-          <img src="/assets/white-right-arrow.png" alt="arrow" />
-        </div>
-        <div className="effective-link-item">
-          Major Depression
-          <img src="/assets/white-right-arrow.png" alt="arrow" />
-        </div>
-        <div className="effective-link-item">
-          Obesity
-          <img src="/assets/white-right-arrow.png" alt="arrow" />
-        </div>
-        <div className="effective-link-item">
-          Opioid Dependence
-          <img src="/assets/white-right-arrow.png" alt="arrow" />
-        </div>
-        <div className="effective-link-item">
-          PTSD
-          <img src="/assets/white-right-arrow.png" alt="arrow" />
-        </div>
-        <div className="effective-link-item">
-          Schizophrenia
-          <img src="/assets/white-right-arrow.png" alt="arrow" />
-        </div>
-        <div className="effective-link-item">
-          Stroke
-          <img src="/assets/white-right-arrow.png" alt="arrow" />
-        </div>
-      </div>
+    <section className="ih-button__container">
+      <div className="ih-button__container-title">Effective for the following:</div>
+      <div className="ih-button">Diabetes</div>
+      <div className="ih-button">Generalized Anxiety Disorder</div>
+      <div className="ih-button">Hypertension</div>
+      <div className="ih-button">Cardiovascular Disease</div>
+      <div className="ih-button">Major Depression</div>
+      <div className="ih-button">Obesity</div>
+      <div className="ih-button">Opioid Dependence</div>
+      <div className="ih-button">PTSD</div>
+      <div className="ih-button">Schizophrenia</div>
+      <div className="ih-button">Stroke</div>
     </section>
   </section>
   </div>

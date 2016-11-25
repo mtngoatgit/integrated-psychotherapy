@@ -16,7 +16,7 @@ function NotFoundView() {
           </div>
           <div className="NotFound-title-sub">
             We were unable to find the page you were looking for.
-            Click the button below to go back.
+            Please choose from the links below.
           </div>
           <div className="NotFound-button-container">
           <div>
