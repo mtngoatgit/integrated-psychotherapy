@@ -18,6 +18,8 @@ Run 'live-server' from public folder
 
 ** In header titles reveals places where the data will be fetched from the back end
 
+Use 404 page to navigate to all potential URL endpoints. The 404 page can be reached by adding any bogus address to the end of the base URL (however you may be serving it).
+
 #### Styling
 
 If unable to find a className in the associated .scss file, look to the global.scss file
