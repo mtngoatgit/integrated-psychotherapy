@@ -1,15 +1,86 @@
 @import "../global";
 
-.comorbid__note {
+.note-box {
   background: $blue50;
+  padding: 12px;
+}
+.symptom__container {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.symptom {
+  color: $gray200;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 400;
+  width: 48%;
+  &:before {
+    content: "• ";
+    letter-spacing: 3px;
+    color: $blue300;
+  }
 }
 .comorbid__center {
   display: flex;
   flex-direction: row;
+  margin-top: 30px;
 }
 .comorbid__left {
   width: 50%;
 }
 .comorbid__right {
   width: 50%;
+}
+.comorbid__link {
+  color: $blue300;
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-weight: 400;
+  &:after {
+    content: ">";
+    margin-left: 6px;
+  }
+}
+.intervention-container {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.intervention-box {
+  background: $blue50;
+  width: 48%;
+  margin-bottom: 18px;
+}
+.intervention-box__header {
+  background: $gray200;
+  color: white;
+  font-weight: 400;
+  padding: 24px 12px;
+}
+.intervention-box__content {
+  padding: 24px 12px;
+}
+.intervention__link {
+  @extend .comorbid__link;
+}
+.intervention__content {
+  color: $blue300;
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.intervention__list {
+  @extend .intervention__content;
+  &:before {
+    content: "• ";
+    letter-spacing: 3px;
+    color: $blue300;
+  }
+}
+.intervention__button {
+  width: 100%;
+  text-align: center;
 }

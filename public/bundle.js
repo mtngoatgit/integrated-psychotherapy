@@ -26911,44 +26911,48 @@
 	      'Symptoms'
 	    ),
 	    _react2.default.createElement(
-	      'li',
-	      null,
-	      'These'
-	    ),
-	    _react2.default.createElement(
-	      'li',
-	      null,
-	      'will'
-	    ),
-	    _react2.default.createElement(
-	      'li',
-	      null,
-	      'be'
-	    ),
-	    _react2.default.createElement(
-	      'li',
-	      null,
-	      'populated'
-	    ),
-	    _react2.default.createElement(
-	      'li',
-	      null,
-	      'from'
-	    ),
-	    _react2.default.createElement(
-	      'li',
-	      null,
-	      'database'
-	    ),
-	    _react2.default.createElement(
-	      'li',
-	      null,
-	      'in'
-	    ),
-	    _react2.default.createElement(
-	      'li',
-	      null,
-	      'future'
+	      'div',
+	      { className: 'symptom__container' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'symptom' },
+	        'These'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'symptom' },
+	        'will'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'symptom' },
+	        'be'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'symptom' },
+	        'populated'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'symptom' },
+	        'from'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'symptom' },
+	        'database'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'symptom' },
+	        'in'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'symptom' },
+	        'future'
+	      )
 	    )
 	  );
 	}
@@ -26998,13 +27002,28 @@
 	            { className: 'comorbid__left' },
 	            _react2.default.createElement(
 	              'div',
-	              null,
-	              'These will have to be'
+	              { className: 'comorbid__link' },
+	              'Diagnosis Link'
 	            ),
 	            _react2.default.createElement(
 	              'div',
-	              null,
-	              'populated from a backend'
+	              { className: 'comorbid__link' },
+	              'Diagnosis Link'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'comorbid__link' },
+	              'Diagnosis Link'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'comorbid__link' },
+	              'Diagnosis Link'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'comorbid__link' },
+	              'Diagnosis Link'
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -27012,7 +27031,7 @@
 	            { className: 'comorbid__right' },
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'comorbid__note' },
+	              { className: 'note-box' },
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'box__title' },
@@ -27041,10 +27060,99 @@
 	      _react2.default.createElement(
 	        _reactCollapsible2.default,
 	        { trigger: 'Interventions', transitionTime: 100 },
-	        _react2.default.createElement('div', { className: '' }),
-	        _react2.default.createElement('div', { className: '' }),
-	        _react2.default.createElement('div', { className: '' }),
-	        _react2.default.createElement('div', { className: '' })
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'intervention-container' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'intervention-box' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'intervention-box__header' },
+	              'Psychotherapies'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'intervention-box__content' },
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: '/somewhereElse' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'intervention__link' },
+	                  'Words'
+	                )
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'intervention-box' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'intervention-box__header' },
+	              'Lifestyle Interventions'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'intervention-box__content' },
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: '/somewhereElse' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'intervention__link' },
+	                  'Words'
+	                )
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'intervention-box' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'intervention-box__header' },
+	              'Medications'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'intervention-box__content' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'intervention__content' },
+	                'Words'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'intervention-box' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'intervention-box__header' },
+	              'Care Management'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'intervention-box__content' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'intervention__list' },
+	                'Words'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'intervention__button' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'ih-button' },
+	              'ALL DIAGNOSES'
+	            )
+	          )
+	        )
 	      )
 	    )
 	  );
@@ -27807,7 +27915,7 @@
 	
 	
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 95px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.comorbid__note {\n  background: #DAE0E6; }\n\n.comorbid__center {\n  display: flex;\n  flex-direction: row; }\n\n.comorbid__left {\n  width: 50%; }\n\n.comorbid__right {\n  width: 50%; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 95px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.note-box {\n  background: #DAE0E6;\n  padding: 12px; }\n\n.symptom__container {\n  margin-top: 12px;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.symptom {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .symptom:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.comorbid__center {\n  display: flex;\n  flex-direction: row;\n  margin-top: 30px; }\n\n.comorbid__left {\n  width: 50%; }\n\n.comorbid__right {\n  width: 50%; }\n\n.comorbid__link, .intervention__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .comorbid__link:after, .intervention__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.intervention-container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.intervention-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.intervention-box__header {\n  background: #504f4f;\n  color: white;\n  font-weight: 400;\n  padding: 24px 12px; }\n\n.intervention-box__content {\n  padding: 24px 12px; }\n\n.intervention__content, .intervention__list {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n\n.intervention__list:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74; }\n\n.intervention__button {\n  width: 100%;\n  text-align: center; }\n", ""]);
 	
 	// exports
 
@@ -28853,7 +28961,7 @@
 	
 	
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 95px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.search-icon {\n  color: white;\n  padding: 30px 20px; }\n\n.main__body li {\n  color: #504f4f; }\n\n.goals-notes-container {\n  margin-bottom: 25px;\n  display: flex;\n  justify-content: space-between; }\n\n.note-component {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.note-component li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.note-component li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74; }\n\n.collapsible-component-assessment {\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700; }\n\n.collapsible-component-techniques {\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700; }\n\n.collapsible li {\n  position: relative; }\n\n/*.clicker-parent {\n  position: absolute;\n  left: 0;\n  right: 0;\n  z-index: 1\n  background: red;\n}*/\n/*.clicker {\n  position: absolute;\n  left: 0;\n  right: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 2;\n  background: blue;\n}*/\n.down-arrow {\n  position: absolute;\n  right: 46%;\n  top: 40%;\n  width: 20px; }\n\n.up-arrow {\n  display: none;\n  position: absolute;\n  right: 46%;\n  top: 40%;\n  width: 20px; }\n\n.up-arrow-one {\n  display: none; }\n\n.up-arrow-two {\n  display: none; }\n\n.up-arrow-three {\n  display: none; }\n\n.up-arrow-four {\n  display: none; }\n\n.up-arrow-five {\n  display: none; }\n\n.up-arrow-six {\n  display: none; }\n\n.up-arrow-seven {\n  display: none; }\n\n.up-arrow-eight {\n  display: none; }\n\n.up-arrow-nine {\n  display: none; }\n\n.collapse-icon-plus-one {\n  font-weight: 900;\n  color: #154f74;\n  font-size: 28px;\n  float: right; }\n\n.collapse-icon-minus-one {\n  font-weight: 900;\n  color: #154f74;\n  font-size: 28px;\n  display: none;\n  float: right; }\n\n.collapse-icon-plus-two {\n  font-weight: 900;\n  color: #154f74;\n  font-size: 28px;\n  float: right; }\n\n.collapse-icon-minus-two {\n  font-weight: 900;\n  color: #154f74;\n  font-size: 28px;\n  display: none;\n  float: right; }\n\n.homework-header {\n  display: block;\n  cursor: pointer;\n  min-height: 3rem;\n  line-height: 3rem;\n  padding: 0 1rem;\n  color: #154f74;\n  background-color: #eeeeee; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 95px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.search-icon {\n  color: white;\n  padding: 30px 20px; }\n\n.main__body li {\n  color: #504f4f; }\n\n.goals-notes-container {\n  margin-bottom: 25px;\n  display: flex;\n  justify-content: space-between; }\n\n.note-component {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.note-component li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.note-component li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74; }\n\n.collapsible-component-assessment {\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700; }\n\n.collapsible-component-techniques {\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700; }\n\n.collapsible li {\n  position: relative; }\n\n.homework-header {\n  display: block;\n  cursor: pointer;\n  min-height: 3rem;\n  line-height: 3rem;\n  padding: 0 1rem;\n  color: #154f74;\n  background-color: #eeeeee; }\n", ""]);
 	
 	// exports
 

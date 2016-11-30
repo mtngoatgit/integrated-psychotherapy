@@ -1,6 +1,6 @@
 import React from 'react';
 import Collapsible from 'react-collapsible';
-import { browserHistory }from 'react-router';
+import { browserHistory, Link }from 'react-router';
 import SideBar from '../SideBar';
 import './app-diagnosis.scss';
 
@@ -46,14 +46,16 @@ function Symptoms() {
   return(
     <div className="box">
       <div className="box__title">Symptoms</div>
-      <li>These</li>
-      <li>will</li>
-      <li>be</li>
-      <li>populated</li>
-      <li>from</li>
-      <li>database</li>
-      <li>in</li>
-      <li>future</li>
+      <div className="symptom__container">
+        <div className="symptom">These</div>
+        <div className="symptom">will</div>
+        <div className="symptom">be</div>
+        <div className="symptom">populated</div>
+        <div className="symptom">from</div>
+        <div className="symptom">database</div>
+        <div className="symptom">in</div>
+        <div className="symptom">future</div>
+      </div>
     </div>
   );
 }
@@ -76,11 +78,14 @@ function ComorbidConditions() {
         <Collapsible trigger="Comorbid Conditions" transitionTime={100}>
           <div className="comorbid__center">
             <div className="comorbid__left">
-              <div>These will have to be</div>
-              <div>populated from a backend</div>
+              <div className="comorbid__link">Diagnosis Link</div>
+              <div className="comorbid__link">Diagnosis Link</div>
+              <div className="comorbid__link">Diagnosis Link</div>
+              <div className="comorbid__link">Diagnosis Link</div>
+              <div className="comorbid__link">Diagnosis Link</div>
             </div>
             <div className="comorbid__right">
-            <div className="comorbid__note">
+            <div className="note-box">
               <div className="box__title">Notes</div>
             </div>
             <div className="ih-button">ALL DIAGNOSES</div>
@@ -97,18 +102,47 @@ function Interventions() {
     <div className="collapsible__section">
       <div >
         <Collapsible trigger="Interventions" transitionTime={100}>
-            <div className="">
-
+          <div className="intervention-container">
+            <div className="intervention-box">
+              <div className="intervention-box__header">Psychotherapies</div>
+              <div className="intervention-box__content">
+                <Link to="/somewhereElse">
+                  <div className="intervention__link">
+                  Words
+                  </div>
+                </Link>
+              </div>
             </div>
-            <div className="">
-
+            <div className="intervention-box">
+              <div className="intervention-box__header">Lifestyle Interventions</div>
+              <div className="intervention-box__content">
+                <Link to="/somewhereElse">
+                  <div className="intervention__link">
+                  Words
+                  </div>
+                </Link>
+              </div>
             </div>
-            <div className="">
-
+            <div className="intervention-box">
+              <div className="intervention-box__header">Medications</div>
+              <div className="intervention-box__content">
+                <div className="intervention__content">
+                Words
+                </div>
+              </div>
             </div>
-            <div className="">
-
+            <div className="intervention-box">
+              <div className="intervention-box__header">Care Management</div>
+              <div className="intervention-box__content">
+                <div className="intervention__list">
+                Words
+                </div>
+              </div>
             </div>
+            <div className="intervention__button">
+              <div className="ih-button">ALL DIAGNOSES</div>
+            </div>
+          </div>
         </Collapsible>
       </div>
     </div>
