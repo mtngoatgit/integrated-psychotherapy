@@ -36,3 +36,47 @@
   z-index: 1;
   width: 70%;
 }
+.GraphsPlus {
+  display: flex;
+  justify-content: space-between;
+}
+.graphs {
+  width: 52%;
+  display: flex;
+  justify-content: space-around;
+}
+.graphs__column {
+  width: 40%;
+}
+.graph__container {
+  width: 100%;
+}
+.graph__icon {
+  width: 100%;
+  height: 100%;
+  border: 8px solid $blue300;
+  border-radius: 100%;
+}
+.graph__percentage {
+  color: $blue100;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+.graph__title {
+  color: $gray100;
+  font-size: 20px;
+  margin: 40px 0;
+  text-align: center;
+}
+.RelatedDiagnoses {
+  width: 40%;
+}
+.related-diagnosis__link {
+  width: 100%;
+  background: $gray100;
+  color: $gray200;
+}
+.related-diagnosis__button {
+  width: 100%;
+}

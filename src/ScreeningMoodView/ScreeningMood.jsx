@@ -61,29 +61,65 @@ function Scoring() {
   )
 }
 
-function Graphs() {
+function GraphsPlus() {
   return(
-    <div className="Graphs">
-
-    </div>
-  );
-}
-
-function RelatedDiagnoses() {
-  return(
-    <div className="RelatedDiagnoses">
-
+    <div className="GraphsPlus">
+      <div className="graphs">
+        <div className="graphs__column">
+          <div className="box__title">Sensitivity</div>
+          <div className="graph__container">
+            <div className="graph__icon">
+              <div className="graph__percentage">
+                83%
+              </div>
+            </div>
+            <div className="graph__title">General Population</div>
+          </div>
+          <div className="graph__container">
+            <div className="graph__icon">
+              <div className="graph__percentage">
+                83%
+              </div>
+            </div>
+            <div className="graph__title">Mood Disorder Population</div>
+          </div>
+        </div>
+        <div className="graphs__column">
+          <div className="box__title">Specificity</div>
+          <div className="graph__container">
+            <div className="graph__icon">
+              <div className="graph__percentage">
+                83%
+              </div>
+            </div>
+            <div className="graph__title">General Population</div>
+          </div>
+          <div className="graph__container">
+            <div className="graph__icon">
+              <div className="graph__percentage">
+                83%
+              </div>
+            </div>
+            <div className="graph__title">Mood Disorder Population</div>
+          </div>
+        </div>
+      </div>
+      <div className="RelatedDiagnoses">
+        <div className="box__title">RelatedDiagnoses</div>
+        <div className="ih-button related-diagnosis__link">**</div>
+        <div className="ih-button related-diagnosis__button">General Screening Information</div>
+      </div>
     </div>
   );
 }
 
 function Notes() {
   return(
-    <section className="view__overview">
-      <div className="view__overview-title">
+    <section className="box">
+      <div className="box__title">
         Notes
       </div>
-      <div className="view__overview-text">
+      <div className="box__body">
         Chartreuse chia fashion axe, kickstarter umami pinterest vaporware
         polaroid skateboard hammock edison bulb. Lomo readymade edison bulb
         authentic. Swag viral iPhone 3 wolf moon. Meditation yuccie
@@ -102,8 +138,7 @@ function MainBody() {
     <section className="main__body">
         <ViewOverview />
         <Scoring />
-        <Graphs />
-        <RelatedDiagnoses />
+        <GraphsPlus />
         <Notes />
     </section>
   )
