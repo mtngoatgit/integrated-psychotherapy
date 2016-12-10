@@ -47,6 +47,9 @@ function NotFoundView() {
             <Link to="/">
               <div className="navigation">Home</div>
             </Link>
+            <Link to="screening_navigation">
+              <div className="navigation">Screening Navigation</div>
+            </Link>
           </div>
           </div>
           <div className="NotFound-error-message">

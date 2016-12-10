@@ -25,12 +25,10 @@ function MainBody () {
       <div className="box">
         <div className="box__title">Integrated Healthcare</div>
         <div className="box__body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Pellentesque a cursus libero. Etiam gravida elit eget ex dignissim,
-          tempor tincidunt mi dapibus. Proin ac lobortis eros, id volutpat dui.
-          Nam ultricies, ex sed finibus convallis, quam ex aliquam nibh,
-          vitae lacinia massa elit et nunc. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus mus.
+          Integrated care is a team-based approach to healthcare which
+          addresses both medical and behavioral health services in a single
+          location, so that patients get the care they need, when they need it,
+          in ways that are user-friendly.
         </div>
       </div>
       <div className="box">

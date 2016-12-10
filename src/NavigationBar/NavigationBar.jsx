@@ -5,6 +5,7 @@ import './navigation-bar.scss';
 function NavigationBar() {
   return (
     <div className="home-nav__bar">
+      <Link to='/'>
       <div className="home-nav__item">
         <div className="home-nav__item-interior">
           <div className="home-nav__icon-container">
@@ -13,13 +14,13 @@ function NavigationBar() {
           <div className="home-nav__title">
             Integrated Healthcare
           </div>
-          <div className="arrow-left"></div>
         </div>
       </div>
+      </Link>
 
       <div className="home-nav__spacer"></div>
 
-      <Link to='/diagnosis'>
+      <Link to='/diagnosis_navigation'>
         <div className="home-nav__item">
           <div className="home-nav__item-interior">
             <div className="home-nav__icon-container">
@@ -34,7 +35,7 @@ function NavigationBar() {
 
       <div className="home-nav__spacer"></div>
 
-      <Link to='/screening_mood'>
+      <Link to='/screening_navigation'>
         <div className="home-nav__item">
           <div className="home-nav__item-interior">
             <div className="home-nav__icon-container">
@@ -49,7 +50,7 @@ function NavigationBar() {
 
       <div className="home-nav__spacer"></div>
 
-      <Link to='/behavioral_interventions'>
+      <Link to='/interventions_navigation'>
         <div className="home-nav__item">
           <div className="home-nav__item-interior">
             <div className="home-nav__icon-container">

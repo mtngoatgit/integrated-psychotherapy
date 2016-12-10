@@ -9,29 +9,27 @@ function Home() {
     <div>
       <NavigationHeader />
       <NavigationBar />
-
-    <section className="content-container">
-      <div className="menu-container">
-        <Link to='/overview'>
-          <div className="menu-item">
-            Overview
-            <img className="arrow-icon" src="/assets/right-arrow.png" alt="" />
-          </div>
-        </Link>
-        <Link to='/terminology'>
-          <div className="menu-item">
-            Terminology
-            <img className="arrow-icon" src="/assets/right-arrow.png" alt="" />
-          </div>
-        </Link>
-        <Link to='/models'>
-          <div className="menu-item">
-            Models
-            <img className="arrow-icon" src="/assets/right-arrow.png" alt="" />
-          </div>
-        </Link>
+      <div className="integrated-healthcare__arrow"></div>
+      <div className="content-container">
+        <div className="arrow-left"></div>
+        <div className="menu-container">
+          <Link to='/integrated_overview'>
+            <div className="navigation-button">
+              Overview
+            </div>
+          </Link>
+          <Link to='/terminology'>
+            <div className="navigation-button">
+              Terminology
+            </div>
+          </Link>
+          <Link to='/models'>
+            <div className="navigation-button">
+              Models
+            </div>
+          </Link>
+        </div>
       </div>
-    </section>
     </div>
   );
 }

@@ -18,7 +18,7 @@ function SideBar() {
 
         <div className="side-nav__spacer"></div>
 
-        <Link to='/diagnosis'>
+        <Link to='/diagnosis_navigation'>
           <div className="side-nav__item">
             <div className="side-nav__item-interior">
               <div className="side-nav__icon-container">
@@ -30,7 +30,7 @@ function SideBar() {
 
         <div className="side-nav__spacer"></div>
 
-        <Link to='/screening_mood'>
+        <Link to='/screening_navigation'>
           <div className="side-nav__item">
             <div className="side-nav__item-interior">
               <div className="side-nav__icon-container">
@@ -42,7 +42,7 @@ function SideBar() {
 
         <div className="side-nav__spacer"></div>
 
-        <Link to='/behavioral_interventions'>
+        <Link to='/interventions_navigation'>
           <div className="side-nav__item">
             <div className="side-nav__item-interior">
               <div className="side-nav__icon-container">

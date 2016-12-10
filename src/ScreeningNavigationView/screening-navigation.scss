@@ -1,0 +1,17 @@
+@import "../global";
+
+.screening-arrow {
+  position: absolute;
+  top: 65%;
+  left: 168px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right:10px solid white;
+}
+.footnote {
+  color: $gray200;
+  margin-top: 50px;
+  font-size: 12px;
+}
