@@ -35,6 +35,12 @@ function NotFoundView() {
             <Link to="/problem_solving">
               <div className="navigation">Problem Solving</div>
             </Link>
+            <Link to="/terminology">
+              <div className="navigation">Terminology</div>
+            </Link>
+            <Link to="/integrated_overview">
+              <div className="navigation">IH Overview</div>
+            </Link>
             <Link to="/">
               <div className="navigation">Home</div>
             </Link>

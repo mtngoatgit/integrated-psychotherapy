@@ -32,6 +32,7 @@ function Home() {
           <div className="home-nav__title">
             Integrated Healthcare
           </div>
+          <div className="arrow-left"></div>
         </div>
       </div>
 

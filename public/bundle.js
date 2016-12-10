@@ -88,29 +88,39 @@
 	
 	var _ScreeningMoodView2 = _interopRequireDefault(_ScreeningMoodView);
 	
+	var _TerminologyView = __webpack_require__(275);
+	
+	var _TerminologyView2 = _interopRequireDefault(_TerminologyView);
+	
+	var _IntegratedOverviewView = __webpack_require__(276);
+	
+	var _IntegratedOverviewView2 = _interopRequireDefault(_IntegratedOverviewView);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	(0, _reactTapEventPlugin2.default)();
 	
 	var App = _react2.default.createClass({
-	  displayName: 'App',
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactRouter.Router,
-	        { history: _reactRouter.hashHistory },
-	        _react2.default.createElement(_reactRouter.Route, { path: '/', component: _HomeView2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/intro', component: _AppIntroView2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/diagnosis', component: _AppDiagnosisView2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/diagnosis_expanded', component: _DiagnosisExpandedView2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/problem_solving', component: _ProblemSolvingView2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/screening_mood', component: _ScreeningMoodView2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '*', component: _NotFoundView2.default })
-	      )
-	    );
-	  }
+		displayName: 'App',
+		render: function render() {
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					_reactRouter.Router,
+					{ history: _reactRouter.hashHistory },
+					_react2.default.createElement(_reactRouter.Route, { path: '/', component: _HomeView2.default }),
+					_react2.default.createElement(_reactRouter.Route, { path: '/intro', component: _AppIntroView2.default }),
+					_react2.default.createElement(_reactRouter.Route, { path: '/diagnosis', component: _AppDiagnosisView2.default }),
+					_react2.default.createElement(_reactRouter.Route, { path: '/diagnosis_expanded', component: _DiagnosisExpandedView2.default }),
+					_react2.default.createElement(_reactRouter.Route, { path: '/problem_solving', component: _ProblemSolvingView2.default }),
+					_react2.default.createElement(_reactRouter.Route, { path: '/screening_mood', component: _ScreeningMoodView2.default }),
+					_react2.default.createElement(_reactRouter.Route, { path: '/terminology', component: _TerminologyView2.default }),
+					_react2.default.createElement(_reactRouter.Route, { path: '/integrated_overview', component: _IntegratedOverviewView2.default }),
+					_react2.default.createElement(_reactRouter.Route, { path: '*', component: _NotFoundView2.default })
+				)
+			);
+		}
 	});
 	
 	_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('app'));
@@ -28230,7 +28240,8 @@
 	            'div',
 	            { className: 'home-nav__title' },
 	            'Integrated Healthcare'
-	          )
+	          ),
+	          _react2.default.createElement('div', { className: 'arrow-left' })
 	        )
 	      ),
 	      _react2.default.createElement('div', { className: 'home-nav__spacer' }),
@@ -28381,7 +28392,7 @@
 	
 	
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 95px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n* {\n  font-family: 'Lato', sans-serif; }\n\na {\n  text-decoration: none; }\n\n.home__header {\n  background-color: #3480a1;\n  width: 100%;\n  height: auto;\n  font-family: 'Lato', sans-serif;\n  padding: 20px;\n  display: flex;\n  justify-content: center; }\n\n.home__logo {\n  display: flex;\n  flex-direction: row; }\n\n.logo-title {\n  display: flex;\n  flex-direction: column;\n  margin-left: 20px; }\n\n.logo-title_one {\n  text-transform: uppercase;\n  color: #7bd5f0;\n  font-weight: 100;\n  font-size: 22px;\n  letter-spacing: 7px; }\n\n.logo-title_two {\n  color: white;\n  font-size: 40px;\n  font-weight: 700; }\n\n.logo-title_two span {\n  font-size: 6px;\n  font-weight: 100; }\n\n.home__icon {\n  width: 60px;\n  height: 60px; }\n\n.home__search-icon {\n  color: white;\n  position: absolute;\n  top: 35px;\n  right: 15px; }\n\n.home-nav__bar {\n  background-color: #01152a;\n  width: 178px;\n  position: absolute;\n  left: 0; }\n\n.home-nav__item {\n  width: 100%;\n  height: 220px;\n  font-family: 'Lato', sans-serif;\n  display: table; }\n\n.home-nav__item-interior {\n  display: table-cell;\n  vertical-align: middle; }\n\n.home-nav__icon-container {\n  width: 50px;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 20px; }\n\n.home-nav__icon {\n  width: 50px; }\n\n.home-nav__title {\n  text-align: center;\n  color: white;\n  font-size: 14px;\n  font-weight: 300;\n  line-height: 1.3;\n  width: 65%;\n  margin: auto;\n  font-family: 'Lato', sans-serif; }\n\n.home-nav__spacer {\n  background-color: #041b32;\n  height: 14px; }\n\n.content-container {\n  margin-left: 178px;\n  padding-top: 20px;\n  height: auto; }\n\n.menu-container {\n  width: 90%;\n  margin-left: auto;\n  margin-right: auto;\n  font-family: 'Lato', sans-serif;\n  font-weight: 400; }\n\n.menu-item {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  line-height: 2;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  position: relative; }\n\n.menu-item a {\n  text-decoration: none; }\n\n.arrow-icon {\n  position: absolute;\n  right: 15px;\n  top: 9px; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 95px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n* {\n  font-family: 'Lato', sans-serif; }\n\na {\n  text-decoration: none; }\n\n.home__header {\n  background-color: #3480a1;\n  width: 100%;\n  height: auto;\n  font-family: 'Lato', sans-serif;\n  padding: 20px;\n  display: flex;\n  justify-content: center; }\n\n.home__logo {\n  display: flex;\n  flex-direction: row; }\n\n.logo-title {\n  display: flex;\n  flex-direction: column;\n  margin-left: 20px; }\n\n.logo-title_one {\n  text-transform: uppercase;\n  color: #7bd5f0;\n  font-weight: 100;\n  font-size: 22px;\n  letter-spacing: 7px; }\n\n.logo-title_two {\n  color: white;\n  font-size: 40px;\n  font-weight: 700; }\n\n.logo-title_two span {\n  font-size: 6px;\n  font-weight: 100; }\n\n.home__icon {\n  width: 60px;\n  height: 60px; }\n\n.home__search-icon {\n  color: white;\n  position: absolute;\n  top: 35px;\n  right: 15px; }\n\n.home-nav__bar {\n  background-color: #01152a;\n  width: 178px;\n  position: absolute;\n  left: 0; }\n\n.home-nav__item {\n  width: 100%;\n  height: 220px;\n  font-family: 'Lato', sans-serif;\n  display: table; }\n\n.home-nav__item-interior {\n  display: table-cell;\n  vertical-align: middle;\n  position: relative; }\n\n.home-nav__icon-container {\n  width: 50px;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 20px; }\n\n.home-nav__icon {\n  width: 50px; }\n\n.home-nav__title {\n  text-align: center;\n  color: white;\n  font-size: 14px;\n  font-weight: 300;\n  line-height: 1.3;\n  width: 65%;\n  margin: auto;\n  font-family: 'Lato', sans-serif; }\n\n.arrow-left {\n  position: absolute;\n  top: 50%;\n  right: -1px;\n  width: 0;\n  height: 0;\n  border-top: 10px solid transparent;\n  border-bottom: 10px solid transparent;\n  border-right: 10px solid white; }\n\n.home-nav__spacer {\n  background-color: #041b32;\n  height: 14px; }\n\n.content-container {\n  margin-left: 178px;\n  padding-top: 20px;\n  height: auto; }\n\n.menu-container {\n  width: 90%;\n  margin-left: auto;\n  margin-right: auto;\n  font-family: 'Lato', sans-serif;\n  font-weight: 400; }\n\n.menu-item {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  line-height: 2;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  position: relative; }\n\n.menu-item a {\n  text-decoration: none; }\n\n.arrow-icon {\n  position: absolute;\n  right: 15px;\n  top: 9px; }\n", ""]);
 	
 	// exports
 
@@ -28499,6 +28510,24 @@
 	                'div',
 	                { className: 'navigation' },
 	                'Problem Solving'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/terminology' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'navigation' },
+	                'Terminology'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/integrated_overview' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'navigation' },
+	                'IH Overview'
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -29290,6 +29319,291 @@
 	
 	// module
 	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 95px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.scoring__container {\n  margin-bottom: 25px;\n  display: flex;\n  justify-content: space-between; }\n\n.scoring__instructions {\n  background-color: #eeeeee;\n  width: 52%;\n  padding: 2em 1.5em; }\n\n.component__spacer {\n  height: 24px; }\n\n.scoring__document {\n  width: 48%;\n  position: relative; }\n\n.pdf {\n  position: absolute;\n  right: 0;\n  z-index: 0;\n  width: 85%;\n  background: white; }\n\n.pdf-lines {\n  position: absolute;\n  right: 5px;\n  top: 20px;\n  z-index: 1;\n  width: 70%; }\n\n.GraphsPlus {\n  display: flex;\n  justify-content: space-between; }\n\n.graphs {\n  width: 52%;\n  display: flex;\n  justify-content: space-around; }\n\n.graphs__column {\n  width: 40%; }\n\n.graph__container {\n  width: 100%; }\n\n.graph__icon {\n  width: 100%;\n  height: 100%;\n  border: 8px solid #154f74;\n  border-radius: 100%; }\n\n.graph__percentage {\n  color: #3480a1;\n  font-size: 32px;\n  font-weight: 700;\n  text-align: center; }\n\n.graph__title {\n  color: #eeeeee;\n  font-size: 20px;\n  margin: 40px 0;\n  text-align: center; }\n\n.RelatedDiagnoses {\n  width: 40%; }\n\n.related-diagnosis__link {\n  width: 100%;\n  background: #eeeeee;\n  color: #504f4f; }\n\n.related-diagnosis__button {\n  width: 100%; }\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 275 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = undefined;
+	
+	var _Terminology = __webpack_require__(280);
+	
+	var _Terminology2 = _interopRequireDefault(_Terminology);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = _Terminology2.default;
+
+/***/ },
+/* 276 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = undefined;
+	
+	var _IntegratedOverview = __webpack_require__(277);
+	
+	var _IntegratedOverview2 = _interopRequireDefault(_IntegratedOverview);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = _IntegratedOverview2.default;
+
+/***/ },
+/* 277 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactCollapsible = __webpack_require__(241);
+	
+	var _reactCollapsible2 = _interopRequireDefault(_reactCollapsible);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	__webpack_require__(278);
+	
+	var _SideBar = __webpack_require__(242);
+	
+	var _SideBar2 = _interopRequireDefault(_SideBar);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function IntegratedOverview() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: '' },
+	    'IntegratedOverview'
+	  );
+	}
+	
+	exports.default = IntegratedOverview;
+
+/***/ },
+/* 278 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(279);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(247)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./integrated-overview.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./integrated-overview.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 279 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(246)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 280 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactCollapsible = __webpack_require__(241);
+	
+	var _reactCollapsible2 = _interopRequireDefault(_reactCollapsible);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	__webpack_require__(281);
+	
+	var _SideBar = __webpack_require__(242);
+	
+	var _SideBar2 = _interopRequireDefault(_SideBar);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function Header() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'header' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'back-arrow-parent' },
+	      _react2.default.createElement(
+	        'button',
+	        { onClick: _reactRouter.browserHistory.goBack },
+	        _react2.default.createElement('img', { className: 'back-arrow', src: '/assets/back-arrow.png', alt: '' })
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'header__title' },
+	      'Terminology'
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'search-icon' },
+	      _react2.default.createElement('i', { className: 'fa fa-search fa-2x', 'aria-hidden': 'true' })
+	    )
+	  );
+	}
+	
+	function MainBody() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'main__body' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'box' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__title' },
+	        'Care Management'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__body' },
+	        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a cursus libero. Etiam gravida elit eget ex dignissim, tempor tincidunt mi dapibus. Proin ac lobortis eros, id volutpat dui. Nam ultricies, ex sed finibus convallis, quam ex aliquam nibh, vitae lacinia massa elit et nunc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'box' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__title' },
+	        'Case Management'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__body' },
+	        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a cursus libero. Etiam gravida elit eget ex dignissim, tempor tincidunt mi dapibus. Proin ac lobortis eros, id volutpat dui. Nam ultricies, ex sed finibus convallis, quam ex aliquam nibh, vitae lacinia massa elit et nunc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'box' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__title' },
+	        'Stepped Care'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__body' },
+	        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a cursus libero. Etiam gravida elit eget ex dignissim, tempor tincidunt mi dapibus. Proin ac lobortis eros, id volutpat dui. Nam ultricies, ex sed finibus convallis, quam ex aliquam nibh, vitae lacinia massa elit et nunc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'box' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__title' },
+	        'Warm Hand-Off'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__body' },
+	        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a cursus libero. Etiam gravida elit eget ex dignissim, tempor tincidunt mi dapibus. Proin ac lobortis eros, id volutpat dui. Nam ultricies, ex sed finibus convallis, quam ex aliquam nibh, vitae lacinia massa elit et nunc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+	      )
+	    )
+	  );
+	}
+	
+	function Terminology() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: '' },
+	    _react2.default.createElement(Header, null),
+	    _react2.default.createElement(_SideBar2.default, null),
+	    _react2.default.createElement(MainBody, null)
+	  );
+	}
+	
+	exports.default = Terminology;
+
+/***/ },
+/* 281 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(282);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(247)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./terminology.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./terminology.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 282 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(246)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "", ""]);
 	
 	// exports
 

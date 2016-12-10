@@ -9,6 +9,8 @@ import Home from '../HomeView';
 import NotFound from '../NotFoundView';
 import ProblemSolving from '../ProblemSolvingView';
 import ScreeningMood from '../ScreeningMoodView';
+import Terminology from '../TerminologyView';
+import IntegratedOverview from '../IntegratedOverviewView';
 
 injectTapEventPlugin();
 
@@ -23,6 +25,8 @@ const App = React.createClass({
           <Route path="/diagnosis_expanded" component={DiagnosisExpanded} />
           <Route path="/problem_solving" component={ProblemSolving} />
           <Route path="/screening_mood" component={ScreeningMood} />
+					<Route path="/terminology" component={Terminology} />
+					<Route path="/integrated_overview" component={IntegratedOverview} />
 					<Route path="*" component={NotFound} />
         </Router>
 			</div>

@@ -65,6 +65,7 @@ height: 60px;
 .home-nav__item-interior {
   display: table-cell;
   vertical-align: middle;
+  position: relative;
 }
 .home-nav__icon-container {
   width: 50px;
@@ -84,6 +85,16 @@ height: 60px;
   width: 65%;
   margin: auto;
   font-family: 'Lato', sans-serif;
+}
+.arrow-left {
+  position: absolute;
+  top: 50%;
+  right: -1px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right:10px solid white;
 }
 .home-nav__spacer {
   background-color: #041b32;
