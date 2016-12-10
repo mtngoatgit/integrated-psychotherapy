@@ -13,6 +13,7 @@ import Terminology from '../TerminologyView';
 import IntegratedOverview from '../IntegratedOverviewView';
 import ScreeningOverview from '../ScreeningOverviewView';
 import ScreeningNavigation from '../ScreeningNavigationView';
+import DiagnosisNavigation from '../DiagnosisNavigationView';
 
 injectTapEventPlugin();
 
@@ -31,6 +32,7 @@ const App = React.createClass({
 					<Route path="/integrated_overview" component={IntegratedOverview} />
 					<Route path="/screening_overview" component={ScreeningOverview} />
 					<Route path="/screening_navigation" component={ScreeningNavigation} />
+					<Route path="/diagnosis_navigation" component={DiagnosisNavigation} />
 					<Route path="*" component={NotFound} />
         </Router>
 			</div>
