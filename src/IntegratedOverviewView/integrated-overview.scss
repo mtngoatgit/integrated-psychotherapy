@@ -1,0 +1,12 @@
+@import "../global";
+
+.sessions {
+  display: flex;
+  justify-content: space-between;
+}
+.primary-care__box {
+  width: 58%;
+}
+.behavioral-health__box {
+  width: 42%;
+}

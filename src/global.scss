@@ -157,6 +157,30 @@ p {
   line-height: 1.3;
   font-weight: 400;
 }
+.box__bullet-narrow {
+  color: $gray200;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 400;
+  width: 48%;
+  &:before {
+    content: "• ";
+    letter-spacing: 3px;
+    color: $blue300;
+  }
+}
+.box__bullet-wide {
+  color: $gray200;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%;
+  &:before {
+    content: "• ";
+    letter-spacing: 3px;
+    color: $blue300;
+  }
+}
 .box li {
   list-style: none;
   margin-top: 25px;

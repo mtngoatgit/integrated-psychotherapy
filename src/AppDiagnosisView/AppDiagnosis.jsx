@@ -47,14 +47,14 @@ function Symptoms() {
     <div className="box">
       <div className="box__title">Symptoms</div>
       <div className="symptom__container">
-        <div className="symptom">These</div>
-        <div className="symptom">will</div>
-        <div className="symptom">be</div>
-        <div className="symptom">populated</div>
-        <div className="symptom">from</div>
-        <div className="symptom">database</div>
-        <div className="symptom">in</div>
-        <div className="symptom">future</div>
+        <div className="box__bullet-narrow">These</div>
+        <div className="box__bullet-narrow">will</div>
+        <div className="box__bullet-narrow">be</div>
+        <div className="box__bullet-narrow">populated</div>
+        <div className="box__bullet-narrow">from</div>
+        <div className="box__bullet-narrow">database</div>
+        <div className="box__bullet-narrow">in</div>
+        <div className="box__bullet-narrow">future</div>
       </div>
     </div>
   );
