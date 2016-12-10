@@ -1,0 +1,46 @@
+@import "../global";
+
+.home__header {
+  background-color: $blue100;
+  width: 100%;
+  height: auto;
+  font-family: 'Lato', sans-serif;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.home__logo {
+  display: flex;
+  flex-direction: row;
+}
+.logo-title {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.logo-title_one {
+  text-transform: uppercase;
+  color: #7bd5f0;
+  font-weight: 100;
+  font-size: 22px;
+  letter-spacing: 7px;
+}
+.logo-title_two {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+}
+.logo-title_two span {
+  font-size: 6px;
+  font-weight: 100;
+}
+.home__icon {
+width: 60px;
+height: 60px;
+}
+.home__search-icon {
+  color: white;
+  position: absolute;
+  top: 35px;
+  right: 15px;
+}
