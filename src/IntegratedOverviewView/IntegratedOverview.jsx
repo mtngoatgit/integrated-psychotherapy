@@ -1,5 +1,4 @@
 import React from 'react';
-import Collapsible from 'react-collapsible';
 import { browserHistory }from 'react-router';
 import './integrated-overview.scss';
 import SideBar from '../SideBar';

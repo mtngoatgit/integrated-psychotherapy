@@ -41,6 +41,9 @@ function NotFoundView() {
             <Link to="/integrated_overview">
               <div className="navigation">IH Overview</div>
             </Link>
+            <Link to="/screening_overview">
+              <div className="navigation">Screening Overview</div>
+            </Link>
             <Link to="/">
               <div className="navigation">Home</div>
             </Link>

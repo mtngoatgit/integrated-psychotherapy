@@ -11,6 +11,7 @@ import ProblemSolving from '../ProblemSolvingView';
 import ScreeningMood from '../ScreeningMoodView';
 import Terminology from '../TerminologyView';
 import IntegratedOverview from '../IntegratedOverviewView';
+import ScreeningOverview from '../ScreeningOverviewView';
 
 injectTapEventPlugin();
 
@@ -27,6 +28,7 @@ const App = React.createClass({
           <Route path="/screening_mood" component={ScreeningMood} />
 					<Route path="/terminology" component={Terminology} />
 					<Route path="/integrated_overview" component={IntegratedOverview} />
+					<Route path="/screening_overview" component={ScreeningOverview} />
 					<Route path="*" component={NotFound} />
         </Router>
 			</div>
