@@ -102,10 +102,10 @@ function Interventions() {
     <div className="collapsible__section">
       <div >
         <Collapsible trigger="Interventions" transitionTime={100}>
-          <div className="intervention-container">
-            <div className="intervention-box">
-              <div className="intervention-box__header">Psychotherapies</div>
-              <div className="intervention-box__content">
+          <div className="dark-box__container">
+            <div className="dark-box">
+              <div className="dark-box__header">Psychotherapies</div>
+              <div className="dark-box__content">
                 <Link to="/somewhereElse">
                   <div className="intervention__link">
                   Words
@@ -113,9 +113,9 @@ function Interventions() {
                 </Link>
               </div>
             </div>
-            <div className="intervention-box">
-              <div className="intervention-box__header">Lifestyle Interventions</div>
-              <div className="intervention-box__content">
+            <div className="dark-box">
+              <div className="dark-box__header">Lifestyle Interventions</div>
+              <div className="dark-box__content">
                 <Link to="/somewhereElse">
                   <div className="intervention__link">
                   Words
@@ -123,17 +123,17 @@ function Interventions() {
                 </Link>
               </div>
             </div>
-            <div className="intervention-box">
-              <div className="intervention-box__header">Medications</div>
-              <div className="intervention-box__content">
+            <div className="dark-box">
+              <div className="dark-box__header">Medications</div>
+              <div className="dark-box__content">
                 <div className="intervention__content">
                 Words
                 </div>
               </div>
             </div>
-            <div className="intervention-box">
-              <div className="intervention-box__header">Care Management</div>
-              <div className="intervention-box__content">
+            <div className="dark-box">
+              <div className="dark-box__header">Care Management</div>
+              <div className="dark-box__content">
                 <div className="intervention__list">
                 Words
                 </div>

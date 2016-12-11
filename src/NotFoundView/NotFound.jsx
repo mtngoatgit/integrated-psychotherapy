@@ -53,6 +53,12 @@ function NotFoundView() {
             <Link to="diagnosis_navigation">
               <div className="navigation">Diagnosis Navigation</div>
             </Link>
+            <Link to="intervention_navigation">
+              <div className="navigation">Intervention Navigation</div>
+            </Link>
+            <Link to="models">
+              <div className="navigation">Models</div>
+            </Link>
           </div>
           </div>
           <div className="NotFound-error-message">

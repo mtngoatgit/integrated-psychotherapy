@@ -212,6 +212,41 @@ a {
     letter-spacing: 3px;
     color: $blue300; /* or whatever color you prefer */
 }
+.dark-box__container {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.dark-box {
+  background: $blue50;
+  width: 48%;
+  margin-bottom: 18px;
+}
+.dark-narrow-box {
+  background: $blue50;
+  width: 31%;
+  margin-bottom: 18px;
+}
+.dark-box__header {
+  background: $gray200;
+  color: white;
+  font-weight: 400;
+  padding: 24px 12px;
+}
+.dark-box__content {
+  padding: 24px 12px;
+}
+.dark-box__link {
+  color: $blue300;
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-weight: 400;
+  &:after {
+    content: ">";
+    margin-left: 6px;
+  }
+}
 .component__title {
   font-size: 23px;
   color: $blue300;

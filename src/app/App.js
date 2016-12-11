@@ -15,6 +15,7 @@ import ScreeningOverview from '../ScreeningOverviewView';
 import ScreeningNavigation from '../ScreeningNavigationView';
 import DiagnosisNavigation from '../DiagnosisNavigationView';
 import InterventionNavigation from '../InterventionNavigationView';
+import Models from '../ModelsView';
 
 injectTapEventPlugin();
 
@@ -35,6 +36,7 @@ const App = React.createClass({
 					<Route path="/screening_navigation" component={ScreeningNavigation} />
 					<Route path="/diagnosis_navigation" component={DiagnosisNavigation} />
 					<Route path="/intervention_navigation" component={InterventionNavigation} />
+					<Route path="/models" component={Models} />
 					<Route path="*" component={NotFound} />
         </Router>
 			</div>

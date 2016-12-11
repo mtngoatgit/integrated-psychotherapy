@@ -31,26 +31,6 @@
     margin-left: 6px;
   }
 }
-.intervention-container {
-  padding: 24px 0;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.intervention-box {
-  background: $blue50;
-  width: 48%;
-  margin-bottom: 18px;
-}
-.intervention-box__header {
-  background: $gray200;
-  color: white;
-  font-weight: 400;
-  padding: 24px 12px;
-}
-.intervention-box__content {
-  padding: 24px 12px;
-}
 .intervention__link {
   @extend .comorbid__link;
 }
