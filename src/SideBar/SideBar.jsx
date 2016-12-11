@@ -42,7 +42,7 @@ function SideBar() {
 
         <div className="side-nav__spacer"></div>
 
-        <Link to='/interventions_navigation'>
+        <Link to='/intervention_navigation'>
           <div className="side-nav__item">
             <div className="side-nav__item-interior">
               <div className="side-nav__icon-container">

@@ -50,7 +50,7 @@ function NavigationBar() {
 
       <div className="home-nav__spacer"></div>
 
-      <Link to='/interventions_navigation'>
+      <Link to='/intervention_navigation'>
         <div className="home-nav__item">
           <div className="home-nav__item-interior">
             <div className="home-nav__icon-container">
