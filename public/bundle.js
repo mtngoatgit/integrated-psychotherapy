@@ -116,6 +116,10 @@
 	
 	var _ModelsView2 = _interopRequireDefault(_ModelsView);
 	
+	var _LifestyleInterventionView = __webpack_require__(311);
+	
+	var _LifestyleInterventionView2 = _interopRequireDefault(_LifestyleInterventionView);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	(0, _reactTapEventPlugin2.default)();
@@ -142,6 +146,7 @@
 					_react2.default.createElement(_reactRouter.Route, { path: '/diagnosis_navigation', component: _DiagnosisNavigationView2.default }),
 					_react2.default.createElement(_reactRouter.Route, { path: '/intervention_navigation', component: _InterventionNavigationView2.default }),
 					_react2.default.createElement(_reactRouter.Route, { path: '/models', component: _ModelsView2.default }),
+					_react2.default.createElement(_reactRouter.Route, { path: '/lifestyle_intervention', component: _LifestyleInterventionView2.default }),
 					_react2.default.createElement(_reactRouter.Route, { path: '*', component: _NotFoundView2.default })
 				)
 			);
@@ -28786,6 +28791,15 @@
 	                { className: 'navigation' },
 	                'Models'
 	              )
+	            ),
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: 'lifestyle_intervention' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'navigation' },
+	                'Lifestyle Intervention'
+	              )
 	            )
 	          )
 	        ),
@@ -31253,6 +31267,212 @@
 	
 	// module
 	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #999999;\n  color: white;\n  font-size: 24px;\n  font-weight: 400;\n  padding: 24px 12px;\n  text-align: center;\n  vertical-align: middle; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.ih-button__special-container {\n  margin: 24px 0;\n  width: 100%;\n  display: flex;\n  justify-content: space-between; }\n\n.ih-button__special-a, .ih-button__special-b {\n  background-color: #3480a1;\n  color: white;\n  font-size: 19px;\n  font-weight: 200;\n  margin: 15px 0;\n  padding: 13px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle;\n  width: 33%;\n  position: relative; }\n  .ih-button__special-a:after, .ih-button__special-b:after {\n    font-family: 'FontAwesome';\n    content: '\\F054';\n    color: white;\n    position: absolute;\n    right: 9px;\n    top: 17px;\n    font-size: 75%; }\n\n.ih-button__special-b {\n  width: 28%; }\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 311 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = undefined;
+	
+	var _LifestyleIntervention = __webpack_require__(312);
+	
+	var _LifestyleIntervention2 = _interopRequireDefault(_LifestyleIntervention);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = _LifestyleIntervention2.default;
+
+/***/ },
+/* 312 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	__webpack_require__(313);
+	
+	var _SideBar = __webpack_require__(242);
+	
+	var _SideBar2 = _interopRequireDefault(_SideBar);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function Header() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'header' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'back-arrow-parent' },
+	      _react2.default.createElement(
+	        'button',
+	        { onClick: _reactRouter.browserHistory.goBack },
+	        _react2.default.createElement('img', { className: 'back-arrow', src: '/assets/back-arrow.png', alt: '' })
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'header__title' },
+	      'Lifestyle Intervention'
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'search-icon' },
+	      _react2.default.createElement('i', { className: 'fa fa-search fa-2x', 'aria-hidden': 'true' })
+	    )
+	  );
+	}
+	
+	function MainBody() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'main__body' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'box' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__title' },
+	        'Intervention Name'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__body' },
+	        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam urna magna, sollicitudin id mattis in, interdum nec lectus. Donec egestas finibus sem, vitae commodo velit. Mauris tellus erat, ultrices a pharetra sed, dapibus id nulla. Donec auctor bibendum tellus. Pellentesque fermentum, turpis a porta posuere, leo dui aliquet mauris, at eleifend justo nunc eget ligula. Vestibulum luctus molestie quam at consectetur.'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'box' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__title', style: { marginBottom: "25px" } },
+	        'Quick Guides'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__bullet-wide' },
+	        'Example of the intevention such as medications'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__bullet-wide' },
+	        'Example of the intevention such as food items'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__bullet-wide' },
+	        'Example of the intevention such as exercises'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__bullet-wide' },
+	        'Example of the intevention such as medications'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__bullet-wide' },
+	        'Example of the intevention such as food items'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__bullet-wide' },
+	        'Example of the intevention such as exercises'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__bullet-wide' },
+	        'Example of the intevention such as medications'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'box__title' },
+	      'Effective for the following:'
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'ih-button no-inline' },
+	      'Condition 1'
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'ih-button no-inline' },
+	      'Condition 2'
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'ih-button no-inline' },
+	      'Condition 3'
+	    )
+	  );
+	}
+	
+	function LifestyleIntervention() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: '' },
+	    _react2.default.createElement(Header, null),
+	    _react2.default.createElement(_SideBar2.default, null),
+	    _react2.default.createElement(MainBody, null)
+	  );
+	}
+	
+	exports.default = LifestyleIntervention;
+
+/***/ },
+/* 313 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(314);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(247)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./lifestyle-intervention.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./lifestyle-intervention.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 314 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(246)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #999999;\n  color: white;\n  font-size: 24px;\n  font-weight: 400;\n  padding: 24px 12px;\n  text-align: center;\n  vertical-align: middle; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.no-inline {\n  margin-right: 35%; }\n", ""]);
 	
 	// exports
 
