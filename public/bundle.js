@@ -76,27 +76,27 @@
 	
 	var _HomeView2 = _interopRequireDefault(_HomeView);
 	
-	var _NotFoundView = __webpack_require__(262);
+	var _NotFoundView = __webpack_require__(270);
 	
 	var _NotFoundView2 = _interopRequireDefault(_NotFoundView);
 	
-	var _ProblemSolvingView = __webpack_require__(267);
+	var _ProblemSolvingView = __webpack_require__(275);
 	
 	var _ProblemSolvingView2 = _interopRequireDefault(_ProblemSolvingView);
 	
-	var _ScreeningMoodView = __webpack_require__(271);
+	var _ScreeningMoodView = __webpack_require__(279);
 	
 	var _ScreeningMoodView2 = _interopRequireDefault(_ScreeningMoodView);
 	
-	var _TerminologyView = __webpack_require__(275);
+	var _TerminologyView = __webpack_require__(283);
 	
 	var _TerminologyView2 = _interopRequireDefault(_TerminologyView);
 	
-	var _IntegratedOverviewView = __webpack_require__(276);
+	var _IntegratedOverviewView = __webpack_require__(287);
 	
 	var _IntegratedOverviewView2 = _interopRequireDefault(_IntegratedOverviewView);
 	
-	var _ScreeningOverviewView = __webpack_require__(283);
+	var _ScreeningOverviewView = __webpack_require__(291);
 	
 	var _ScreeningOverviewView2 = _interopRequireDefault(_ScreeningOverviewView);
 	
@@ -27602,7 +27602,7 @@
 	
 	
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #504f4f;\n  color: white;\n  font-weight: 400;\n  padding: 24px 12px; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.side-nav__bar {\n  background-color: #01152a;\n  width: 100px;\n  position: absolute;\n  left: 0;\n  top: 95px;\n  bottom: 0; }\n\n.side-nav__item {\n  width: 100%;\n  height: 220px;\n  font-family: 'Lato', sans-serif;\n  display: table; }\n\n.side-nav__item-interior {\n  display: table-cell;\n  vertical-align: middle; }\n\n.side-nav__icon-container {\n  width: 50px;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 20px; }\n\n.side-nav__icon {\n  width: 50px; }\n\n.side-nav__spacer {\n  background-color: #041b32;\n  height: 14px; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #999999;\n  color: white;\n  font-size: 24px;\n  font-weight: 400;\n  padding: 24px 12px;\n  text-align: center;\n  vertical-align: middle; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.side-nav__bar {\n  background-color: #01152a;\n  width: 100px;\n  position: absolute;\n  left: 0;\n  top: 95px;\n  bottom: 0; }\n\n.side-nav__item {\n  width: 100%;\n  height: 220px;\n  font-family: 'Lato', sans-serif;\n  display: table; }\n\n.side-nav__item-interior {\n  display: table-cell;\n  vertical-align: middle; }\n\n.side-nav__icon-container {\n  width: 50px;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 20px; }\n\n.side-nav__icon {\n  width: 50px; }\n\n.side-nav__spacer {\n  background-color: #041b32;\n  height: 14px; }\n", ""]);
 	
 	// exports
 
@@ -27950,7 +27950,7 @@
 	
 	
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #504f4f;\n  color: white;\n  font-weight: 400;\n  padding: 24px 12px; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.note-box {\n  background: #DAE0E6;\n  padding: 12px; }\n\n.symptom__container {\n  margin-top: 12px;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.comorbid__center {\n  display: flex;\n  flex-direction: row;\n  margin-top: 30px; }\n\n.comorbid__left {\n  width: 50%; }\n\n.comorbid__right {\n  width: 50%; }\n\n.comorbid__link, .intervention__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .comorbid__link:after, .intervention__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.intervention__content, .intervention__list {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n\n.intervention__list:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74; }\n\n.intervention__button {\n  width: 100%;\n  text-align: center; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #999999;\n  color: white;\n  font-size: 24px;\n  font-weight: 400;\n  padding: 24px 12px;\n  text-align: center;\n  vertical-align: middle; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.note-box {\n  background: #DAE0E6;\n  padding: 12px; }\n\n.symptom__container {\n  margin-top: 12px;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.comorbid__center {\n  display: flex;\n  flex-direction: row;\n  margin-top: 30px; }\n\n.comorbid__left {\n  width: 50%; }\n\n.comorbid__right {\n  width: 50%; }\n\n.comorbid__link, .intervention__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .comorbid__link:after, .intervention__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.intervention__content, .intervention__list {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n\n.intervention__list:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74; }\n\n.intervention__button {\n  width: 100%;\n  text-align: center; }\n", ""]);
 	
 	// exports
 
@@ -28079,7 +28079,7 @@
 	
 	
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #504f4f;\n  color: white;\n  font-weight: 400;\n  padding: 24px 12px; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.app-intro__main {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  background-color: #3480a1;\n  display: flex;\n  align-items: center;\n  justify-content: center; }\n\n.app-intro__inner {\n  padding: 190px 0;\n  background-image: radial-gradient(circle at 50% 36%, #7aabc1 0%, #3480a1 50%); }\n\n.app-intro__logo {\n  width: 100vw;\n  display: flex;\n  flex-direction: column;\n  text-align: center; }\n\n.app-intro__icon {\n  width: 130px;\n  margin: 0 auto 60px auto; }\n\n.app-intro__trademark-top {\n  text-transform: uppercase;\n  color: #7bd5f0;\n  font-weight: 200;\n  font-size: 48px;\n  letter-spacing: 16px; }\n\n.app-intro__trademark-bottom {\n  color: white;\n  font-size: 88px;\n  font-weight: 700; }\n  .app-intro__trademark-bottom span {\n    font-size: 12px;\n    font-weight: 100; }\n\n.app-intro__body p {\n  width: 57%;\n  margin: 100px auto;\n  color: white;\n  line-height: 1.3;\n  font-weight: 300;\n  text-align: center; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #999999;\n  color: white;\n  font-size: 24px;\n  font-weight: 400;\n  padding: 24px 12px;\n  text-align: center;\n  vertical-align: middle; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.app-intro__main {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  background-color: #3480a1;\n  display: flex;\n  align-items: center;\n  justify-content: center; }\n\n.app-intro__inner {\n  padding: 190px 0;\n  background-image: radial-gradient(circle at 50% 36%, #7aabc1 0%, #3480a1 50%); }\n\n.app-intro__logo {\n  width: 100vw;\n  display: flex;\n  flex-direction: column;\n  text-align: center; }\n\n.app-intro__icon {\n  width: 130px;\n  margin: 0 auto 60px auto; }\n\n.app-intro__trademark-top {\n  text-transform: uppercase;\n  color: #7bd5f0;\n  font-weight: 200;\n  font-size: 48px;\n  letter-spacing: 16px; }\n\n.app-intro__trademark-bottom {\n  color: white;\n  font-size: 88px;\n  font-weight: 700; }\n  .app-intro__trademark-bottom span {\n    font-size: 12px;\n    font-weight: 100; }\n\n.app-intro__body p {\n  width: 57%;\n  margin: 100px auto;\n  color: white;\n  line-height: 1.3;\n  font-weight: 300;\n  text-align: center; }\n", ""]);
 	
 	// exports
 
@@ -28208,11 +28208,11 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	var _NavigationHeader = __webpack_require__(287);
+	var _NavigationHeader = __webpack_require__(262);
 	
 	var _NavigationHeader2 = _interopRequireDefault(_NavigationHeader);
 	
-	var _NavigationBar = __webpack_require__(291);
+	var _NavigationBar = __webpack_require__(266);
 	
 	var _NavigationBar2 = _interopRequireDefault(_NavigationBar);
 	
@@ -28301,7 +28301,7 @@
 	
 	
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #504f4f;\n  color: white;\n  font-weight: 400;\n  padding: 24px 12px; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.integrated-healthcare__arrow {\n  position: absolute;\n  top: 21%;\n  left: 168px;\n  width: 0;\n  height: 0;\n  border-top: 10px solid transparent;\n  border-bottom: 10px solid transparent;\n  border-right: 10px solid white; }\n\n.home-nav__spacer {\n  background-color: #041b32;\n  height: 14px; }\n\n.content-container {\n  margin-left: 178px;\n  padding-top: 20px;\n  height: auto; }\n\n.menu-container {\n  width: 90%;\n  margin-left: auto;\n  margin-right: auto;\n  font-weight: 400; }\n\n.menu-item {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  line-height: 2;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  position: relative; }\n\n.arrow-icon {\n  position: absolute;\n  right: 15px;\n  top: 9px; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #999999;\n  color: white;\n  font-size: 24px;\n  font-weight: 400;\n  padding: 24px 12px;\n  text-align: center;\n  vertical-align: middle; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.integrated-healthcare__arrow {\n  position: absolute;\n  top: 21%;\n  left: 168px;\n  width: 0;\n  height: 0;\n  border-top: 10px solid transparent;\n  border-bottom: 10px solid transparent;\n  border-right: 10px solid white; }\n\n.home-nav__spacer {\n  background-color: #041b32;\n  height: 14px; }\n\n.content-container {\n  margin-left: 178px;\n  padding-top: 20px;\n  height: auto; }\n\n.menu-container {\n  width: 90%;\n  margin-left: auto;\n  margin-right: auto;\n  font-weight: 400; }\n\n.menu-item {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  line-height: 2;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  position: relative; }\n\n.arrow-icon {\n  position: absolute;\n  right: 15px;\n  top: 9px; }\n", ""]);
 	
 	// exports
 
@@ -28317,13 +28317,13 @@
 	});
 	exports.default = undefined;
 	
-	var _NotFound = __webpack_require__(263);
+	var _NavigationHeader = __webpack_require__(263);
 	
-	var _NotFound2 = _interopRequireDefault(_NotFound);
+	var _NavigationHeader2 = _interopRequireDefault(_NavigationHeader);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	exports.default = _NotFound2.default;
+	exports.default = _NavigationHeader2.default;
 
 /***/ },
 /* 263 */
@@ -28339,11 +28339,305 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactRouter = __webpack_require__(178);
-	
 	__webpack_require__(264);
 	
-	var _integratedIcon = __webpack_require__(266);
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function NavigationHeader() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'home__header' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'home__logo' },
+	      _react2.default.createElement('img', { className: 'home__icon', src: '/assets/integrated-icon.png', alt: '' }),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'logo-title' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'logo-title_one' },
+	          'integrated'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'logo-title_two' },
+	          'Healthcare',
+	          _react2.default.createElement(
+	            'span',
+	            null,
+	            'TM'
+	          )
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'home__search-icon' },
+	      _react2.default.createElement('i', { className: 'fa fa-search fa-2x', 'aria-hidden': 'true' })
+	    )
+	  );
+	}
+	
+	exports.default = NavigationHeader;
+
+/***/ },
+/* 264 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(265);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(247)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./navigation-header.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./navigation-header.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 265 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(246)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #999999;\n  color: white;\n  font-size: 24px;\n  font-weight: 400;\n  padding: 24px 12px;\n  text-align: center;\n  vertical-align: middle; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.home__header {\n  background-color: #3480a1;\n  width: 100%;\n  height: auto;\n  font-family: 'Lato', sans-serif;\n  padding: 20px;\n  display: flex;\n  justify-content: center; }\n\n.home__logo {\n  display: flex;\n  flex-direction: row; }\n\n.logo-title {\n  display: flex;\n  flex-direction: column;\n  margin-left: 20px; }\n\n.logo-title_one {\n  text-transform: uppercase;\n  color: #7bd5f0;\n  font-weight: 100;\n  font-size: 22px;\n  letter-spacing: 7px; }\n\n.logo-title_two {\n  color: white;\n  font-size: 40px;\n  font-weight: 700; }\n\n.logo-title_two span {\n  font-size: 6px;\n  font-weight: 100; }\n\n.home__icon {\n  width: 60px;\n  height: 60px; }\n\n.home__search-icon {\n  color: white;\n  position: absolute;\n  top: 35px;\n  right: 15px; }\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 266 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = undefined;
+	
+	var _NavigationBar = __webpack_require__(267);
+	
+	var _NavigationBar2 = _interopRequireDefault(_NavigationBar);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = _NavigationBar2.default;
+
+/***/ },
+/* 267 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	__webpack_require__(268);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function NavigationBar() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'home-nav__bar' },
+	    _react2.default.createElement(
+	      _reactRouter.Link,
+	      { to: '/' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'home-nav__item' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'home-nav__item-interior' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'home-nav__icon-container' },
+	            _react2.default.createElement('img', { className: 'home-nav__icon', src: '/assets/suitcase.png', alt: 'suitcase' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'home-nav__title' },
+	            'Integrated Healthcare'
+	          )
+	        )
+	      )
+	    ),
+	    _react2.default.createElement('div', { className: 'home-nav__spacer' }),
+	    _react2.default.createElement(
+	      _reactRouter.Link,
+	      { to: '/diagnosis_navigation' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'home-nav__item' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'home-nav__item-interior' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'home-nav__icon-container' },
+	            _react2.default.createElement('img', { className: 'home-nav__icon', src: '/assets/brain-heart.png', alt: 'brain-heart' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'home-nav__title' },
+	            'Diagnoses'
+	          )
+	        )
+	      )
+	    ),
+	    _react2.default.createElement('div', { className: 'home-nav__spacer' }),
+	    _react2.default.createElement(
+	      _reactRouter.Link,
+	      { to: '/screening_navigation' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'home-nav__item' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'home-nav__item-interior' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'home-nav__icon-container' },
+	            _react2.default.createElement('img', { className: 'home-nav__icon', src: '/assets/clipboard.png', alt: 'clipboard' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'home-nav__title' },
+	            'Screening Measures'
+	          )
+	        )
+	      )
+	    ),
+	    _react2.default.createElement('div', { className: 'home-nav__spacer' }),
+	    _react2.default.createElement(
+	      _reactRouter.Link,
+	      { to: '/intervention_navigation' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'home-nav__item' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'home-nav__item-interior' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'home-nav__icon-container' },
+	            _react2.default.createElement('img', { className: 'home-nav__icon', src: '/assets/puzzle.png', alt: 'bust' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'home-nav__title' },
+	            'Behavioral Interventions'
+	          )
+	        )
+	      )
+	    )
+	  );
+	}
+	
+	exports.default = NavigationBar;
+
+/***/ },
+/* 268 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(269);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(247)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./navigation-bar.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./navigation-bar.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 269 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(246)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #999999;\n  color: white;\n  font-size: 24px;\n  font-weight: 400;\n  padding: 24px 12px;\n  text-align: center;\n  vertical-align: middle; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.home-nav__bar {\n  background-color: #01152a;\n  width: 178px;\n  position: absolute;\n  left: 0; }\n\n.home-nav__item {\n  width: 100%;\n  height: 220px;\n  font-family: 'Lato', sans-serif;\n  display: table; }\n\n.home-nav__item-interior {\n  display: table-cell;\n  vertical-align: middle;\n  position: relative; }\n\n.home-nav__icon-container {\n  width: 50px;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 20px; }\n\n.home-nav__icon {\n  width: 50px; }\n\n.home-nav__title {\n  text-align: center;\n  color: white;\n  font-size: 14px;\n  font-weight: 300;\n  line-height: 1.3;\n  width: 65%;\n  margin: auto;\n  font-family: 'Lato', sans-serif; }\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 270 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = undefined;
+	
+	var _NotFound = __webpack_require__(271);
+	
+	var _NotFound2 = _interopRequireDefault(_NotFound);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = _NotFound2.default;
+
+/***/ },
+/* 271 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	__webpack_require__(272);
+	
+	var _integratedIcon = __webpack_require__(274);
 	
 	var _integratedIcon2 = _interopRequireDefault(_integratedIcon);
 	
@@ -28508,13 +28802,13 @@
 	exports.default = NotFoundView;
 
 /***/ },
-/* 264 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(265);
+	var content = __webpack_require__(273);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(247)(content, {});
@@ -28534,7 +28828,7 @@
 	}
 
 /***/ },
-/* 265 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(246)();
@@ -28542,19 +28836,19 @@
 	
 	
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #504f4f;\n  color: white;\n  font-weight: 400;\n  padding: 24px 12px; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.NotFoundView {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  background-color: #3480a1; }\n\n.NotFound__inner {\n  height: 100%;\n  width: 100%;\n  display: flex; }\n\n.NotFound-title-logo {\n  text-align: center;\n  width: 100%;\n  padding: 12px 48px;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 50px; }\n  .NotFound-title-logo img {\n    width: 150px; }\n\n.NotFound-title-container {\n  align-self: center;\n  width: 100%; }\n\n.NotFound-title-main {\n  text-align: center; }\n\n.NotFound-title-sub {\n  text-align: center;\n  padding: 12px 16px;\n  margin-bottom: 50px; }\n\n.NotFound-button-container {\n  display: flex;\n  justify-content: center;\n  text-align: center;\n  width: 100%;\n  margin-bottom: 50px; }\n  .NotFound-button-container button {\n    padding: 20px;\n    width: 30%;\n    border: none;\n    font-size: 16px;\n    background-color: #154f74;\n    color: white; }\n\n.navigation {\n  float: left;\n  margin: 10px;\n  padding: 20px;\n  width: 30%;\n  text-decoration: none;\n  font-size: 16px;\n  background-color: #154f74;\n  color: white; }\n\n.NotFound-error-message {\n  position: absolute;\n  width: 100%;\n  text-align: center;\n  bottom: 12px;\n  font-size: 12px; }\n\n@media (min-width: 768px) {\n  .NotFound-title-logo {\n    padding: 12px; }\n  .NotFound-title-main {\n    font-size: 64px; }\n  .NotFound-title-sub {\n    font-size: 40px;\n    padding: 24px 72px; } }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #999999;\n  color: white;\n  font-size: 24px;\n  font-weight: 400;\n  padding: 24px 12px;\n  text-align: center;\n  vertical-align: middle; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.NotFoundView {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  background-color: #3480a1; }\n\n.NotFound__inner {\n  height: 100%;\n  width: 100%;\n  display: flex; }\n\n.NotFound-title-logo {\n  text-align: center;\n  width: 100%;\n  padding: 12px 48px;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 50px; }\n  .NotFound-title-logo img {\n    width: 150px; }\n\n.NotFound-title-container {\n  align-self: center;\n  width: 100%; }\n\n.NotFound-title-main {\n  text-align: center; }\n\n.NotFound-title-sub {\n  text-align: center;\n  padding: 12px 16px;\n  margin-bottom: 50px; }\n\n.NotFound-button-container {\n  display: flex;\n  justify-content: center;\n  text-align: center;\n  width: 100%;\n  margin-bottom: 50px; }\n  .NotFound-button-container button {\n    padding: 20px;\n    width: 30%;\n    border: none;\n    font-size: 16px;\n    background-color: #154f74;\n    color: white; }\n\n.navigation {\n  float: left;\n  margin: 10px;\n  padding: 20px;\n  width: 30%;\n  text-decoration: none;\n  font-size: 16px;\n  background-color: #154f74;\n  color: white; }\n\n.NotFound-error-message {\n  position: absolute;\n  width: 100%;\n  text-align: center;\n  bottom: 12px;\n  font-size: 12px; }\n\n@media (min-width: 768px) {\n  .NotFound-title-logo {\n    padding: 12px; }\n  .NotFound-title-main {\n    font-size: 64px; }\n  .NotFound-title-sub {\n    font-size: 40px;\n    padding: 24px 72px; } }\n", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 266 */
+/* 274 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAYAAABRRIOnAAAP9UlEQVR4nO2deXRTdaLHv7+bNEmbdEnpBl0EulgQsWWkA4MgbmChLA8QBWVEGBllxOcZnswZnmdcxhnHhXlPBRQQlxEQhSIIhSm49Jw3FC1DKVW2AlWgtKSFNoF0Sdrmvj+SYNqm7U1y7/3dm9zPOT2nSe7ybfM59/5+97cRBCl5L27SA8gCcDOATAAprp9EALEAYlw/xGM3B4DrAGwAWgCYANQAuASgFkA1gOMAqsqef6RDlD9EZEj/m0ifvBc3qQDcBmAcgLEAcuGUgRHolDYAJwFUAjgEoKTs+UdOCXQuUZGtEO9+XZE5MjV+2jNbvrkDwD0AoihHMgEo2TI7rzSyumpH4vSCGsp5/EJNO4AvFB07lzUyNWFunEGXrwtTj7F3OkwABtLO5SIRwIOp2ekTNLdk/k+nzXaww2wuspRXFCbkTz5LOxxXJC/ESztLdQU56fOzkowP6rVhd0MGmQEwjEYzXpOQMD7+/kkvd7a2Hmi9cHHTlf1ffjZ42VJJlz0k+8/dfOhE6t3D0p5KiIpYwBAilauAP6gZnS5fn5WZr89If902b+6H5oOHVifOmFZHO5g3hCp0+c3O8jPD6q81r5s3ZtiJpGj9CpnL0BWGGaQZMGBlwrSpp+1NTasbivdn0o7UHckIsaGkcmijtXX9jNyM8vjIiCUEMNDOJBiERIbFxPwubtJ9le1m87v1e/YOoh3JDXUhVn9ZHn2x8fpfFt95a7lRr3scgI52JhHRqaOjfxs/5f4TNpPphQsbNkbSDkRViGMX6h958u6cyhSjYSUBomlmoQoh0ZqEhOdTHlv4g/XkqQdpRqEixOdHzqQ3NbftGpka/zFDSBqNDFKEqJg0ffbNWzus1u0N+w/cRCOD6EKcrL26dMaojLKYCO10sc8tF1R6/ey4e+8pbz5zdonY5xZNiA0llXFXra2fZg+MXUOcbQkKfUFIbERG+rp2i2XzpS1bjWKdVhQhyqrrxi8cf0tprF43V4zzBRPqqKj5A+fO+dZ8+Mg4Mc4nuBAna68+cfuQpGI1w0iuzi0XiEqVFX37qP3NZ88tFvpcggmxoaSSudh4/c3sgbHvECBcqPOEEBER6UPfa7tseuOnt9cK9r0JcuC3D5RHPvjLm3elGA1PC3H8UEabmLA8ZeGCnRc3fqAX4vi8C7Hmq6PxiyfcuidSpyng+9gKTlQGw7RB8+ftEaKwyasQxd//mLh4wq1F4Rr1BD6Pq9ATRqedmDRr5j9Ne4oSeT0uXwcq/v7HxLuGpe3TqlWj+TqmQt8wWm1e/KT79vEpBS9CvLn/SMKd2am7w1RMLh/HU+AOCQvLjbv3ni/4un0ELMSm0hP6x+8cuU25MtCD0Wrzkv5j5g4+CpoBCbGhpJKZnpu+VSkz0IfRaScOnDvnk0CrpAHtnD9yyN+V2oR0UBkM05IemP1aIMfwW4jjl648mWw0/GcgJ1fgH21iwvJAnmj6JcTR86ZxwwcNeMPfkyoIS0T60Lf8bfvwWYgNJZVxI1LiPgAQ4c8JFUQhIir3tvf9qXn4LMTs0VmrlYYq6UNUqqyEqfmrfd3PJyGqLjc+YYzQUu3ipcAddVTUfF872XAWYu+x6iEZica/+B5LgSYR6UNf8aU7Hmch7shK/rvS00mGEBJr/NXYVVw35yTEDzVX5kfqNDP9T6VAE5VeP5trb+5+hdhQUhk1bFDsK4HHUqBJRGbma1zGffQrxJTbhqxQusrLH6Ji0hKnFyzvb7s+B/tu/e5U2sAYw1P8xfKdtvaO2m9OXbzo7bNGa1sYpDMdAABgW9npuliD7oK3z+7KTk3VhampDdvTxMc/U79n7/qEgim1vW3T54QhjdbW9a7hdVTZfriq4vV9h3No5wiEZ/NHV8wZnUX9b+iwWNaFxcQ80dvnvd4yvj5xPtOo1y0QJpZvzBmdlfNs/ugK2jn8RSoyAIA6OvrRvkad9yrEyNT430NCA2/lKoWUZHChi84b3WujpFchCv9dlRxrCH9EuEz+ITcpJCgDACAsOvrXpl27vZa9vAox4eaU30l1fga5SCFVGQAAhETGjBvrtbLQQ4g39h3Wxup1jwqfqivmDvYM122lLoWvMrTa2nst9QuFxmhc+NPba3vUMnsIMXnE4IcYQkSvGu24ard/bW7n/CVLVQpfZfho76GKfd/+4LVaLSgMMyhu0r09xtr2ECI9IWaeOIl6srnBniNnKfyR4bn1u6jdVsLTUnuUE7sIUXTsXFa4Rn2PeJF6Ilcp5CYDADA63X31+4ozurzn+eL2wUmzIIGpCuUmhRxlcKGOHpUz2/ONLkJEhWumiZund+QihYxlAACoY2Kmer6+IcQn354crAtTjxE/Uu9IXQq5ywAAjEYzzvTFnhT36xu3hxGZqdM7WJjoxAJaHdB4e39zgz0HQMXdMWGc/pGuL0jwtg8+ZWhouh5mb++gNrNtU+qQWQDeAjwatxZVWbcCkGx/yYfjNZylAIRtEAuGK0M3Pq3Z9epDQNcyxEQ6WbghldtHEMoAeHz3KgBYVGXNBvAHWmm48n1LZ1KkilQM0amSuGw/PHlAkjFCV1F6tpbT9v0RpDIAgCEq+45Pr50+eMV9hZhIM40v0LpSBLEMbiYCP98yxtLL4TtiSxECMgAuB9xCjKQYxC/EkiJEZABcDpBFVVY1ACsALd08/iFk7SOEZACcC8sZGDhXr5OlDIBwV4oQkwFwOpDFALiFdpJA4VuKEJTBzS0MgKG0U/ABX1KEsAwAMJQBIJnlfQIlUClCXAYAGKQGkEw7BZ/42/bh8TsnglAGAEgmi6qs3wL4Je0kfONr7cMXglQGAPiOgXNF2qDD19sHV4JYBgBIZBDEc0XxLUWQywAAEQxk/AyCC3xJEQIyAICWAUB9rUihCVSKEJEBACIZSGAxVzHwV4oQkgEAmJCQQYE7DAA77RBi4G819NEpY3NeXjKD+rgPkXAwAFpppxCaQJ9JhJAU1xkAFtophISvB1QhIoWNAUCt+7fQ8P20MgSkaGEAiD4UXQyEenQd5FKYgvIK4asM720vrnhvezHnLzmIpahRA6imnYJP/JFhxesb3dtX/GbOZE77PjplbA6AYHtGcUmVu2xlPABqc0LwSYAy4EDp0aQBxqiKUcMzOI3jyMlMTRoQpa/4+shpXsZ9SIDPVbnLVhIAVCcn5YNAZXAT4lKsZwCcA9BBO0kg8CWDmxWvb8wJ0TLFceb9LEM7gFO0k/gL3zK4CUEpbACqVACQu2zlHQBupZvHd4SSwU2I3T5+qNn16jvuxi3ZmS20DG5C6EpRCfzc9F1GMYjPiCWDmxCR4hDwsxBHADjoZeGO2DK4CQEpSgCXEO9nGawATtJMwwVaMrgJYilMNbtePQV07S31HaUwnKAtg5sglaLE/cuNOaZ+autckqxhXqCRBgC+MrfXfXbFPsrbZ1KRwZPXnl3M+TE30HdXvOcWTil/bOqvqK0MdP746b9l5Y54C/CYhe4mLbMdwDug1McySk28LkskRRkA55UCPLV9xBsj2zVhalpCOKIv/rTD/eLGl08IaYTHpUMKSFUGN8Fw+3DY7QcTpxfUuF93vxrsgESQugxu5C5Fh9lc5Pm6uxCFkEC7hlxkcCNjKTos5RWFnm90EYIQchnAHlEjdUNuMriRoxSOtrYDCfmTz3q+523m+w0AZooTqStylcGNvwVNYVP1TuuFi5u6v9dj3U6WZRkA5wGkdP9MSOwsajWE++QlUpPBE1+rpK229tpwbZi4E7c4HLXn1667afCypV2KCD2qmIQQB4C1ogVzESwyAL7fPkSXAYC9qenD7jIAvT9zeAfANWEj+YfUZXDjqxSiwrLXzQcPrfb2kVchCCFmAO8KGsoP5CKDG6lK0W6x/CNxxjSvve37eir5vwDahInkO3KTwY0EpWizlB1+s7cPexWCEFIHCmUJb8hVBjdSkqLDYvkofvKkXtdI7VHL8IRlWSOc4zZi+A7GldY2W+3ub8q8rmtZ32gO+9NbH3ttEKPFS08vKE+IjWn39tm0u/JSw3VaetNAsqylYe8/hycUTOl1tF6fQjiPwS4H8AavwXjCZm+vGzj+YWqthN6o+7/NdVpNmKQyubHX17+oTUx8oa9tuLRsrgbwIy+JFKjBdjoumL7Ys6q/7foVghBiA/AkL6kUqNFy5syKtMcXX+9vO059HwghxQB6POZUkAedzc2FhmHZn3LZ1pfOML8HcNW/SArUYNnGptJDy7luzlkIQkgDlFuH7Gg5V/3H+En3nee6vU/d5Qgh2+BsDVWQAR3Xrm3RZ2as92Uff/pPPgMZdNkPddjOzqr6on0+j+r3WQhCSAucKwC3+Lqvgmi0XDt6bFHy/IeafN3Rrx7WhJDvAfzan30VhKflXPXTMaN/cdCfff3uck8IKQTwJ3/3VxAGm6l+lT4jfaO/+wc6BuNlAJzqtwrC02m17r68rXBFIMcISAhCCAvnraM4kOMoBI6jzVZS99n2eYOXLQ1o0HbAo7QIIXYAswD8K9BjKfiHw2Yru/z5zlmpix9rDvRYvAzbc9U8CiCzeSaCAba9/eiVL7+a7k+Nwhu8jeMkhFgATIJypRANh81W1rD/QH5iwVQTX8fkdWCvS4rJUMoUguNos5Vc3rHzfj5lAAQY6e26fUyHUvsQjE6rdXftlk8K+LpNeCLI0H9XQXMelOcUvGMz1a+q+fDjmXwUIL3hbSgfL7iqpH9mWfYEgH8giJeDFImWlnPVTwfy0IkLgk8O4nqiOQZKg5jfsJ2dVZZ/l08SWgZApNliXG0ft0NpOveZjmvXttR9tn2Mv20TviLYLaM7rsLmEpZlD8A5VHCAWOeWJSzb2HKu+o++9mcIFNHnk3J1shkGpY9mr3Q2Nxde+fKrUWLLAFCaYIwQ0kAIWQDgfihd/G/AdjouNJ86/ZDaYJjjS7c3PqG6kKurN/cwAP8FwEwzC1VY1mKvr3+x5oMPR3DtHS0UopUhesM17mMVy7LvA3gOwFIAOrqpRKOtw2L5qOlfpS/1NbxOTCSz1DMhpIkQshzAUACvAeh3UIlsYVlru9m85sr+AyPDYmKekIoMgISEcEMIqSOE/AFAGoCVAGr62UU+OBy19qtX/1q/uyhLYzQ+1dcobFpITgg3hBAzIeQVADcBmApgJyQwZaIfdDja2vY1V515+PzadUO0cXH/3dtkHVKAehmiP1xzXu0FsJdl2SQAs+HskDORZq5+cDjs9oMdZnORpbyisPvUf1JG8kJ44ppHcw2ANSzLxp69UDsLzsfieQCGA1BRjGcCUPLjseOlsZcv7fCcLlhO9Ds/hFww5j0QDuA2AL8AMArONcSGA9ALcDobnG0zlXCuRFPSVLZNtgvZeRI0QnjDmPcAgbMMkgkgC0A6gGTXTxKAOADhADSuXRxw1m5scA5EMsFZqL0E5xrp1QCOA6hqKtsmx/JMv/w/XVC2gkyTRZoAAAAASUVORK5CYII="
 
 /***/ },
-/* 267 */
+/* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28564,7 +28858,7 @@
 	});
 	exports.default = undefined;
 	
-	var _ProblemSolving = __webpack_require__(268);
+	var _ProblemSolving = __webpack_require__(276);
 	
 	var _ProblemSolving2 = _interopRequireDefault(_ProblemSolving);
 	
@@ -28573,7 +28867,7 @@
 	exports.default = _ProblemSolving2.default;
 
 /***/ },
-/* 268 */
+/* 276 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28592,7 +28886,7 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	__webpack_require__(269);
+	__webpack_require__(277);
 	
 	var _SideBar = __webpack_require__(242);
 	
@@ -28910,13 +29204,13 @@
 	  */}
 
 /***/ },
-/* 269 */
+/* 277 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(270);
+	var content = __webpack_require__(278);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(247)(content, {});
@@ -28936,7 +29230,7 @@
 	}
 
 /***/ },
-/* 270 */
+/* 278 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(246)();
@@ -28944,13 +29238,13 @@
 	
 	
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #504f4f;\n  color: white;\n  font-weight: 400;\n  padding: 24px 12px; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.search-icon {\n  color: white;\n  padding: 30px 20px; }\n\n.main__body li {\n  color: #504f4f; }\n\n.goals-notes-container {\n  margin-bottom: 25px;\n  display: flex;\n  justify-content: space-between; }\n\n.note-component {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.note-component li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.note-component li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74; }\n\n.collapsible-component-assessment {\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700; }\n\n.collapsible-component-techniques {\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700; }\n\n.collapsible li {\n  position: relative; }\n\n.homework-header {\n  display: block;\n  cursor: pointer;\n  min-height: 3rem;\n  line-height: 3rem;\n  padding: 0 1rem;\n  color: #154f74;\n  background-color: #eeeeee; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #999999;\n  color: white;\n  font-size: 24px;\n  font-weight: 400;\n  padding: 24px 12px;\n  text-align: center;\n  vertical-align: middle; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.search-icon {\n  color: white;\n  padding: 30px 20px; }\n\n.main__body li {\n  color: #504f4f; }\n\n.goals-notes-container {\n  margin-bottom: 25px;\n  display: flex;\n  justify-content: space-between; }\n\n.note-component {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.note-component li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.note-component li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74; }\n\n.collapsible-component-assessment {\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700; }\n\n.collapsible-component-techniques {\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700; }\n\n.collapsible li {\n  position: relative; }\n\n.homework-header {\n  display: block;\n  cursor: pointer;\n  min-height: 3rem;\n  line-height: 3rem;\n  padding: 0 1rem;\n  color: #154f74;\n  background-color: #eeeeee; }\n", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 271 */
+/* 279 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28960,7 +29254,7 @@
 	});
 	exports.default = undefined;
 	
-	var _ScreeningMood = __webpack_require__(272);
+	var _ScreeningMood = __webpack_require__(280);
 	
 	var _ScreeningMood2 = _interopRequireDefault(_ScreeningMood);
 	
@@ -28969,7 +29263,7 @@
 	exports.default = _ScreeningMood2.default;
 
 /***/ },
-/* 272 */
+/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28988,7 +29282,7 @@
 	
 	var _SideBar2 = _interopRequireDefault(_SideBar);
 	
-	__webpack_require__(273);
+	__webpack_require__(281);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -29238,13 +29532,13 @@
 	exports.default = ScreeningMood;
 
 /***/ },
-/* 273 */
+/* 281 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(274);
+	var content = __webpack_require__(282);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(247)(content, {});
@@ -29264,7 +29558,7 @@
 	}
 
 /***/ },
-/* 274 */
+/* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(246)();
@@ -29272,13 +29566,13 @@
 	
 	
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #504f4f;\n  color: white;\n  font-weight: 400;\n  padding: 24px 12px; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.scoring__container {\n  margin-bottom: 25px;\n  display: flex;\n  justify-content: space-between; }\n\n.scoring__instructions {\n  background-color: #eeeeee;\n  width: 52%;\n  padding: 2em 1.5em; }\n\n.component__spacer {\n  height: 24px; }\n\n.scoring__document {\n  width: 48%;\n  position: relative; }\n\n.pdf {\n  position: absolute;\n  right: 0;\n  z-index: 0;\n  width: 85%;\n  background: white; }\n\n.pdf-lines {\n  position: absolute;\n  right: 5px;\n  top: 20px;\n  z-index: 1;\n  width: 70%; }\n\n.GraphsPlus {\n  display: flex;\n  justify-content: space-between; }\n\n.graphs {\n  width: 52%;\n  display: flex;\n  justify-content: space-around; }\n\n.graphs__column {\n  width: 40%; }\n\n.graph__container {\n  width: 100%; }\n\n.graph__icon {\n  width: 100%;\n  height: 100%;\n  border: 8px solid #154f74;\n  border-radius: 100%; }\n\n.graph__percentage {\n  color: #3480a1;\n  font-size: 32px;\n  font-weight: 700;\n  text-align: center; }\n\n.graph__title {\n  color: #eeeeee;\n  font-size: 20px;\n  margin: 40px 0;\n  text-align: center; }\n\n.RelatedDiagnoses {\n  width: 40%; }\n\n.related-diagnosis__link {\n  width: 100%;\n  background: #eeeeee;\n  color: #504f4f; }\n\n.related-diagnosis__button {\n  width: 100%; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #999999;\n  color: white;\n  font-size: 24px;\n  font-weight: 400;\n  padding: 24px 12px;\n  text-align: center;\n  vertical-align: middle; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.scoring__container {\n  margin-bottom: 25px;\n  display: flex;\n  justify-content: space-between; }\n\n.scoring__instructions {\n  background-color: #eeeeee;\n  width: 52%;\n  padding: 2em 1.5em; }\n\n.component__spacer {\n  height: 24px; }\n\n.scoring__document {\n  width: 48%;\n  position: relative; }\n\n.pdf {\n  position: absolute;\n  right: 0;\n  z-index: 0;\n  width: 85%;\n  background: white; }\n\n.pdf-lines {\n  position: absolute;\n  right: 5px;\n  top: 20px;\n  z-index: 1;\n  width: 70%; }\n\n.GraphsPlus {\n  display: flex;\n  justify-content: space-between; }\n\n.graphs {\n  width: 52%;\n  display: flex;\n  justify-content: space-around; }\n\n.graphs__column {\n  width: 40%; }\n\n.graph__container {\n  width: 100%; }\n\n.graph__icon {\n  width: 100%;\n  height: 100%;\n  border: 8px solid #154f74;\n  border-radius: 100%; }\n\n.graph__percentage {\n  color: #3480a1;\n  font-size: 32px;\n  font-weight: 700;\n  text-align: center; }\n\n.graph__title {\n  color: #eeeeee;\n  font-size: 20px;\n  margin: 40px 0;\n  text-align: center; }\n\n.RelatedDiagnoses {\n  width: 40%; }\n\n.related-diagnosis__link {\n  width: 100%;\n  background: #eeeeee;\n  color: #504f4f; }\n\n.related-diagnosis__button {\n  width: 100%; }\n", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 275 */
+/* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29288,7 +29582,7 @@
 	});
 	exports.default = undefined;
 	
-	var _Terminology = __webpack_require__(280);
+	var _Terminology = __webpack_require__(284);
 	
 	var _Terminology2 = _interopRequireDefault(_Terminology);
 	
@@ -29297,7 +29591,176 @@
 	exports.default = _Terminology2.default;
 
 /***/ },
-/* 276 */
+/* 284 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactCollapsible = __webpack_require__(241);
+	
+	var _reactCollapsible2 = _interopRequireDefault(_reactCollapsible);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	__webpack_require__(285);
+	
+	var _SideBar = __webpack_require__(242);
+	
+	var _SideBar2 = _interopRequireDefault(_SideBar);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function Header() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'header' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'back-arrow-parent' },
+	      _react2.default.createElement(
+	        'button',
+	        { onClick: _reactRouter.browserHistory.goBack },
+	        _react2.default.createElement('img', { className: 'back-arrow', src: '/assets/back-arrow.png', alt: '' })
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'header__title' },
+	      'Terminology'
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'search-icon' },
+	      _react2.default.createElement('i', { className: 'fa fa-search fa-2x', 'aria-hidden': 'true' })
+	    )
+	  );
+	}
+	
+	function MainBody() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'main__body' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'box' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__title' },
+	        'Care Management'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__body' },
+	        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a cursus libero. Etiam gravida elit eget ex dignissim, tempor tincidunt mi dapibus. Proin ac lobortis eros, id volutpat dui. Nam ultricies, ex sed finibus convallis, quam ex aliquam nibh, vitae lacinia massa elit et nunc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'box' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__title' },
+	        'Case Management'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__body' },
+	        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a cursus libero. Etiam gravida elit eget ex dignissim, tempor tincidunt mi dapibus. Proin ac lobortis eros, id volutpat dui. Nam ultricies, ex sed finibus convallis, quam ex aliquam nibh, vitae lacinia massa elit et nunc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'box' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__title' },
+	        'Stepped Care'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__body' },
+	        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a cursus libero. Etiam gravida elit eget ex dignissim, tempor tincidunt mi dapibus. Proin ac lobortis eros, id volutpat dui. Nam ultricies, ex sed finibus convallis, quam ex aliquam nibh, vitae lacinia massa elit et nunc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'box' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__title' },
+	        'Warm Hand-Off'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'box__body' },
+	        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a cursus libero. Etiam gravida elit eget ex dignissim, tempor tincidunt mi dapibus. Proin ac lobortis eros, id volutpat dui. Nam ultricies, ex sed finibus convallis, quam ex aliquam nibh, vitae lacinia massa elit et nunc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+	      )
+	    )
+	  );
+	}
+	
+	function Terminology() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: '' },
+	    _react2.default.createElement(Header, null),
+	    _react2.default.createElement(_SideBar2.default, null),
+	    _react2.default.createElement(MainBody, null)
+	  );
+	}
+	
+	exports.default = Terminology;
+
+/***/ },
+/* 285 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(286);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(247)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./terminology.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./terminology.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 286 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(246)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29307,7 +29770,7 @@
 	});
 	exports.default = undefined;
 	
-	var _IntegratedOverview = __webpack_require__(277);
+	var _IntegratedOverview = __webpack_require__(288);
 	
 	var _IntegratedOverview2 = _interopRequireDefault(_IntegratedOverview);
 	
@@ -29316,7 +29779,7 @@
 	exports.default = _IntegratedOverview2.default;
 
 /***/ },
-/* 277 */
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29331,7 +29794,7 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	__webpack_require__(278);
+	__webpack_require__(289);
 	
 	var _SideBar = __webpack_require__(242);
 	
@@ -29534,13 +29997,13 @@
 	exports.default = IntegratedOverview;
 
 /***/ },
-/* 278 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(279);
+	var content = __webpack_require__(290);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(247)(content, {});
@@ -29560,7 +30023,7 @@
 	}
 
 /***/ },
-/* 279 */
+/* 290 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(246)();
@@ -29568,182 +30031,13 @@
 	
 	
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #504f4f;\n  color: white;\n  font-weight: 400;\n  padding: 24px 12px; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.sessions {\n  display: flex;\n  justify-content: space-between; }\n\n.primary-care__box {\n  width: 58%; }\n\n.behavioral-health__box {\n  width: 42%; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #999999;\n  color: white;\n  font-size: 24px;\n  font-weight: 400;\n  padding: 24px 12px;\n  text-align: center;\n  vertical-align: middle; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.sessions {\n  display: flex;\n  justify-content: space-between; }\n\n.primary-care__box {\n  width: 58%; }\n\n.behavioral-health__box {\n  width: 42%; }\n", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 280 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactCollapsible = __webpack_require__(241);
-	
-	var _reactCollapsible2 = _interopRequireDefault(_reactCollapsible);
-	
-	var _reactRouter = __webpack_require__(178);
-	
-	__webpack_require__(281);
-	
-	var _SideBar = __webpack_require__(242);
-	
-	var _SideBar2 = _interopRequireDefault(_SideBar);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function Header() {
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'header' },
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'back-arrow-parent' },
-	      _react2.default.createElement(
-	        'button',
-	        { onClick: _reactRouter.browserHistory.goBack },
-	        _react2.default.createElement('img', { className: 'back-arrow', src: '/assets/back-arrow.png', alt: '' })
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'header__title' },
-	      'Terminology'
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'search-icon' },
-	      _react2.default.createElement('i', { className: 'fa fa-search fa-2x', 'aria-hidden': 'true' })
-	    )
-	  );
-	}
-	
-	function MainBody() {
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'main__body' },
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'box' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'box__title' },
-	        'Care Management'
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'box__body' },
-	        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a cursus libero. Etiam gravida elit eget ex dignissim, tempor tincidunt mi dapibus. Proin ac lobortis eros, id volutpat dui. Nam ultricies, ex sed finibus convallis, quam ex aliquam nibh, vitae lacinia massa elit et nunc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'box' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'box__title' },
-	        'Case Management'
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'box__body' },
-	        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a cursus libero. Etiam gravida elit eget ex dignissim, tempor tincidunt mi dapibus. Proin ac lobortis eros, id volutpat dui. Nam ultricies, ex sed finibus convallis, quam ex aliquam nibh, vitae lacinia massa elit et nunc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'box' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'box__title' },
-	        'Stepped Care'
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'box__body' },
-	        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a cursus libero. Etiam gravida elit eget ex dignissim, tempor tincidunt mi dapibus. Proin ac lobortis eros, id volutpat dui. Nam ultricies, ex sed finibus convallis, quam ex aliquam nibh, vitae lacinia massa elit et nunc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'box' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'box__title' },
-	        'Warm Hand-Off'
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'box__body' },
-	        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a cursus libero. Etiam gravida elit eget ex dignissim, tempor tincidunt mi dapibus. Proin ac lobortis eros, id volutpat dui. Nam ultricies, ex sed finibus convallis, quam ex aliquam nibh, vitae lacinia massa elit et nunc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
-	      )
-	    )
-	  );
-	}
-	
-	function Terminology() {
-	  return _react2.default.createElement(
-	    'div',
-	    { className: '' },
-	    _react2.default.createElement(Header, null),
-	    _react2.default.createElement(_SideBar2.default, null),
-	    _react2.default.createElement(MainBody, null)
-	  );
-	}
-	
-	exports.default = Terminology;
-
-/***/ },
-/* 281 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(282);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(247)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./terminology.scss", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./terminology.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 282 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(246)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 283 */
+/* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29753,7 +30047,7 @@
 	});
 	exports.default = undefined;
 	
-	var _ScreeningOverview = __webpack_require__(284);
+	var _ScreeningOverview = __webpack_require__(292);
 	
 	var _ScreeningOverview2 = _interopRequireDefault(_ScreeningOverview);
 	
@@ -29762,7 +30056,7 @@
 	exports.default = _ScreeningOverview2.default;
 
 /***/ },
-/* 284 */
+/* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29777,7 +30071,7 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	__webpack_require__(285);
+	__webpack_require__(293);
 	
 	var _SideBar = __webpack_require__(242);
 	
@@ -29903,13 +30197,13 @@
 	exports.default = ScreeningOverview;
 
 /***/ },
-/* 285 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(286);
+	var content = __webpack_require__(294);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(247)(content, {});
@@ -29929,300 +30223,6 @@
 	}
 
 /***/ },
-/* 286 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(246)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #504f4f;\n  color: white;\n  font-weight: 400;\n  padding: 24px 12px; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 287 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = undefined;
-	
-	var _NavigationHeader = __webpack_require__(288);
-	
-	var _NavigationHeader2 = _interopRequireDefault(_NavigationHeader);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = _NavigationHeader2.default;
-
-/***/ },
-/* 288 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	__webpack_require__(289);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function NavigationHeader() {
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'home__header' },
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'home__logo' },
-	      _react2.default.createElement('img', { className: 'home__icon', src: '/assets/integrated-icon.png', alt: '' }),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'logo-title' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'logo-title_one' },
-	          'integrated'
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'logo-title_two' },
-	          'Healthcare',
-	          _react2.default.createElement(
-	            'span',
-	            null,
-	            'TM'
-	          )
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'home__search-icon' },
-	      _react2.default.createElement('i', { className: 'fa fa-search fa-2x', 'aria-hidden': 'true' })
-	    )
-	  );
-	}
-	
-	exports.default = NavigationHeader;
-
-/***/ },
-/* 289 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(290);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(247)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./navigation-header.scss", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./navigation-header.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 290 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(246)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #504f4f;\n  color: white;\n  font-weight: 400;\n  padding: 24px 12px; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.home__header {\n  background-color: #3480a1;\n  width: 100%;\n  height: auto;\n  font-family: 'Lato', sans-serif;\n  padding: 20px;\n  display: flex;\n  justify-content: center; }\n\n.home__logo {\n  display: flex;\n  flex-direction: row; }\n\n.logo-title {\n  display: flex;\n  flex-direction: column;\n  margin-left: 20px; }\n\n.logo-title_one {\n  text-transform: uppercase;\n  color: #7bd5f0;\n  font-weight: 100;\n  font-size: 22px;\n  letter-spacing: 7px; }\n\n.logo-title_two {\n  color: white;\n  font-size: 40px;\n  font-weight: 700; }\n\n.logo-title_two span {\n  font-size: 6px;\n  font-weight: 100; }\n\n.home__icon {\n  width: 60px;\n  height: 60px; }\n\n.home__search-icon {\n  color: white;\n  position: absolute;\n  top: 35px;\n  right: 15px; }\n", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 291 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = undefined;
-	
-	var _NavigationBar = __webpack_require__(292);
-	
-	var _NavigationBar2 = _interopRequireDefault(_NavigationBar);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = _NavigationBar2.default;
-
-/***/ },
-/* 292 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRouter = __webpack_require__(178);
-	
-	__webpack_require__(293);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function NavigationBar() {
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'home-nav__bar' },
-	    _react2.default.createElement(
-	      _reactRouter.Link,
-	      { to: '/' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'home-nav__item' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'home-nav__item-interior' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'home-nav__icon-container' },
-	            _react2.default.createElement('img', { className: 'home-nav__icon', src: '/assets/suitcase.png', alt: 'suitcase' })
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'home-nav__title' },
-	            'Integrated Healthcare'
-	          )
-	        )
-	      )
-	    ),
-	    _react2.default.createElement('div', { className: 'home-nav__spacer' }),
-	    _react2.default.createElement(
-	      _reactRouter.Link,
-	      { to: '/diagnosis_navigation' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'home-nav__item' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'home-nav__item-interior' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'home-nav__icon-container' },
-	            _react2.default.createElement('img', { className: 'home-nav__icon', src: '/assets/brain-heart.png', alt: 'brain-heart' })
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'home-nav__title' },
-	            'Diagnoses'
-	          )
-	        )
-	      )
-	    ),
-	    _react2.default.createElement('div', { className: 'home-nav__spacer' }),
-	    _react2.default.createElement(
-	      _reactRouter.Link,
-	      { to: '/screening_navigation' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'home-nav__item' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'home-nav__item-interior' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'home-nav__icon-container' },
-	            _react2.default.createElement('img', { className: 'home-nav__icon', src: '/assets/clipboard.png', alt: 'clipboard' })
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'home-nav__title' },
-	            'Screening Measures'
-	          )
-	        )
-	      )
-	    ),
-	    _react2.default.createElement('div', { className: 'home-nav__spacer' }),
-	    _react2.default.createElement(
-	      _reactRouter.Link,
-	      { to: '/intervention_navigation' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'home-nav__item' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'home-nav__item-interior' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'home-nav__icon-container' },
-	            _react2.default.createElement('img', { className: 'home-nav__icon', src: '/assets/puzzle.png', alt: 'bust' })
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'home-nav__title' },
-	            'Behavioral Interventions'
-	          )
-	        )
-	      )
-	    )
-	  );
-	}
-	
-	exports.default = NavigationBar;
-
-/***/ },
-/* 293 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(294);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(247)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./navigation-bar.scss", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./navigation-bar.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
 /* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -30231,7 +30231,7 @@
 	
 	
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #504f4f;\n  color: white;\n  font-weight: 400;\n  padding: 24px 12px; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.home-nav__bar {\n  background-color: #01152a;\n  width: 178px;\n  position: absolute;\n  left: 0; }\n\n.home-nav__item {\n  width: 100%;\n  height: 220px;\n  font-family: 'Lato', sans-serif;\n  display: table; }\n\n.home-nav__item-interior {\n  display: table-cell;\n  vertical-align: middle;\n  position: relative; }\n\n.home-nav__icon-container {\n  width: 50px;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 20px; }\n\n.home-nav__icon {\n  width: 50px; }\n\n.home-nav__title {\n  text-align: center;\n  color: white;\n  font-size: 14px;\n  font-weight: 300;\n  line-height: 1.3;\n  width: 65%;\n  margin: auto;\n  font-family: 'Lato', sans-serif; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #999999;\n  color: white;\n  font-size: 24px;\n  font-weight: 400;\n  padding: 24px 12px;\n  text-align: center;\n  vertical-align: middle; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n", ""]);
 	
 	// exports
 
@@ -30271,11 +30271,11 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	var _NavigationHeader = __webpack_require__(287);
+	var _NavigationHeader = __webpack_require__(262);
 	
 	var _NavigationHeader2 = _interopRequireDefault(_NavigationHeader);
 	
-	var _NavigationBar = __webpack_require__(291);
+	var _NavigationBar = __webpack_require__(266);
 	
 	var _NavigationBar2 = _interopRequireDefault(_NavigationBar);
 	
@@ -30459,7 +30459,7 @@
 	
 	
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #504f4f;\n  color: white;\n  font-weight: 400;\n  padding: 24px 12px; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.screening-arrow {\n  position: absolute;\n  top: 65%;\n  left: 168px;\n  width: 0;\n  height: 0;\n  border-top: 10px solid transparent;\n  border-bottom: 10px solid transparent;\n  border-right: 10px solid white; }\n\n.footnote {\n  color: #504f4f;\n  margin-top: 50px;\n  font-size: 12px; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #999999;\n  color: white;\n  font-size: 24px;\n  font-weight: 400;\n  padding: 24px 12px;\n  text-align: center;\n  vertical-align: middle; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.screening-arrow {\n  position: absolute;\n  top: 65%;\n  left: 168px;\n  width: 0;\n  height: 0;\n  border-top: 10px solid transparent;\n  border-bottom: 10px solid transparent;\n  border-right: 10px solid white; }\n\n.footnote {\n  color: #504f4f;\n  margin-top: 50px;\n  font-size: 12px; }\n", ""]);
 	
 	// exports
 
@@ -30499,11 +30499,11 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	var _NavigationHeader = __webpack_require__(287);
+	var _NavigationHeader = __webpack_require__(262);
 	
 	var _NavigationHeader2 = _interopRequireDefault(_NavigationHeader);
 	
-	var _NavigationBar = __webpack_require__(291);
+	var _NavigationBar = __webpack_require__(266);
 	
 	var _NavigationBar2 = _interopRequireDefault(_NavigationBar);
 	
@@ -30778,7 +30778,7 @@
 	
 	
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #504f4f;\n  color: white;\n  font-weight: 400;\n  padding: 24px 12px; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.diagnosis-arrow {\n  position: absolute;\n  top: 43%;\n  left: 168px;\n  width: 0;\n  height: 0;\n  border-top: 10px solid transparent;\n  border-bottom: 10px solid transparent;\n  border-right: 10px solid white; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #999999;\n  color: white;\n  font-size: 24px;\n  font-weight: 400;\n  padding: 24px 12px;\n  text-align: center;\n  vertical-align: middle; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.diagnosis-arrow {\n  position: absolute;\n  top: 43%;\n  left: 168px;\n  width: 0;\n  height: 0;\n  border-top: 10px solid transparent;\n  border-bottom: 10px solid transparent;\n  border-right: 10px solid white; }\n", ""]);
 	
 	// exports
 
@@ -30818,11 +30818,11 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	var _NavigationHeader = __webpack_require__(287);
+	var _NavigationHeader = __webpack_require__(262);
 	
 	var _NavigationHeader2 = _interopRequireDefault(_NavigationHeader);
 	
-	var _NavigationBar = __webpack_require__(291);
+	var _NavigationBar = __webpack_require__(266);
 	
 	var _NavigationBar2 = _interopRequireDefault(_NavigationBar);
 	
@@ -30999,7 +30999,7 @@
 	
 	
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #504f4f;\n  color: white;\n  font-weight: 400;\n  padding: 24px 12px; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.intervention-arrow {\n  position: absolute;\n  top: 89%;\n  left: 168px;\n  width: 0;\n  height: 0;\n  border-top: 10px solid transparent;\n  border-bottom: 10px solid transparent;\n  border-right: 10px solid white; }\n\n.intervention__title {\n  line-height: 3; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #999999;\n  color: white;\n  font-size: 24px;\n  font-weight: 400;\n  padding: 24px 12px;\n  text-align: center;\n  vertical-align: middle; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.intervention-arrow {\n  position: absolute;\n  top: 89%;\n  left: 168px;\n  width: 0;\n  height: 0;\n  border-top: 10px solid transparent;\n  border-bottom: 10px solid transparent;\n  border-right: 10px solid white; }\n\n.intervention__title {\n  line-height: 3; }\n", ""]);
 	
 	// exports
 
@@ -31112,7 +31112,7 @@
 	          { className: 'dark-narrow-box' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'dark-box__header' },
+	            { className: 'dark-box__header', style: { lineHeight: 2 } },
 	            'Diagnoses'
 	          ),
 	          _react2.default.createElement(
@@ -31185,20 +31185,20 @@
 	    ),
 	    _react2.default.createElement(
 	      'div',
-	      { className: 'ih-button__container' },
+	      { className: 'ih-button__special-container' },
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'ih-button' },
+	        { className: 'ih-button__special-a' },
 	        'All Diagnoses'
 	      ),
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'ih-button' },
+	        { className: 'ih-button__special-b' },
 	        'All Screenings'
 	      ),
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'ih-button' },
+	        { className: 'ih-button__special-a' },
 	        'All Interventions'
 	      )
 	    )
@@ -31252,7 +31252,7 @@
 	
 	
 	// module
-	exports.push([module.id, "", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #999999;\n  color: white;\n  font-size: 24px;\n  font-weight: 400;\n  padding: 24px 12px;\n  text-align: center;\n  vertical-align: middle; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.ih-button__special-container {\n  margin: 24px 0;\n  width: 100%;\n  display: flex;\n  justify-content: space-between; }\n\n.ih-button__special-a, .ih-button__special-b {\n  background-color: #3480a1;\n  color: white;\n  font-size: 19px;\n  font-weight: 200;\n  margin: 15px 0;\n  padding: 13px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle;\n  width: 33%;\n  position: relative; }\n  .ih-button__special-a:after, .ih-button__special-b:after {\n    font-family: 'FontAwesome';\n    content: '\\F054';\n    color: white;\n    position: absolute;\n    right: 9px;\n    top: 17px;\n    font-size: 75%; }\n\n.ih-button__special-b {\n  width: 28%; }\n", ""]);
 	
 	// exports
 

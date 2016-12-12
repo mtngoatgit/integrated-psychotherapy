@@ -1,0 +1,40 @@
+@import "../global";
+
+.ih-button__special-container {
+  margin: 24px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.ih-button__special-a {
+  background-color: $blue100;
+  color: white;
+  font-size: 19px;
+  font-weight: 200;
+  margin: 15px 0;
+  padding: 13px;
+  display: inline-block;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  width: 33%;
+  position: relative;
+  // &:after {
+  //   content: url('/assets/white-right-arrow.png');
+  //   height: 4px;
+  //   position: absolute;
+  //   right: 10px;
+  // }
+  &:after {
+    font-family: 'FontAwesome';
+    content: '\f054';
+    color: white;
+    position: absolute;
+    right: 9px;
+    top: 17px;
+    font-size: 75%;
+  }
+}
+.ih-button__special-b {
+  @extend .ih-button__special-a;
+  width: 28%;
+}

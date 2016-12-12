@@ -15,6 +15,7 @@ $blue300: #154f74;
 $blue400: #01152a;
 
 $gray100: #eeeeee;
+$gray150: #999999;
 $gray200: #504f4f;
 
 *, div, p {
@@ -229,10 +230,13 @@ a {
   margin-bottom: 18px;
 }
 .dark-box__header {
-  background: $gray200;
+  background: $gray150;
   color: white;
+  font-size: 24px;
   font-weight: 400;
   padding: 24px 12px;
+  text-align: center;
+  vertical-align: middle;
 }
 .dark-box__content {
   padding: 24px 12px;

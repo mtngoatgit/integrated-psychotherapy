@@ -41,7 +41,7 @@ function MainBody () {
         </div>
         <div className="dark-box__container">
           <div className="dark-narrow-box">
-            <div className="dark-box__header">Diagnoses</div>
+            <div className="dark-box__header" style={{lineHeight: 2}}>Diagnoses</div>
             <div className="dark-box__content">
               <div className="dark-box__link">Major Depression</div>
             </div>
@@ -64,10 +64,10 @@ function MainBody () {
           </div>
         </div>
       </div>
-      <div className="ih-button__container">
-        <div className="ih-button">All Diagnoses</div>
-        <div className="ih-button">All Screenings</div>
-        <div className="ih-button">All Interventions</div>
+      <div className="ih-button__special-container">
+        <div className="ih-button__special-a">All Diagnoses</div>
+        <div className="ih-button__special-b">All Screenings</div>
+        <div className="ih-button__special-a">All Interventions</div>
       </div>
     </div>
   );
