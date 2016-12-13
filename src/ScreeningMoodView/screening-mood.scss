@@ -20,21 +20,19 @@
 .scoring__document {
   width: 48%;
   position: relative;
+  img {
+    -webkit-transform: scale(0.5);
+    position: absolute;
+    left: -117px;
+    top: -194px;
+  }
 }
-.pdf {
+.measure__link {
+  color: $blue300;
+  text-decoration: underline;
   position: absolute;
-  right: 0;
-  z-index: 0;
-  width: 85%;
-  background: white;
-  // border: 2px solid $gray100;
-}
-.pdf-lines {
-  position: absolute;
-  right: 5px;
-  top: 20px;
-  z-index: 1;
-  width: 70%;
+  right: 12px;
+  bottom: 108px;
 }
 .GraphsPlus {
   display: flex;
@@ -51,22 +49,10 @@
 .graph__container {
   width: 100%;
 }
-.graph__icon {
-  width: 100%;
-  height: 100%;
-  border: 8px solid $blue300;
-  border-radius: 100%;
-}
-.graph__percentage {
-  color: $blue100;
-  font-size: 32px;
-  font-weight: 700;
-  text-align: center;
-}
 .graph__title {
-  color: $gray100;
-  font-size: 20px;
-  margin: 40px 0;
+  color: $gray300;
+  font-size: 18px;
+  margin: 32px 0;
   text-align: center;
 }
 .RelatedDiagnoses {
@@ -75,7 +61,7 @@
 .related-diagnosis__link {
   width: 100%;
   background: $gray100;
-  color: $gray200;
+  color: $gray300;
 }
 .related-diagnosis__button {
   width: 100%;

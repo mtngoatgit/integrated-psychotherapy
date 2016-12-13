@@ -2,6 +2,7 @@ import React from 'react';
 import { browserHistory } from 'react-router';
 import SideBar from '../SideBar';
 import './screening-mood.scss';
+import DonutChart from '../DonutChart';
 
 function Header() {
   return (
@@ -23,11 +24,11 @@ function Header() {
 
 function ViewOverview(){
   return(
-    <section className="view__overview">
-      <div className="view__overview-title">
+    <section className="box">
+      <div className="box__title">
         Mood Disorders Questionnaire (MDQ)
       </div>
-      <div className="view__overview-text">
+      <div className="box__body">
         The Mood Disorders Questionnaire is a 5 question (17 item) measure of
         the lifetime history of manic or hypomanic symptoms derived from the
         DSM IV criteria and clinical experience.
@@ -54,8 +55,9 @@ function Scoring() {
         <div className="component__spacer"></div>
       </div>
       <div className="scoring__document">
-        <img className="pdf" src="/assets/pdf.png" alt="pdf" />
-        {/* <img className="pdf-lines" src="/assets/pdf-lines.png" alt="pdf-lines" /> */}
+        <img src="/assets/pdf_cheat.png" alt="" />
+        {/* THIS WILL NEED TO LINK TO THE APPROPRIATE RESOURCE */}
+        <div className="measure__link">View Measure</div>
       </div>
     </section>
   )
@@ -68,45 +70,29 @@ function GraphsPlus() {
         <div className="graphs__column">
           <div className="box__title">Sensitivity</div>
           <div className="graph__container">
-            <div className="graph__icon">
-              <div className="graph__percentage">
-                83%
-              </div>
-            </div>
+            <DonutChart />
             <div className="graph__title">General Population</div>
           </div>
           <div className="graph__container">
-            <div className="graph__icon">
-              <div className="graph__percentage">
-                83%
-              </div>
-            </div>
+            <DonutChart />
             <div className="graph__title">Mood Disorder Population</div>
           </div>
         </div>
         <div className="graphs__column">
           <div className="box__title">Specificity</div>
           <div className="graph__container">
-            <div className="graph__icon">
-              <div className="graph__percentage">
-                83%
-              </div>
-            </div>
+            <DonutChart />
             <div className="graph__title">General Population</div>
           </div>
           <div className="graph__container">
-            <div className="graph__icon">
-              <div className="graph__percentage">
-                83%
-              </div>
-            </div>
+            <DonutChart />
             <div className="graph__title">Mood Disorder Population</div>
           </div>
         </div>
       </div>
       <div className="RelatedDiagnoses">
         <div className="box__title">RelatedDiagnoses</div>
-        <div className="ih-button related-diagnosis__link">**</div>
+        <div className="navigation-button">**</div>
         <div className="ih-button related-diagnosis__button">General Screening Information</div>
       </div>
     </div>

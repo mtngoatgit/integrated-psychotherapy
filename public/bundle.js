@@ -88,35 +88,35 @@
 	
 	var _ScreeningMoodView2 = _interopRequireDefault(_ScreeningMoodView);
 	
-	var _TerminologyView = __webpack_require__(283);
+	var _TerminologyView = __webpack_require__(312);
 	
 	var _TerminologyView2 = _interopRequireDefault(_TerminologyView);
 	
-	var _IntegratedOverviewView = __webpack_require__(287);
+	var _IntegratedOverviewView = __webpack_require__(316);
 	
 	var _IntegratedOverviewView2 = _interopRequireDefault(_IntegratedOverviewView);
 	
-	var _ScreeningOverviewView = __webpack_require__(291);
+	var _ScreeningOverviewView = __webpack_require__(320);
 	
 	var _ScreeningOverviewView2 = _interopRequireDefault(_ScreeningOverviewView);
 	
-	var _ScreeningNavigationView = __webpack_require__(295);
+	var _ScreeningNavigationView = __webpack_require__(324);
 	
 	var _ScreeningNavigationView2 = _interopRequireDefault(_ScreeningNavigationView);
 	
-	var _DiagnosisNavigationView = __webpack_require__(299);
+	var _DiagnosisNavigationView = __webpack_require__(328);
 	
 	var _DiagnosisNavigationView2 = _interopRequireDefault(_DiagnosisNavigationView);
 	
-	var _InterventionNavigationView = __webpack_require__(303);
+	var _InterventionNavigationView = __webpack_require__(332);
 	
 	var _InterventionNavigationView2 = _interopRequireDefault(_InterventionNavigationView);
 	
-	var _ModelsView = __webpack_require__(307);
+	var _ModelsView = __webpack_require__(336);
 	
 	var _ModelsView2 = _interopRequireDefault(_ModelsView);
 	
-	var _LifestyleInterventionView = __webpack_require__(311);
+	var _LifestyleInterventionView = __webpack_require__(340);
 	
 	var _LifestyleInterventionView2 = _interopRequireDefault(_LifestyleInterventionView);
 	
@@ -29298,6 +29298,10 @@
 	
 	__webpack_require__(281);
 	
+	var _DonutChart = __webpack_require__(283);
+	
+	var _DonutChart2 = _interopRequireDefault(_DonutChart);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function Header() {
@@ -29329,15 +29333,15 @@
 	function ViewOverview() {
 	  return _react2.default.createElement(
 	    'section',
-	    { className: 'view__overview' },
+	    { className: 'box' },
 	    _react2.default.createElement(
 	      'div',
-	      { className: 'view__overview-title' },
+	      { className: 'box__title' },
 	      'Mood Disorders Questionnaire (MDQ)'
 	    ),
 	    _react2.default.createElement(
 	      'div',
-	      { className: 'view__overview-text' },
+	      { className: 'box__body' },
 	      'The Mood Disorders Questionnaire is a 5 question (17 item) measure of the lifetime history of manic or hypomanic symptoms derived from the DSM IV criteria and clinical experience. Question 1 contains 13 \u201Cyes/no\u201D items assessing bipolar symptoms with 4 additional questions assessing clustering of symptoms, functional impairment, family history, and previous diagnoses.'
 	    )
 	  );
@@ -29380,7 +29384,12 @@
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'scoring__document' },
-	      _react2.default.createElement('img', { className: 'pdf', src: '/assets/pdf.png', alt: 'pdf' })
+	      _react2.default.createElement('img', { src: '/assets/pdf_cheat.png', alt: '' }),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'measure__link' },
+	        'View Measure'
+	      )
 	    )
 	  );
 	}
@@ -29403,15 +29412,7 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'graph__container' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'graph__icon' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'graph__percentage' },
-	              '83%'
-	            )
-	          ),
+	          _react2.default.createElement(_DonutChart2.default, null),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'graph__title' },
@@ -29421,15 +29422,7 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'graph__container' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'graph__icon' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'graph__percentage' },
-	              '83%'
-	            )
-	          ),
+	          _react2.default.createElement(_DonutChart2.default, null),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'graph__title' },
@@ -29448,15 +29441,7 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'graph__container' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'graph__icon' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'graph__percentage' },
-	              '83%'
-	            )
-	          ),
+	          _react2.default.createElement(_DonutChart2.default, null),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'graph__title' },
@@ -29466,15 +29451,7 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'graph__container' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'graph__icon' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'graph__percentage' },
-	              '83%'
-	            )
-	          ),
+	          _react2.default.createElement(_DonutChart2.default, null),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'graph__title' },
@@ -29493,7 +29470,7 @@
 	      ),
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'ih-button related-diagnosis__link' },
+	        { className: 'navigation-button' },
 	        '**'
 	      ),
 	      _react2.default.createElement(
@@ -29580,7 +29557,7 @@
 	
 	
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #999999;\n  color: white;\n  font-size: 24px;\n  font-weight: 400;\n  padding: 24px 12px;\n  text-align: center;\n  vertical-align: middle; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.scoring__container {\n  margin-bottom: 25px;\n  display: flex;\n  justify-content: space-between; }\n\n.scoring__instructions {\n  background-color: #eeeeee;\n  width: 52%;\n  padding: 2em 1.5em; }\n\n.component__spacer {\n  height: 24px; }\n\n.scoring__document {\n  width: 48%;\n  position: relative; }\n\n.pdf {\n  position: absolute;\n  right: 0;\n  z-index: 0;\n  width: 85%;\n  background: white; }\n\n.pdf-lines {\n  position: absolute;\n  right: 5px;\n  top: 20px;\n  z-index: 1;\n  width: 70%; }\n\n.GraphsPlus {\n  display: flex;\n  justify-content: space-between; }\n\n.graphs {\n  width: 52%;\n  display: flex;\n  justify-content: space-around; }\n\n.graphs__column {\n  width: 40%; }\n\n.graph__container {\n  width: 100%; }\n\n.graph__icon {\n  width: 100%;\n  height: 100%;\n  border: 8px solid #154f74;\n  border-radius: 100%; }\n\n.graph__percentage {\n  color: #3480a1;\n  font-size: 32px;\n  font-weight: 700;\n  text-align: center; }\n\n.graph__title {\n  color: #eeeeee;\n  font-size: 20px;\n  margin: 40px 0;\n  text-align: center; }\n\n.RelatedDiagnoses {\n  width: 40%; }\n\n.related-diagnosis__link {\n  width: 100%;\n  background: #eeeeee;\n  color: #504f4f; }\n\n.related-diagnosis__button {\n  width: 100%; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #999999;\n  color: white;\n  font-size: 24px;\n  font-weight: 400;\n  padding: 24px 12px;\n  text-align: center;\n  vertical-align: middle; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.scoring__container {\n  margin-bottom: 25px;\n  display: flex;\n  justify-content: space-between; }\n\n.scoring__instructions {\n  background-color: #eeeeee;\n  width: 52%;\n  padding: 2em 1.5em; }\n\n.component__spacer {\n  height: 24px; }\n\n.scoring__document {\n  width: 48%;\n  position: relative; }\n  .scoring__document img {\n    -webkit-transform: scale(0.5);\n    position: absolute;\n    left: -117px;\n    top: -194px; }\n\n.measure__link {\n  color: #154f74;\n  text-decoration: underline;\n  position: absolute;\n  right: 12px;\n  bottom: 108px; }\n\n.GraphsPlus {\n  display: flex;\n  justify-content: space-between; }\n\n.graphs {\n  width: 52%;\n  display: flex;\n  justify-content: space-around; }\n\n.graphs__column {\n  width: 40%; }\n\n.graph__container {\n  width: 100%; }\n\n.graph__title {\n  color: #504f4f;\n  font-size: 18px;\n  margin: 32px 0;\n  text-align: center; }\n\n.RelatedDiagnoses {\n  width: 40%; }\n\n.related-diagnosis__link {\n  width: 100%;\n  background: #eeeeee;\n  color: #504f4f; }\n\n.related-diagnosis__button {\n  width: 100%; }\n", ""]);
 	
 	// exports
 
@@ -29596,7 +29573,178 @@
 	});
 	exports.default = undefined;
 	
-	var _Terminology = __webpack_require__(284);
+	var _DonutChart = __webpack_require__(284);
+	
+	var _DonutChart2 = _interopRequireDefault(_DonutChart);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = _DonutChart2.default;
+
+/***/ },
+/* 284 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	__webpack_require__(310);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var DonutChart = _react2.default.createClass({
+	  displayName: 'DonutChart',
+	  getInitialState: function getInitialState() {
+	    return {
+	      donutval: 83
+	    };
+	  },
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(Donuts, { value: this.state.donutval })
+	    );
+	  }
+	});
+	
+	var Donuts = _react2.default.createClass({
+	  displayName: 'Donuts',
+	
+	  propTypes: {
+	    value: _react2.default.PropTypes.number, // value the chart should show
+	    valuelabel: _react2.default.PropTypes.string, // label for the chart
+	    size: _react2.default.PropTypes.number, // diameter of chart
+	    strokewidth: _react2.default.PropTypes.number // width of chart line
+	  },
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      value: 0,
+	      size: 136,
+	      strokewidth: 16
+	    };
+	  },
+	  render: function render() {
+	
+	    var halfsize = this.props.size * 0.5;
+	    var radius = halfsize - this.props.strokewidth * 0.5;
+	    var circumference = 2 * Math.PI * radius;
+	    var strokeval = this.props.value * circumference / 100;
+	    var dashval = strokeval + ' ' + circumference;
+	
+	    var trackstyle = { strokeWidth: this.props.strokewidth };
+	    var indicatorstyle = { strokeWidth: this.props.strokewidth, strokeDasharray: dashval };
+	    var rotateval = 'rotate(-90 ' + halfsize + ',' + halfsize + ')';
+	
+	    return _react2.default.createElement(
+	      'svg',
+	      { width: this.props.size, height: this.props.size, className: 'donutchart' },
+	      _react2.default.createElement('circle', { r: radius, cx: halfsize, cy: halfsize, transform: rotateval, style: trackstyle, className: 'donutchart-track' }),
+	      _react2.default.createElement('circle', { r: radius, cx: halfsize, cy: halfsize, transform: rotateval, style: indicatorstyle, className: 'donutchart-indicator' }),
+	      _react2.default.createElement(
+	        'text',
+	        { className: 'donutchart-text', x: "52%", y: "57%", style: { textAnchor: 'middle' } },
+	        _react2.default.createElement(
+	          'tspan',
+	          { className: 'donutchart-text-val' },
+	          this.props.value
+	        ),
+	        _react2.default.createElement(
+	          'tspan',
+	          { className: 'donutchart-text-percent' },
+	          '%'
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = DonutChart;
+
+/***/ },
+/* 285 */,
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */,
+/* 309 */,
+/* 310 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(311);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(247)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./donut-chart.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./donut-chart.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 311 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(246)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "@charset \"UTF-8\";\n*, div, p {\n  font-family: 'Lato', sans-serif; }\n\np {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\na {\n  text-decoration: none; }\n\n.main__body {\n  background-color: white;\n  width: calc(100% - 100px);\n  margin-left: 100px;\n  padding: 25px;\n  font-family: 'Lato', sans-serif;\n  height: calc(1024px - 98px);\n  overflow: scroll; }\n\n.view__overview {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.view__overview-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.view__overview-text {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.Collapsible {\n  background: #eeeeee;\n  padding: 20px 28px;\n  font-size: 24px;\n  color: #154f74;\n  font-weight: 700;\n  margin-bottom: 16px; }\n  .Collapsible p {\n    margin: 16px 0; }\n\n.Collapsible__trigger {\n  display: block;\n  position: relative;\n  background: #eeeeee;\n  color: #154f74; }\n  .Collapsible__trigger:after {\n    font-family: 'FontAwesome';\n    content: '\\F067';\n    position: absolute;\n    right: 10px;\n    top: 5px;\n    display: block;\n    transition: transform 300ms; }\n  .Collapsible__trigger.is-open:after {\n    transform: rotateZ(180deg);\n    content: '\\F068'; }\n\n.collapsible-sub_header__trigger {\n  font-weight: 400;\n  font-size: 18px;\n  margin-bottom: 16px;\n  display: block;\n  position: relative; }\n  .collapsible-sub_header__trigger:after {\n    font-family: 'FontAwesome';\n    display: block;\n    content: '\\F107';\n    position: absolute;\n    right: 50%;\n    top: 2px;\n    display: block;\n    transition: transform 300ms; }\n  .collapsible-sub_header__trigger.is-open {\n    margin-bottom: 0; }\n    .collapsible-sub_header__trigger.is-open:after {\n      transform: rotateZ(180deg); }\n\n.collapsible-sub_header {\n  font-weight: 400;\n  font-size: 20px; }\n\n.header {\n  background-color: #3480a1;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  overflow: hidden;\n  align-items: center; }\n\n.back-arrow-parent {\n  background-color: #154f74;\n  width: 100px;\n  height: 97px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header__title {\n  font-weight: 500;\n  font-size: 36px;\n  color: white;\n  padding: 30px 0; }\n\n.box {\n  background-color: #eeeeee;\n  width: 100%;\n  padding: 2em 1.5em;\n  margin-bottom: 25px; }\n\n.box__title {\n  font-size: 24px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.box__body {\n  color: #504f4f;\n  font-size: 18px;\n  line-height: 1.3;\n  font-weight: 400; }\n\n.box__bullet-narrow {\n  color: #504f4f;\n  line-height: 1.5;\n  font-size: 18px;\n  font-weight: 400;\n  width: 48%; }\n  .box__bullet-narrow:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box__bullet-wide {\n  color: #504f4f;\n  line-height: 1.3;\n  margin: 5px 0;\n  font-size: 18px;\n  font-weight: 400;\n  width: 100%; }\n  .box__bullet-wide:before {\n    content: \"\\2022   \";\n    letter-spacing: 3px;\n    color: #154f74; }\n\n.box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.half-box {\n  background-color: #eeeeee;\n  width: 48%;\n  padding: 2em 1.5em; }\n\n.half-box li {\n  list-style: none;\n  margin-top: 25px;\n  margin-left: 20px;\n  text-indent: -20px; }\n\n.half-box li:before {\n  content: \"\\2022   \";\n  letter-spacing: 3px;\n  color: #154f74;\n  /* or whatever color you prefer */ }\n\n.dark-box__container {\n  padding: 24px 0;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n.dark-box {\n  background: #DAE0E6;\n  width: 48%;\n  margin-bottom: 18px; }\n\n.dark-narrow-box {\n  background: #DAE0E6;\n  width: 31%;\n  margin-bottom: 18px; }\n\n.dark-box__header {\n  background: #999999;\n  color: white;\n  font-size: 24px;\n  font-weight: 400;\n  padding: 24px 12px;\n  text-align: center;\n  vertical-align: middle; }\n\n.dark-box__content {\n  padding: 24px 12px; }\n\n.dark-box__link {\n  color: #154f74;\n  margin-bottom: 24px;\n  font-size: 18px;\n  font-weight: 400; }\n  .dark-box__link:after {\n    content: \">\";\n    margin-left: 6px; }\n\n.component__title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700; }\n\n.component__title-sub {\n  font-size: 18px;\n  color: #154f74;\n  line-height: 4; }\n\n.ih-button__container {\n  margin: 24px 0;\n  width: 100%; }\n\n.ih-button__container-title {\n  font-size: 23px;\n  color: #154f74;\n  margin-bottom: 13px;\n  font-weight: 700;\n  line-height: 2; }\n\n.ih-button {\n  background-color: #3480a1;\n  color: white;\n  font-size: 20px;\n  font-weight: 300;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  display: inline-block;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .ih-button:after {\n    content: url(\"/assets/white-right-arrow.png\");\n    margin-left: 10px;\n    width: 8px; }\n\n.navigation-button {\n  background-color: #eeeeee;\n  color: #504f4f;\n  font-size: 20px;\n  margin-top: 20px;\n  padding-left: 10px;\n  width: 100%;\n  font-weight: 400;\n  margin: 15px 15px 15px 0;\n  padding: 14px;\n  position: relative;\n  letter-spacing: 1px;\n  vertical-align: middle; }\n  .navigation-button:after {\n    content: url(\"/assets/right-arrow.png\");\n    position: absolute;\n    right: 20px;\n    width: 8px; }\n\n.navigation__body {\n  position: relative;\n  background-color: white;\n  width: calc(100% - 178px);\n  margin-left: 178px;\n  padding: 25px 25px 50px 25px;\n  height: calc(1024px - 102px);\n  overflow: scroll; }\n\n.navigation__link-spacer {\n  width: 100%;\n  height: 40px; }\n\n.donutchart-track {\n  fill: transparent;\n  stroke: #DAE2E5;\n  stroke-width: 16; }\n\n.donutchart-indicator {\n  fill: transparent;\n  stroke: #7FE1F6;\n  stroke-width: 16;\n  stroke-dasharray: 0 10000;\n  transition: stroke-dasharray .3s ease; }\n\n.donutchart {\n  margin: 0 auto;\n  border-radius: 50%;\n  display: block; }\n\n.donutchart-text {\n  fill: #3480a1; }\n\n.donutchart-text-val {\n  font-size: 28px;\n  font-weight: 700; }\n\n.donutchart-text-percent {\n  font-size: 28px; }\n\n.donutchart-text-label {\n  font-size: 9px; }\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 312 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = undefined;
+	
+	var _Terminology = __webpack_require__(313);
 	
 	var _Terminology2 = _interopRequireDefault(_Terminology);
 	
@@ -29605,7 +29753,7 @@
 	exports.default = _Terminology2.default;
 
 /***/ },
-/* 284 */
+/* 313 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29624,7 +29772,7 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	__webpack_require__(285);
+	__webpack_require__(314);
 	
 	var _SideBar = __webpack_require__(242);
 	
@@ -29734,13 +29882,13 @@
 	exports.default = Terminology;
 
 /***/ },
-/* 285 */
+/* 314 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(286);
+	var content = __webpack_require__(315);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(247)(content, {});
@@ -29760,7 +29908,7 @@
 	}
 
 /***/ },
-/* 286 */
+/* 315 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(246)();
@@ -29774,7 +29922,7 @@
 
 
 /***/ },
-/* 287 */
+/* 316 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29784,7 +29932,7 @@
 	});
 	exports.default = undefined;
 	
-	var _IntegratedOverview = __webpack_require__(288);
+	var _IntegratedOverview = __webpack_require__(317);
 	
 	var _IntegratedOverview2 = _interopRequireDefault(_IntegratedOverview);
 	
@@ -29793,7 +29941,7 @@
 	exports.default = _IntegratedOverview2.default;
 
 /***/ },
-/* 288 */
+/* 317 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29808,7 +29956,7 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	__webpack_require__(289);
+	__webpack_require__(318);
 	
 	var _SideBar = __webpack_require__(242);
 	
@@ -30011,13 +30159,13 @@
 	exports.default = IntegratedOverview;
 
 /***/ },
-/* 289 */
+/* 318 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(290);
+	var content = __webpack_require__(319);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(247)(content, {});
@@ -30037,7 +30185,7 @@
 	}
 
 /***/ },
-/* 290 */
+/* 319 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(246)();
@@ -30051,7 +30199,7 @@
 
 
 /***/ },
-/* 291 */
+/* 320 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30061,7 +30209,7 @@
 	});
 	exports.default = undefined;
 	
-	var _ScreeningOverview = __webpack_require__(292);
+	var _ScreeningOverview = __webpack_require__(321);
 	
 	var _ScreeningOverview2 = _interopRequireDefault(_ScreeningOverview);
 	
@@ -30070,7 +30218,7 @@
 	exports.default = _ScreeningOverview2.default;
 
 /***/ },
-/* 292 */
+/* 321 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30085,7 +30233,7 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	__webpack_require__(293);
+	__webpack_require__(322);
 	
 	var _SideBar = __webpack_require__(242);
 	
@@ -30211,13 +30359,13 @@
 	exports.default = ScreeningOverview;
 
 /***/ },
-/* 293 */
+/* 322 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(294);
+	var content = __webpack_require__(323);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(247)(content, {});
@@ -30237,7 +30385,7 @@
 	}
 
 /***/ },
-/* 294 */
+/* 323 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(246)();
@@ -30251,7 +30399,7 @@
 
 
 /***/ },
-/* 295 */
+/* 324 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30261,7 +30409,7 @@
 	});
 	exports.default = undefined;
 	
-	var _ScreeningNavigation = __webpack_require__(296);
+	var _ScreeningNavigation = __webpack_require__(325);
 	
 	var _ScreeningNavigation2 = _interopRequireDefault(_ScreeningNavigation);
 	
@@ -30270,7 +30418,7 @@
 	exports.default = _ScreeningNavigation2.default;
 
 /***/ },
-/* 296 */
+/* 325 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30293,7 +30441,7 @@
 	
 	var _NavigationBar2 = _interopRequireDefault(_NavigationBar);
 	
-	__webpack_require__(297);
+	__webpack_require__(326);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -30439,13 +30587,13 @@
 	exports.default = ScreeningNavigation;
 
 /***/ },
-/* 297 */
+/* 326 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(298);
+	var content = __webpack_require__(327);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(247)(content, {});
@@ -30465,7 +30613,7 @@
 	}
 
 /***/ },
-/* 298 */
+/* 327 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(246)();
@@ -30479,7 +30627,7 @@
 
 
 /***/ },
-/* 299 */
+/* 328 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30489,7 +30637,7 @@
 	});
 	exports.default = undefined;
 	
-	var _DiagnosisNavigation = __webpack_require__(300);
+	var _DiagnosisNavigation = __webpack_require__(329);
 	
 	var _DiagnosisNavigation2 = _interopRequireDefault(_DiagnosisNavigation);
 	
@@ -30498,7 +30646,7 @@
 	exports.default = _DiagnosisNavigation2.default;
 
 /***/ },
-/* 300 */
+/* 329 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30521,7 +30669,7 @@
 	
 	var _NavigationBar2 = _interopRequireDefault(_NavigationBar);
 	
-	__webpack_require__(301);
+	__webpack_require__(330);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -30758,13 +30906,13 @@
 	exports.default = DiagnosisNavigation;
 
 /***/ },
-/* 301 */
+/* 330 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(302);
+	var content = __webpack_require__(331);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(247)(content, {});
@@ -30784,7 +30932,7 @@
 	}
 
 /***/ },
-/* 302 */
+/* 331 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(246)();
@@ -30798,7 +30946,7 @@
 
 
 /***/ },
-/* 303 */
+/* 332 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30808,7 +30956,7 @@
 	});
 	exports.default = undefined;
 	
-	var _InterventionNavigation = __webpack_require__(304);
+	var _InterventionNavigation = __webpack_require__(333);
 	
 	var _InterventionNavigation2 = _interopRequireDefault(_InterventionNavigation);
 	
@@ -30817,7 +30965,7 @@
 	exports.default = _InterventionNavigation2.default;
 
 /***/ },
-/* 304 */
+/* 333 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30840,7 +30988,7 @@
 	
 	var _NavigationBar2 = _interopRequireDefault(_NavigationBar);
 	
-	__webpack_require__(305);
+	__webpack_require__(334);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -30979,13 +31127,13 @@
 	exports.default = InterventionNavigation;
 
 /***/ },
-/* 305 */
+/* 334 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(306);
+	var content = __webpack_require__(335);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(247)(content, {});
@@ -31005,7 +31153,7 @@
 	}
 
 /***/ },
-/* 306 */
+/* 335 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(246)();
@@ -31019,7 +31167,7 @@
 
 
 /***/ },
-/* 307 */
+/* 336 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31029,7 +31177,7 @@
 	});
 	exports.default = undefined;
 	
-	var _Models = __webpack_require__(308);
+	var _Models = __webpack_require__(337);
 	
 	var _Models2 = _interopRequireDefault(_Models);
 	
@@ -31038,7 +31186,7 @@
 	exports.default = _Models2.default;
 
 /***/ },
-/* 308 */
+/* 337 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31053,7 +31201,7 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	__webpack_require__(309);
+	__webpack_require__(338);
 	
 	var _SideBar = __webpack_require__(242);
 	
@@ -31232,13 +31380,13 @@
 	exports.default = Models;
 
 /***/ },
-/* 309 */
+/* 338 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(310);
+	var content = __webpack_require__(339);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(247)(content, {});
@@ -31258,7 +31406,7 @@
 	}
 
 /***/ },
-/* 310 */
+/* 339 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(246)();
@@ -31272,7 +31420,7 @@
 
 
 /***/ },
-/* 311 */
+/* 340 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31282,7 +31430,7 @@
 	});
 	exports.default = undefined;
 	
-	var _LifestyleIntervention = __webpack_require__(312);
+	var _LifestyleIntervention = __webpack_require__(341);
 	
 	var _LifestyleIntervention2 = _interopRequireDefault(_LifestyleIntervention);
 	
@@ -31291,7 +31439,7 @@
 	exports.default = _LifestyleIntervention2.default;
 
 /***/ },
-/* 312 */
+/* 341 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31306,7 +31454,7 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	__webpack_require__(313);
+	__webpack_require__(342);
 	
 	var _SideBar = __webpack_require__(242);
 	
@@ -31438,13 +31586,13 @@
 	exports.default = LifestyleIntervention;
 
 /***/ },
-/* 313 */
+/* 342 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(314);
+	var content = __webpack_require__(343);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(247)(content, {});
@@ -31464,7 +31612,7 @@
 	}
 
 /***/ },
-/* 314 */
+/* 343 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(246)();

@@ -15,15 +15,15 @@ $blue300: #154f74;
 $blue400: #01152a;
 
 $gray100: #eeeeee;
-$gray150: #999999;
-$gray200: #504f4f;
+$gray200: #999999;
+$gray300: #504f4f;
 
 *, div, p {
   font-family: 'Lato', sans-serif;
 }
 
 p {
-  color: $gray200;
+  color: $gray300;
   font-size: 18px;
   line-height: 1.3;
   font-weight: 400;
@@ -156,13 +156,13 @@ a {
   font-weight: 700;
 }
 .box__body {
-  color: $gray200;
+  color: $gray300;
   font-size: 18px;
   line-height: 1.3;
   font-weight: 400;
 }
 .box__bullet-narrow {
-  color: $gray200;
+  color: $gray300;
   line-height: 1.5;
   font-size: 18px;
   font-weight: 400;
@@ -174,7 +174,7 @@ a {
   }
 }
 .box__bullet-wide {
-  color: $gray200;
+  color: $gray300;
   line-height: 1.3;
   margin: 5px 0;
   font-size: 18px;
@@ -230,7 +230,7 @@ a {
   margin-bottom: 18px;
 }
 .dark-box__header {
-  background: $gray150;
+  background: $gray200;
   color: white;
   font-size: 24px;
   font-weight: 400;
@@ -291,7 +291,7 @@ a {
 }
 .navigation-button {
   background-color: $gray100;
-  color: $gray200;
+  color: $gray300;
   font-size: 20px;
   margin-top: 20px;
   padding-left: 10px;
